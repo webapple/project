@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="denglu11.css"/>
+		<script>
+			window.onload=function(){
+				saoma.onclick=function(){
+					xianshi.style.display="none";
+					xianshi1.style.display="block";
+					saoma.style.color="orange";
+					zhanghao.style.color="#ccc";
+					wang.style.top="10px";
+				}
+				zhanghao.onclick=function(){
+					xianshi.style.display="block";
+					xianshi1.style.display="none";
+					zhanghao.style.color="orange";
+					saoma.style.color="#ccc";
+					wang.style.top="150px";
+				}
+					
+//				console.log(aa);
+				//获取登录页的value值
+				var usename=document.getElementById("inp1");
+				var pasword=document.getElementById("inp2");
+				var log=document.getElementById("deng");
+					console.log(111);
+				log.onclick=function(){
+					
+					if(arr==""||arr==null){
+					alert("此帐号不存在")
+					return;
+				    }
+					if(arr1[1]==usename.value&&aa[1]==pasword.value){
+						document.cookie="username="+usename.value;
+						document.cookie="password="+pasword.value;
+						document.location="index.html";
+					}else{
+						alert("密码格式不对,或不匹配");
+					}
+				}
+				//对比
+				
+					function move (obj,json,speed){
+					clearInterval(obj.timer);  //共用的一个定时器  
+					obj.timer=setInterval(
+						function(){
+							for (var attr in json) {
+								var cur=0;	
+								if(attr=="opacity"){
+									cur=getStyle(obj,"opacity")*100;
+								}else{
+									cur=parseInt(getStyle(obj,attr));
+								}
+								speed=(json[attr]-cur)/8;
+								speed=speed>0?Math.ceil(speed):Math.floor(speed);
+								if(cur==json[attr]){
+									clearInterval(obj.timer);
+								}else if(attr=="opacity"){
+									obj.style.opacity=(cur+speed)/100;
+									obj.style.filter=parseInt("alpha(opacity="+(cur+speed)+")");
+		//							console.log(obj.style.filter);
+								}else{
+									obj.style[attr]=cur+speed+"px";
+								}
+							}
+						},50
+					)
+				}
+					function getStyle(obj,attr){    //获取元素属性
+						if(obj.currentStyle){
+							return obj.currentStyle[attr];  //IE
+						}else{
+							return getComputedStyle(obj,false)[attr];  //火狐；
+						}
+					}	
+  			move(yidong,{opacity:100,top:0},2);
+				
+				var arr=document.cookie.split(";");
+				 var arr1=arr[0].split("=");
+				 var aa=arr[1].split("=");
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<div class="zhong">
+				<div class="logo"><img src="img/55bc529876c0b10b9fa154659da25106_121_121.jpg"/></div>
+				<div class="tou">
+					<p class="p1">小米商城</p>
+					<p class="p2">让每个人都能享受科技的乐趣</p>
+				</div>
+			</div>
+		</div>
+		<div id="div2">
+			<div class="zhong">
+				<div id="zuo">
+					<div class="zuoa">
+						<div id="yidong">
+							<p class="p1">小米Note2双曲面商务旗舰</p>
+							<p class="p2">一面科技，一面艺术</p>
+							<p class="p3">5.7″双曲面屏/骁龙821性能版/2256万像素相机</p>
+							<div class="p4">
+								<span class="span1"><sup>￥</sup>2799</span><span class="span2">64GB</span><span class="span3"></span>
+								<span class="span1"><sup>￥</sup>3299</span><span class="span2">128GB</span>
+							</div>
+						</div>
+						<img src="img/qq.png.png" style="height: 590px;"/>
+					</div>
+				</div>
+				<div id="you">
+					<div id="zhang">
+						<span class="span1"id="zhanghao" style="color: #FF6700;">帐号登录</span>
+						<span class="span2">|</span>
+						<span class="span3"id="saoma">扫码登陆</span>
+					</div>
+					<div id="zhang1">
+						<div id="xianshi">
+							<input type="text" id="inp1" placeholder="邮箱/手机号码/小米帐号"/>
+							<input type="password" id="inp2"  placeholder="密码"/>
+							<div id="deng"><a href="#">立即登录</a></div>
+						</div>
+						<div id="xianshi1">
+							<img src="img/qr.png" />
+						</div>
+					</div>
+						<div id="wang">
+							<span class="span1"><a href="zhuce.html">注册小米账户</a></span>
+							<span class="span2">|</span>
+							<span class="span3"><a href="#">忘记密码？</a></span>
+						</div>
+					<div id="zhang2">
+						<p class="p1"></p>
+						<p class="p2">其他方式登录都不管用</p>
+						<p class="p1"></p>
+					</div>
+					<div id="zhang3">
+						<a href="#"><img src="img/qq.png"/></a>
+						<a href="#"><img src="img/weibo.png"/></a>
+						<a href="#"><img src="img/zzz.png"/></a>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+		<div id="div3">
+			<div class="zhong">
+				<div class="xia1">
+					<span>简体</span>|
+					<span>繁体</span>|
+					<span>English</span>|
+					<span>常见问题</span>
+				</div>
+				<div class="xia2">
+					<span>小米公司版权所有</span>-<span>京ICP备10046444</span>-<span>京公网安备11010802020134号</span>-<span>京ICP证110507号</span>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,204 @@
+#logo ul li {
+	list-style: none;
+	font-size:15px;
+	float: right;
+	line-height: 50px;
+	margin: 0 20px;
+}
+#logo ul li a:hover{
+	color: #00a7eb;
+}
+#logo{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+#logo ul li:nth-child(1){
+	float: left;
+}
+#head1{
+	background: white;
+	width: 100%;
+	position: absolute;
+	z-index: 2 ;
+}
+#head2{
+	background: white;
+	width: 100%;
+	position: absolute;
+	top: 60px;
+	z-index: 2 ;
+	opacity: .7;
+}
+#logo2 ul li:nth-child(1){
+	float: left;
+}
+#logo2{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+#logo2 ul li a:hover{
+	color: #00a7eb;
+}
+#logo2 ul li {
+	list-style: none;
+	font-size:15px;
+	float: right;
+	line-height: 50px;
+	margin: 0 20px;
+}
+#logo2 ul li:nth-child(2) span{
+	margin-top: 10px;
+	text-align: center;
+	display: block;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	background: #00A7EB;
+}
+#logo2 ul li:nth-child(2) span:hover{
+	color: #fff;
+}
+.img1{
+	width:45%;
+	position: relative;
+	left: -200px;
+}
+.img5{
+	width:45%;
+	position: relative;
+	right: -200px;
+}
+.img2{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+#img2{
+	width: 100%;
+	height: 100%;
+}
+#imgbig{
+	width: 80%;
+	position: relative;
+	top: 20%;
+	margin: 0 auto;
+}
+ #p1{
+	width: 100%;
+	font-size: 350%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	bottom: 70%;
+}
+ #p2{
+	width: 100%;
+	font-size: 250%;
+	color: white;
+	text-align: center;
+	position: absolute;
+	bottom: 60%;
+}
+#p3,#p4,#p5{
+	color: white;
+	position: absolute;
+	bottom:30%;
+	left: 20%;
+	text-align: center;
+	opacity: .5;
+}
+#p3{
+	bottom: 30%;
+	font-size: 50px;
+}
+#p4{
+	font-size: 50px;
+	bottom: 25%;
+}
+#p5{
+	font-size: 40px;
+	bottom: 20%;
+}
+#p7,#p6{
+	width: 100%;
+	font-size: 40px;
+	color: white;
+	position: relative;
+	bottom: 60%;
+	text-align: center;
+}
+#p8,#p9{
+	width: 100%;
+	font-size: 30px;
+	color: white;
+	position: relative;
+	bottom: 80%;
+	text-align: center;
+}
+#p10,#p11{
+	width: 100%;
+	font-size: 30px;
+	color: white;
+	position: relative;
+	bottom: 30%;
+	text-align: center;
+}
+#img09{
+	width: 100%;
+	height: 100%;
+}
+#img11{
+	width: 40%;
+	position: absolute;
+	right: 0%;
+	bottom: 10%;
+}
+#img12{
+	width: 20%;
+	position: absolute;
+	left: 20%;
+	bottom: 50%;
+	opacity: .2;
+}
+#p12{
+	color: white;
+	font-size: 40px;
+	position: absolute;
+	left: 20%;
+	bottom: 40%;
+	opacity: .2;
+}
+.fp-controlArrow{
+	top: 200px;
+	opacity: .5;
+}
+#img21{
+	position: absolute;
+	width: 60%;
+	top: 200px;
+	left: 20%;
+}
+.guangquan{
+	width: 150px;
+	position: absolute;
+	top: 30%;
+	right: 25%;
+}
+.s111{
+	top: 35%;
+	left: 50%;
+}
+
+#div21{
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	background: #CCCCCC;
+	padding: 30px;
+}
+#div21 p{
+	margin: 5px;
+	text-align: center;
+}

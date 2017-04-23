@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #000;
+}
+.div1{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.div1 img{
+	width: 100%;
+	position: relative;
+}
+.div2{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.4;
+	position: absolute;
+}
+p{
+    position: relative;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    z-index:99;
+    top: 40%;
+}
+#nav{
+	position: fixed;
+	z-index: 3;
+	top: 5%;
+	left: 2%;
+}
+#nav span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	border-radius: 3px;
+	margin: 5px;
+	background: white;
+}
+#cebianlan{
+	position: fixed;
+	z-index: 4;
+	width: 20%;
+	height: 100%;
+	background: white;
+	left: -20%;
+	overflow: hidden;
+}
+#icon1{
+	display: block;
+	height: 22px;
+	width: 22px;
+	background: url(../img/sprite.png) 0 -90px no-repeat;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	cursor: pointer;
+}
+.img1{
+	position: absolute;
+	width: 60%;
+	top: 20%;
+	left: 20%;
+}
+.div4{
+	animation: roll 1s forwards;
+}
+@keyframes roll{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		height: 100%;
+		opacity: 0;
+	}
+}
+#sen p{
+	font-size: 16px;
+	color: #ccc;
+	width: 200%;
+}
+
+#sen{
+	position: absolute;
+	top: 50%;
+}

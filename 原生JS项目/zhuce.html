@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		   	body{
+		   		background: #f6f4f4;
+		   	}
+			table{
+				margin: 0 auto;
+				width: 1200px;
+				background: white;
+				margin-top: 200px;
+			}
+			.juzhong{
+				margin: 0 auto;
+				width: 1200px;
+				margin-top: 200px;
+			}
+			span ,input{
+				margin: 10px 20px;
+				float: right;
+				position:relative;
+				right: 500px;
+			}
+			#nan{
+				margin: 10px 20px;
+				float: right;
+				position:relative;
+				right: 460px;
+				bottom: 6px;
+			}
+			#nan1{
+				margin: 10px 20px;
+				float: right;
+				position:relative;
+				right: 443px;
+				bottom: 6px;
+			}
+			#logo{
+				float: left;
+				margin-left: 550px;
+				width: 40px;
+				height: 40px;
+				margin-bottom: 70px;
+			}
+			#zhuce{
+				width: 200px;
+				height: 50px;
+				background:#ff936a;
+				border: 0 solid #CCCCCC;
+				right: 500px;
+				font-size: 15px;
+			}
+			.dingwei{
+				position: relative;
+				left: 700px;
+				top: 10px;
+			}
+			p{
+				text-align: center;
+			}
+			.yangshi1{
+				position: relative;
+				z-index: 2;
+				right: 500px;
+				font-size: 15px;
+				margin: 2px;
+				color: #CCCCCC;
+			}
+			.yangshi{
+				position: relative;
+				z-index: 2;
+				width: 30px;
+				height: 5px;
+				background: #ccc;
+				top: 5px;
+				margin: 4px;
+				right: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			window.onload=function(){
+				var log=document.getElementById("username");
+				var zhengze=/^[a-zA-Z_]\w{6,12}$/;
+				log.onblur=function(){
+					if(log.value==""||log.value==null){
+						tishi1.innerHTML="帐号不能为空，格式为：首字为字母，长度7-12位";
+						return;
+					}
+					if(zhengze.test(log.value)){
+						tishi1.innerHTML="√";
+					}else{
+						tishi1.innerHTML="帐号格式不正确，格式为：首字为字母，长度7-12位";
+					}
+				}
+				var que=document.getElementById("queren");
+				
+				var mima=document.getElementById("password");
+				var mimayanzheng=/^\w{0,6}$/;
+				var mimayanzheng1=/^\w{6,9}$/;
+				var mimayanzheng2=/^\w{9,20}$/;
+				mima.onblur=function(){
+					if(mimayanzheng.test(mima.value)){
+						document.getElementById("sapn3").style.background="red";
+						document.getElementById("sapn1").style.background="#ccc";
+						document.getElementById("sapn2").style.background="#ccc";
+					}
+					if(mimayanzheng1.test(mima.value)){
+						document.getElementById("sapn3").style.background="orange";
+						document.getElementById("sapn2").style.background="orange";
+						document.getElementById("sapn1").style.background="#ccc";
+					}
+					if(mimayanzheng2.test(mima.value)){
+						document.getElementById("sapn1").style.background="green";
+						document.getElementById("sapn3").style.background="green";
+						document.getElementById("sapn2").style.background="green";
+					}
+				}
+				que.onblur=function(){
+					if(mima.value==""||mima.value==null||mima.value=="    "){
+						tishi2.innerHTML="password不能为空";
+					}else if(que.value!=mima.value){
+						tishi2.innerHTML="两次密码输入不一致"
+					}else{
+						tishi2.innerHTML="√"
+					}
+				}
+				var shouji=document.getElementById("shoujihao");
+				var shouzheng=/^[1][0-9]{10}$/
+				shouji.onblur=function(){
+					if(shouji.value==""||shouji.value==null){
+						tishi3.innerHTML="手机号不能为空";
+					}else if(!shouzheng.test(shouji.value)){
+						tishi3.innerHTML="格式不正确";
+					}else{
+						tishi3.innerHTML="√";
+					}
+				}
+				var youxiang=document.getElementById("youxiang");
+				var yxzz=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+$/
+				youxiang.onblur=function(){
+					if(youxiang.value==""||youxiang.value==null){
+						tishi4.innerHTML="邮箱不能为空";
+					}else if(yxzz.test(youxiang.value)){
+						tishi4.innerHTML="√";
+					}else{
+						tishi4.innerHTML="邮箱格式不完整";
+					}
+				}
+				var zhenfen=document.getElementById("shenfenzhenghao");
+				var sfzhzz=/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/
+				zhenfen.onblur=function(){
+					if(sfzhzz.test(zhenfen.value)){
+						tishi5.innerHTML="√";
+					}else{
+						tishi5.innerHTML="身份证号格式不正确";
+					}
+				}
+				var shengri=document.getElementById("shengri");
+				var shengrizz=/^\d{8}/
+				shengri.onblur=function(){
+					if(shengri.value==""||shengri.value==null){
+						tishi6.innerHTML="生日不能为空";
+					}else if(shengrizz.test(shengri.value)){
+						tishi6.innerHTML="√";
+					}else{
+						tishi6.innerHTML="生日格式不正确，例：19970824";
+					}
+				}
+				zhuce.onclick=function yanzheng(){
+					var l=0;
+					var suoyou=document.getElementsByTagName("label");
+					for(var i=0;i<suoyou.length;i++){
+						if(suoyou[i].innerHTML!="√"){
+							var l=2;
+								alert("信息有误，请您重新注册");
+								i=suoyou.length;
+						}
+					}
+					if(l==0){
+						var useName=document.getElementById("username");
+				        var pasWord=document.getElementById("password");
+						document.cookie="username="+useName.value;
+						document.cookie="password="+pasWord.value;
+							document.location="denglu11.html"
+							}
+				}	
+						
+			}
+		</script>
+		<table>
+			<tr>
+				<td><img src="img/logo2.jpg" id="logo"/> </td>
+			</tr>	
+			<tr>
+				<td><label id="tishi1"class="dingwei"></label><input type="text" id="username" placeholder="帐号"/><span>帐号:</span></td>
+			</tr>	
+			<tr>	
+				<td><input type="password" id="password" placeholder="密码"/><span>密码:</span></td>
+			</tr>
+			<tr  id="ttr11">
+				<td><span id="sapn1" class="yangshi"></span><span id="sapn2" class="yangshi"></span><span id="sapn3" class="yangshi"></span><span class="yangshi1">密码强度:</span></td>
+			</tr>
+			<tr>
+				<td><label id="tishi2"class="dingwei"></label><input type="password" id="queren" placeholder="确认密码"/><span>确认密码:</span></td>
+			</tr>
+			<tr>
+				<td><label id="tishi4"class="dingwei"></label><input type="txet" id="youxiang" placeholder="邮箱"/><span>邮箱:</span></td>
+			</tr>
+			<tr>
+				<td><label id="tishi3"class="dingwei"></label><input type="txet" id="shoujihao" placeholder="+86"/><span>手机号:</span></td>
+			</tr>
+			<tr>
+				<td><label id="tishi5"class="dingwei"></label><input type="txet" id="shenfenzhenghao"/><span>身份证号:</span></td>
+			</tr>
+			<tr>
+				<td><label id="tishi6"class="dingwei"></label><input type="txet" id="shengri"/><span>生日:</span></td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="aa"value="0"/><span id="nan">男：</span>
+					<input type="radio" name="aa"value="1"/><span id="nan">女：</span>
+					<span id="nan1">性别:</span>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button" id="zhuce" value="注册" /></td>
+			</tr>
+			
+		</table>
+		<div class="floot">
+			<div class="juzhong">
+			<p>小米公司版权所有-京ICP备10046444<img src="img/ghs.png"/>11010802020134号-京ICP证110507号</p>
+			</div>
+		</div>
+	</body>
+</html>

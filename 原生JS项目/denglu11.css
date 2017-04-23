@@ -1,0 +1,235 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+#div1{
+	width: 100%;
+	height: 110px;
+}
+#div2{
+	width: 100%;
+	height: 590px;
+	background: #1e303e;
+}
+#div3{
+	width: 100%;
+}
+.zhong{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+#div1 .logo{
+	width: 80px;
+	height: 100px;
+}
+#div1 .logo img{
+	width: 55px;
+	height: 55px;
+	margin: 25px 0;
+}
+#div1 .tou,.logo{
+	float: left;
+}
+#div1 .tou .p1{
+	letter-spacing: 3px;
+	margin-top: 17px;
+	color: #323232;
+	font-size: 36px;
+}
+#div1 .tou .p2{
+	color: #808080;
+	font-size: 12px;
+}
+
+
+
+
+
+
+#div2 .zuoa{
+	position: relative;
+}
+#div2 #zuo .p1{
+	position: absolute;
+	top: 125px;
+	color: #fff;
+	font-size: 31px;
+}
+#div2 #zuo .p2{
+	position: absolute;
+	top: 168px;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 7px;
+}
+#div2 #zuo .p3{
+	position: absolute;
+	top: 200px;
+	color: #A5ADAE;
+	font-size: 13px;
+}
+#div2 #zuo .p4{
+	height: 20px;
+	position: absolute; 
+	top: 250px;
+}
+#div2 #zuo sup{
+	font-size: 12px;
+}
+#div2 #zuo span{
+	color: #2d7cff;
+}
+#div2 #zuo .span1{
+	font-size: 26px;
+}
+#div2 #zuo .span2{
+	position: relative;
+	left: 7px;
+	top: -4px;
+	letter-spacing: -1px;
+	font-size: 14px;
+	padding: 0 5px;
+	border: 1px solid #2D7CFF;
+	border-radius: 5px;
+}
+#div2 #zuo .span3{
+	position: relative;
+	top: -2px;
+	left: 8px;
+	margin: 0 15px;
+	border-right: 0.1px solid #2D7CFF;
+}
+#div2 #zuo img{
+	position: absolute;
+	left: 330px;
+}
+#div2 #you{
+	position: relative;
+	left: 780px;
+	top: 40px;
+	background: white;
+	width: 380px;
+	height: 500px;
+}
+#zhang span{
+	font-size: 24px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	margin: 0 15px;
+}
+#zhang .span1,#zhang .span3{
+	color: #CCCCCC;
+}
+#zhang span:hover{
+	color: orange;
+}
+#zhang .span2{
+	color: #ddd;
+}
+#zhang1 input{
+	position: relative;
+	width: 300px;
+	height: 50px;
+	left: 30px;
+	top: 35px;
+	padding: 0 8px;
+	margin-top: 20px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+}
+#deng{
+	position: absolute;
+	top: 230px;
+	left: 30px;
+	height: 50px;
+	width: 318px;
+	background: #f56600;
+}
+#deng a{
+	font-size: 18px;
+	color: white;
+	line-height: 50px;
+	margin: 0 118px;
+}
+#you #wang{
+	position: relative;
+	top: 150px;
+	left: 98px;
+}
+#wang span,#wang a{
+	font-size: 14px;
+	color: #9a9899;
+}
+#wang a:hover{
+	color: #FF6700;
+}
+#wang .span2{
+	margin: 0 5px;
+}
+#zhang2{
+	position: absolute;
+	top: 400px;
+	left: 40px;
+}
+#zhang2 p{
+	display: inline-block;
+	color: #bbb;
+	font-size: 14px;
+}
+#zhang2 .p1{
+	position: relative;
+	top: -5px;
+	width: 80px;
+	height: 0px;
+	border-bottom: 1px solid #bbb;
+}
+#zhang3{
+	position: absolute;
+	top: 440px;
+	left: 110px;
+}
+#zhang3 img{
+	width: 23px;
+	margin: 0 15px;
+}
+.xia1{
+	position: relative;
+	top: 50px;
+	left: 400px;
+	width: 300px;
+}
+.xia2{
+	position: relative;
+	top: 60px;
+	width: 600px;
+	left: 250px;
+}
+.xia1,.xia2{
+	font-size: 14px;
+	color: #888;
+}
+.xia1 span{
+	margin: 0 10px;
+}
+.xia1 span:hover,.xia2 span:hover{
+	color: #FF6700;
+}
+#xianshi1{
+	display: none;
+}
+#xianshi1 img{
+	width: 200px;
+	height: 200px;
+	margin-top: 60px;
+	margin-left: 90px;
+}
+#yidong{
+	position: relative;
+	top: 80px;
+	opacity: 0.1;
+}

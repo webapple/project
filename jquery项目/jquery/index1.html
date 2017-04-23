@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	<meta charset="utf-8">
+	<title>fullPage.js — 基本演示_dowebok</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/new_file.css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script>
+		$(function(){
+			move1();
+			$('#dowebok').fullpage({
+				 'css3': true,
+				'navigation':true,
+				'verticalCentered':false,
+				sectionsColor: ['#7BAABE', '#4BBFC3', '#000', '#f90'],
+				onLeave: function(anchorLink, index){
+					//using index
+					if(index == 3){
+						yichu1();
+						move11();
+						move33();
+					}
+					if(index == 2){
+						move2();
+						move();
+						head();
+					}
+					if(index == 1){
+						move11();
+						head11();
+						move1();
+					}
+					if(index==4){
+						move3();
+					}
+					if(index==5){
+						move33();
+					}
+					//using anchorLink
+				},
+				onSlideLeave:function(index,slideIndex,anchorLink,direction){
+					if(anchorLink == 0){
+						yichu2()
+					}
+					if(anchorLink == 1){
+						yichu3()
+					}
+				}
+			});
+			function yichu1(){
+				$(".video1")[0].src="";
+				$("#liu1")[0].src="img/01.webm";
+			};
+			function yichu2(){
+				$(".video1")[1].src="";
+				$("#liu2")[0].src="img/02.webm";
+			};
+			function yichu3(){
+				$(".video1")[2].src="";
+				$("#liu3")[0].src="img/03.webm";
+			};
+			function move(){
+				$(".img1").animate({"left":0},2000);
+				$(".img5").animate({"right":0},2000);
+			};
+			function move1(){
+				$("#p3").animate({
+					"bottom":"50%",
+					"opacity":1
+				},1000)
+				$("#p4").animate({
+					"bottom":"42%",
+					"opacity":1
+				},2000)
+				$("#p5").animate({
+					"bottom":"36%",
+					"opacity":1
+				},2500)
+			};
+			function move2(){
+				$("#p3").animate({
+					"bottom":"30%",
+					"opacity":.5
+				},500)
+				$("#p4").animate({
+					"bottom":"25%",
+					"opacity":.5
+				},500)
+				$("#p5").animate({
+					"bottom":"20%",
+					"opacity":.5
+				},500)
+			};
+			function move3(){
+				$("#img11").animate({"right":"10%","bottom":"15%"},2000);
+				$("#img12").animate({"bottom":"60%","opacity":1},2000);
+				$("#p12").animate({"bottom":"40%","opacity":1},2000);
+				
+			}
+			function move33(){
+				$("#img11").animate({"right":"0%","bottom":"10%"},2000);
+				$("#img12").animate({"bottom":"50%","opacity":.2},2000);
+				$("#p12").animate({"bottom":"30%","opacity":.2},2000);
+			}
+			function move11(){
+				$(".img1").animate({"left":-200},1000);
+				$(".img5").animate({"right":-200},1000);
+			};
+			function head(){
+				$("#head1").animate({"top":-100},2000);
+				$("#head2").animate({"top":0},1000);
+			};
+			function head11(){
+				$("#head1").animate({"top":0},1000);
+				$("#head2").animate({"top":60},1000);
+			}
+		})
+	</script>
+	</head>
+	<body>
+	<div id="head1">
+		<div id="logo">
+			<ul>
+				<li><img src="img/logo.jpg" /></li>
+				<li><a>登录|</a><a>注册</a></li>
+				<li><a>社区</a></li>
+				<li><a>服务</a></li>
+				<li><a>Filme</a></li>
+				<li><a>专卖店</a></li>
+				<li><a>产品</a></li>
+				<li><a>在线商城</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="head2">
+		<div id="logo2">
+			<ul>
+				<li><img src="img/meilannote2_logo.png" /></li>
+				<li><span>立即购买</span></li>
+				<li><a>意外险</a></li>
+				<li><a>机型比较</a></li>
+				<li><a>图库</a></li>
+				<li><a>参数</a></li>
+				<li><a>概述</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="dowebok"> 
+		<div class="section">
+			<img src="img/bg1-s.jpg"class="img2">
+			<p id="p3">追不完的音乐会</p>
+			<p id="p4">听不完的青春</p>
+			<p id="p5">魅族 HD50 头戴式耳机</p>
+		</div>
+		<div class="section">
+			<div id="imgbig">
+				<img src="img/phone-blue.png" class="img1"/>
+				<img src="img/phone-white.png" class="img5"/>
+				<p id="p1">魅族 魅蓝5.0 手机</p>
+				<p id="p2">震撼上市</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="slide">
+				<video class="video1" autoplay="true" preload="none" src="img/01.webm" id="liu1"></video>
+				<p id="p6">曾经我们充满好奇</p>
+				<p id="p7">正是因为这样的好奇，我们打开了身边的世界</p>
+			</div>
+			<div class="slide">
+				<video class="video1" autoplay="true" preload="none" src="img/02.webm" id="liu2"></video>
+				<p id="p8">听老白讲</p>
+				<p id="p9">魅族背后的故事</p>
+			</div>
+			<div class="slide">
+				<video class="video1" autoplay="true" preload="none" src="img/03.webm" id="liu3"></video>
+				<p id="p10">魅族开发，大国芯片</p>
+				<p id="p11">魅蓝1.0</p>
+			</div>
+		</div>
+		<div class="section">
+			<img src="img/slogan-np_87141dc.jpg" id="img09" />
+			<img src="img/slogan-phone_83c4291.png" id="img11"/> 
+			<img src="img/slogan-logo_fdd55ef.png" id="img12"/>
+			<p id="p12">越强大，越冷静</p>
+		</div>
+		<div class="section">
+			<img src="img/006.png" id="img21"/>
+			<img src="img/009.gif" class="guangquan"/>
+			<img src="img/009.gif" class="guangquan s111"/>
+			<div id="div21"><p>备注：</p>
+					<p>充电5分钟，通话2小时：数据来源于中国赛宝实验室检验报告；检验环境：温度15°C-35°C，相对湿度45%-75%，</p>
+						<p>气压86kPa-106kPa；测试条件：在手机电量为1%的情况下，关闭除通话以外的其他手机服务和功能，使用标配电源适配器充电5分钟。</p>
+						<p>充电后，可用手机在信号满格，黑屏，通话音量为50%状态下接听电话2小时。实际通话时间可能因手机使用具体条件而发生变化。</p>
+					<p>全网通3.0指移动卡与联通卡、电信卡可以任意搭配使用，任意一张卡可选4G网络，当主卡为移动或联通4G状态时，另一张卡最高可为联通3G网络语音电话状态。</p>
+					<p>2张电信卡无法同时使用：同时使用时一张卡可使用4G网络，另一张卡将不能注册网络。</p>
+					<p>产品某些规格和描述可能因供应商更换等原因而发生变化，请以产品实际为准。页面中所涉及到的数据均来源于我司设计技术参数、实验室及供应商测试数据，实际情况会因测试软件版本、具体测试环境、具体版本不同，而略有差异。</p>
+			</div>
+
+		</div>
+	</div>
+	</body>
+</html>

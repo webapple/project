@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+		*{
+			margin: 0;
+		}
+			#div1{
+				width: 875px;
+				height: 877px;
+				position: absolute;
+				left: 500px;
+                overflow: hidden;
+			}
+			
+			#qiu{
+				width: 875px;
+				height: 877px;
+			}
+			#shang{
+				position: absolute;
+				z-index:9;
+			}
+			#xia{
+				position: relative;
+				bottom:-400px;
+				width: 3000px;
+				height: 500px;
+			}
+			#zi{
+				width: 100%;
+				position: absolute;
+				top: 600px;
+				z-index:99;
+			}
+			#zi p{
+				text-align: center;
+				font-size: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<div id="qiu">	
+				<img src="img/002.png" id="shang"/>
+			    <img src="img/003.png" id="xia"/>
+			</div>
+		</div>
+		<div id="zi">
+			<p>等待中……</p>
+		</div>
+		<script>
+			window.onload=function(){
+				var yidong=document.getElementById("xia");
+				var y=yidong.offsetLeft ;
+				var y1=-400;
+				var shijian=setInterval(function(){
+					y--;
+					y1++;
+					ScrollTop=y;
+					if(y1>0){
+						document.location="1212-1217小米子页/ziye1.html";
+					}
+					yidong.style.left=ScrollTop+"px";
+					yidong.style.bottom=y1+"px";
+				},10)
+				
+				
+				
+			}
+		</script>
+	</body>
+</html>
