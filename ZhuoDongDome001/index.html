@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reselt.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<link rel="stylesheet/less" type="text/css" href="css/musice.less" />
+		<link rel="stylesheet/less" type="text/css" href="css/musice001.less" />
+		<link rel="stylesheet/less" type="text/css" href="css/musice002.less" />
+		<link rel="stylesheet" href="css/jquery.zySlide.css" />
+		<link rel="stylesheet" href="css/musice.css" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="css/to_top.css"/>
+		<script src="js/top.show.js"></script>
+		<script src="js/less.min.js"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/banner.js"></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+		<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	</head>
+	<body>
+		<div id="to_top">
+			<img src="img/icon_top_h.png" />
+		</div>
+		<div id="tal">
+			<div id="talk">
+				<img src="img/icon_top_o.png" id="pi"/>
+			</div>
+			<div id="talk_t">
+				<p>查看<br />评论</p>
+			</div>
+		</div>
+		<div id="redios">
+			<div id="red_o">
+			     <img src="img/icon_top_t.png" id="red_r"/>
+			</div>
+			<div id="red_t">
+			     <p>播放器</p>
+			</div>
+		</div>
+		<div class="denglu" id="denglu">
+			<div class="header">
+				<a class="close">
+					<i class="icon_txt"></i>
+				</a>
+			</div>
+			<div class="web_login_one" id="web_login_one">
+				<div class="tips">
+					<div class="title">快速安全登录</div>
+					<div class="link">请使用<a>QQ手机版</a>扫描二维码，<br/>安全登录，防止盗号</div>
+				</div>
+				<div class="web_one_picture">
+					<span class="picture_one"><img src="img/ptqrshow.png" id="picture_one"/></span>
+					<span class="picture_two"><img src="img/small_24_tiny.png" id="picture_two"/></span>
+				</div>
+			</div>
+			<div class="web_login" id="web_login">
+				<div class="tips">
+					<div class="title">帐号密码登录</div>
+					<div class="link">推荐使用<a class="fast">快速安全登录</a>，防止盗号。</div>
+				</div>
+				<div class="login_from">
+					<div class="inputout">
+						<!--<label class="input_tips">支持QQ号/邮箱/手机号</label>-->
+						<div class="inputout_out">
+							<input class="input_style" type="text"placeholder="支持QQ号/邮箱/手机号"/>
+						</div>
+					</div>
+					<div class="inputover">
+						<!--<label class="input_tip">密码</label>-->
+						<div class="inputover_over">
+							<input class="input_over_style" type="password" placeholder="密码"/>
+						</div>
+					</div>
+					<div class="submit">
+						<a class="login_button">
+							<input class="btns btn" type="submit" value="登录"/>
+						</a>
+						
+					</div>
+				</div>
+			</div>
+			<!------------------------------------------------------>
+			<div class="web_login_two" id="web_login_two">
+				<div class="tips">
+					<div class="title">注册新帐号</div>
+				</div>
+				<div class="login_from">
+					<div class="inputout">
+						<!--<label class="input_tips">支持QQ号/邮箱/手机号</label>-->
+						<div class="inputout_out">
+							<input class="input_style name" type="text" placeholder="支持QQ号/邮箱/手机号"/>
+							<span class="alll"></span>
+						</div>
+					</div>
+					<div class="inputover">
+						<!--<label class="input_tip">密码</label>-->
+						<div class="inputover_over">
+							<input class="input_over_style pas" type="password" placeholder="密码"/>
+							<span class="alll"></span>
+						</div>
+					</div>
+					<div class="inputover_one">
+						<!--<label class="input_tip_one">确认密码</label>-->
+						<div class="inputover_over_one">
+							<input class="input_over_style_one" type="password" placeholder="确认密码"/>
+							<span class="alll"></span>
+						</div>
+					</div>
+					<div class="submit">
+						<a class="login_button">
+							<input class="btns btnss" type="submit" value="点击注册"/>
+						</a>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="bottom">
+				<div class="bottom_box">
+					<a class="checked"></a>
+					<label class="bottom_wording">下次自动登录</label>
+				</div>
+				<a class="txt" id="txt">帐号密码登录</a>
+				<a class="txt" style="display: none;" id="password">忘记密码？</a>
+				<span class="span_one">|</span>
+				<a class="txt" id="zhuce">注册新账号</a>
+				<a class="txt" id="deng" style="display: none;">快速安全登录</a>
+				<span class="span_one">|</span>
+				<a class="txt">意见反馈</a>
+			</div>
+		</div>
+		<div class="hide">
+			
+		</div>
+		<div class="max">
+			<div class="nav">
+				<div class="inner">
+					<div class="qqmusic">
+						<img src="img/nav_logo.png"/>
+					</div>
+					<ul class="top_nav_one">
+						<li class="top_one_item" id="top_one_item"><a herf="#" class="top_nav_link">音乐馆</a></li>
+						<li class="top_one_item"><a herf="#" class="top_nav_link" id="nav_link">我的音乐</a></li>
+						<li class="top_one_item"><a herf="#" class="top_nav_link" id="nav_link">下载客户端</a></li>
+						<li class="top_one_item"><a herf="#" class="top_nav_link" id="nav_link">VIP</a></li>
+					</ul>
+					<ul class="top_nav_two"> 
+						<li class="top_two_item"><a href="#" class="top_nav_subnav"  id="top_two_item">首页</a></li>
+						<li class="top_two_item"><a href="geshou.html" class="top_nav_subnav" id="nav_subnav">歌手</a></li>
+						<li class="top_two_item"><a href="zhuanji.html" class="top_nav_subnav" id="nav_subnav">专辑</a></li>
+						<li class="top_two_item"><a href="#" class="top_nav_subnav" id="nav_subnav">排行榜</a></li>
+						<li class="top_two_item"><a href="#" class="top_nav_subnav" id="nav_subnav">分类榜单</a></li>
+						<li class="top_two_item"><a href="#" class="top_nav_subnav" id="nav_subnav">MV</a></li>
+					</ul>
+					<div class="top_nav_search">
+						 <div class="search_input">
+						 	<input class="search_input_input" placeholder="歌手" type="text"/>
+						 </div>
+						 <button class="search_btn">
+						 	<i class="icon_search"></i>
+						 </button>
+					</div>
+					<div class="header_opt">
+						<span class="top_login">
+							<a class="login">登录</a>
+							<a class="header_green">开通绿钻豪华版</a>
+							<a class="opean">开通付费包</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="banner">
+                <div class="left1"><</div>
+				<div class="right">></div>
+				<div class="judgeLeft"></div>
+				<div class="judgeRight"></div>
+				<div class="center">
+					<div class="littleCenter">
+						<p>新歌首发</p>
+						<span class="span1"></span>
+						<span class="span2"></span>
+						<div class="little_nav">
+							<a href="#" target="_blank">全部</a>
+							<a href="#">华语</a>
+							<a href="#">欧美</a>
+							<a href="#">韩国</a>
+							<a href="#">日本</a>
+						</div>
+					</div>
+					<a href="#" class="all">全部></a>
+					<div class="center_max">
+						<div class="max_one">
+							<ul>
+								<li>
+									<div class="up">
+										<img src="img/banner_008.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>歌手&nbsp;&nbsp;第五期</h4>
+										<p><a href="#">歌手</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_009.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>Options</h4>
+										<p><a href="#">pitbull</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_012.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>안녕 오로라</h4>
+										<p><a href="#">커피소년딘</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_005.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>王牌对王牌&nbsp;&nbsp;第五期</h4>
+										<p><a href="#">王牌对王牌</a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="max_two">
+							<ul>
+								<li>
+									<div class="up">
+										<img src="img/banner_010.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>Vente&nbsp;&nbsp;Pa Ca</h4>
+										<p><a href="#">Ricky Martin</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_011.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>Oceans Away (Vicetone Remix)</h4>
+										<p><a href="#">A R I Z O N A</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_006.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>Paris (Remixes)</h4>
+										<p><a href="#">The Chainsmokers</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_004.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>我们的热血传奇</h4>
+										<p><a href="#">南征北战</a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="max_three">
+							<ul>
+								<li>
+									<div class="up">
+										<img src="img/banner_002.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>limbo</h4>
+										<p><a href="#">졸업사진 </a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_007.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>김진호</h4>
+										<p><a href="#">안녕 못해 (I'm Not Okay)-미첸</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_013.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>안녕 못 첸</h4>
+										<p><a href="#">안녕 못해</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/banner_003.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>SCANDAL</h4>
+										<p><a href="#">SCANDAL</a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<span class="show"></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="banner_two">
+				    <p>精彩推荐</p>
+				<section id="sec" class="section">></section>
+				<section id="sec1" class="section"><</section>
+				<div id="Slide1" class="zy-Slide">
+				<div class="inner">
+					<span></span>
+				    <span></span>
+						<!--prev:元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。-->
+						<ul>
+							<!--alt + shift : 可以创建一个矩形选择区域-->
+							<li><img src="img/Q678252.jpg" /></li>
+							<li><img src="img/Q67825.jpg"</li>
+							<li><img src="img/Q725433.jpg" /></li>
+							<li><img src="img/Q725434.jpg" /></li>
+							<li><img src="img/Q72544.jpg" /></li>
+							
+						</ul>
+					</div>
+						<script type="text/javascript" src="js/jquery.zySlide.js" ></script>
+						<script type="text/javascript" src="js/index.js" ></script>
+						<script type="text/javascript" src="js/jquery.min.js" ></script>
+				</div>
+			</div>
+			<div class="top">
+				<div class="center">
+					<div class="top-1">
+						<p>排行榜</p>
+					</div>
+					<div>
+						<li href="#"><a>全部></a></li>
+					</div>
+					<div>
+						<div class="top-a">
+							<div class="top-6"><img src="img/top-one.jpg"/></div>
+							<p class="top-3">巅峰榜</p>
+							<p class="top-4"><b>流行指数</b></p>
+							<div class="top-5"></div>
+							<div class="top-show1">
+								<img src="img/cover_play.png"/>
+							</div>
+							<div class="top-tr">
+								<p><a><b>1&nbsp;繁花</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;董贞</a></p>
+								<p><a><b>2&nbsp;就算没有如果</b></a></p>
+								<p><a>&nbsp;&nbsp; 香香</a></p>
+								<p><a><b>3&nbsp;美女与野兽</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;田馥甄/井柏然</a></p>
+								<p><a><b>4&nbsp;凉凉</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;杨宗纬/张碧晨</a></p>
+							</div>
+						</div>
+						<div class="top-b">
+							<div class="top-6"><img src="img/top-two.jpg"/></div>
+							<p class="top-3">巅峰榜</p>
+							<p class="top-4"><b>热歌</b></p>
+							<div class="top-5"></div>
+							<div class="top-show2">
+								<img src="img/cover_play.png"/>
+							</div>
+							<div class="top-tr">
+								<p><a><b>1&nbsp;凉凉</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;杨宗纬/张碧晨</a></p>
+								<p><a><b>2&nbsp;刚好遇见你</b></a></p>
+								<p><a>&nbsp;&nbsp; 李玉刚</a></p>
+								<p><a><b>3&nbsp;三生三世</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;张杰</a></p>
+								<p><a><b>4&nbsp;告白气球</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;周杰伦</a></p>
+							</div>
+						</div>
+						<div class="top-c">
+							<div class="top-6"><img src="img/top-three.jpg"/></div>
+							<p class="top-3">巅峰榜</p>
+							<p class="top-4"><b>新歌</b></p>
+							<div class="top-5"></div>
+							<div class="top-show3">
+								<img src="img/cover_play.png"/>
+							</div>
+							<div class="top-tr">
+								<p><a><b>1&nbsp;凉凉</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;杨宗纬/张碧晨</a></p>
+								<p><a><b>2&nbsp;繁花</b></a></p>
+								<p><a>&nbsp;&nbsp; 董贞</a></p>
+								<p><a><b>3&nbsp;就算没有如果</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;香香</a></p>
+								<p><a><b>4&nbsp;美女与野兽</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;田馥甄/井柏然</a></p>
+							</div>
+						</div>
+						<div class="top-d">
+							<div class="top-6"><img src="img/top-four.jpg"/></div>
+							<p class="top-3">巅峰榜</p>
+							<p class="top-4"><b>欧美</b></p>
+							<div class="top-5"></div>
+							<div class="top-show4">
+								<img src="img/cover_play.png"/>
+							</div>
+							<div class="top-tr">
+								<p><a><b>1&nbsp;I&nbsp;Don`t</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;Mariah&nbsp;Carey/YG</a></p>
+								<p><a><b>2&nbsp;Chained&nbsp;To&nbsp;The&nbsp;Rhy...</b></a></p>
+								<p><a>&nbsp;&nbsp;Katy&nbsp;Perry//Skip&nbsp;Marley</a></p>
+								<p><a><b>3&nbsp;Beauty&nbsp;and&nbsp;the&nbsp;Bea...</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;Ariana&nbsp;Grande/John&nbsp;Leg...</a></p>
+								<p><a><b>4&nbsp;Run&nbsp;Up</b></a></p>
+								<p><a>&nbsp;&nbsp;&nbsp;Marjor&nbsp;Lazer/PARTYNEXTD</a></p>
+							</div>
+							<!--<img src="img/bg_index_top.jpg"/>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hotsong">
+				<div class="left2"><</div>
+				<div class="right1">></div>
+				<div class="judgeLeft"></div>
+				<div class="judgeRight"></div>
+				<div class="center">
+					<div class="littleCenter">
+						<p>新歌首发</p>
+						<span class="span1"></span>
+						<span class="span2"></span>
+					</div>
+					<div class="center_max">
+						<div class="max_one">
+							<ul>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_004.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>『华语故事』备胎用歌词怎么讲？</h4>
+										<p><a href="#">播放量：118.3万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_001.png" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>天籁女声丨让人无法抗拒的美妙声线</h4>
+										<p><a href="#"> 播放量：85.4万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_002.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>甜蜜情歌：浪漫邂逅，哼一首爱…</h4>
+										<p><a href="#">播放量：103.1万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_003.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>Smooth Jazz丨即兴 曼妙欢愉</h4>
+										<p><a href="#">播放量：8.2万</a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="max_two">
+							<ul>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_011.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>那些年我们喜欢的华语创作歌手…</h4>
+										<p><a href="#">播放量：158.7万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_012.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>国产奇葩脑洞神曲指南</h4>
+										<p><a href="#">播放量：105.1万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_013.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>粉碎起床气 ! 闹钟铃声合集</h4>
+										<p><a href="#">播放量：20.3万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_014.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>超棒！韩语与钢琴的极简旋律</h4>
+										<p><a href="#">播放量：21.8万</a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="max_three">
+							<ul>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_021.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>年度最受热评青春电影原声合集</h4>
+										<p><a href="#">播放量：30.0万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_022.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>华语:追忆感时花溅泪那刻分手的不舍</h4>
+										<p><a href="#"> 播放量：13.4万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_023.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>【日系】男嗓让你沦陷 一听易上瘾</h4>
+										<p><a href="#">播放量：6.4万</a></p>
+									</div>
+								</li>
+								<li>
+									<div class="up">
+										<img src="img/hotsong_024.jpg" />
+									</div>
+									<div class="bim">
+									</div>
+									<img src="img/banner_014.png" class="paly"/>
+									<div class="bottom">
+										<h4>永远的回忆: 年少时期 追过的…</h4>
+										<p><a href="#">播放量：6.9万</a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<span class="show"></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="mv">
+				<div class="mv-g">
+					<div class="mv-navigation">
+						<p class="mv-navigation-p">MV首播</p>
+						<div class="mv-d">
+							<a href="#" class="mv-navigation-a1">全部</a>
+							<a href="#" class="mv-navigation-a">内地</a>
+							<a href="#" class="mv-navigation-a">港台</a>
+							<a href="#" class="mv-navigation-a">欧美</a>
+							<a href="#" class="mv-navigation-a">韩国</a>
+							<a href="#" class="mv-navigation-a">日本</a>
+							<p><a href="#" class="mv-navigation-a2">全部></a></p>
+						</div>
+						
+						
+					</div>
+					<div class="mv-show">
+						<div class="show-1">
+							<div><img class="show-3" src="img/show1.jpg" style="width: 3rem;"/></div>
+							
+							<p class="show-p">最爱</p>
+							<p class="show-p1">防弹少年团</p>
+						</div>
+						<div class="show-1">
+							<div><img class="show-3" src="img/show2.jpg" style="width: 3rem;"/></div>
+							
+							<p class="show-p">《如果&nbsp;What&nbsp;if&nbsp;said》&nbsp;MV预告片</p>
+							<p class="show-p1">鹿晗</p>
+						</div>
+						<div class="show-1">
+							<div><img class="show-3" src="img/show3.jpg" style="width: 3rem;"/></div>
+							
+							<p class="show-p">离开为了更好的回来</p>
+							<p class="show-p1">海明威</p>
+						</div>
+						<div class="show-1">
+							<div><img class="show-3" src="img/show4.jpg" style="width: 3rem;"/></div>
+							
+							<p class="show-p">Love</p>
+							<p class="show-p1">Lana&nbsp;Del&nbsp;Rey</p>
+						</div>
+					
+						<div class="show-1">
+							<div class="show-4"><img class="show-3" src="img/show5.jpg" style="width: 3rem;"/></div>
+							
+							<p class="show-p">过客</p>
+							<p class="show-p1">庄心妍</p>
+						</div>
+						<div class="show-1">
+							<div><img class="show-3" src="img/show6.jpg" style="width: 3rem;"/></div>
+							
+							<p class="show-p">给眼泪一点时间</p>
+							<p class="show-p1">黄雅莉</p>
+						</div>
+						<div class="show-1">
+							<div><img class="show-3" src="img/show7.jpg" style="width: 3rem;"/></div>
+							
+							<p class="show-p">KNOCK KNOCK</p>
+							<p class="show-p1">TWICE</p>
+						</div>
+						<div class="show-1">
+							<div><img class="show-3" src="img/show8.jpg" style="width: 3rem;"/></div>
+							
+							<p class="show-p">爱是你&nbsp;爱是我</p>
+							<p class="show-p1">吴建豪</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot">
+				<div class="foot_inner">
+					<div class="footer_one">
+						<div class="footer_iphone">
+							<h3 class="footer_tit">下载QQ音乐客户端</h3>
+							<ul class="footer_down_list">
+								<li class="footer_down_list_item">
+									<a class="footer_down">
+										<i class="icon_qm_pc"></i>PC版
+									</a>
+								</li>
+								<li class="footer_down_list_item">
+									<a class="footer_down">
+										<i class="icon_qm_mac"></i>MAC版
+									</a>
+								</li>
+								<li class="footer_down_list_item">
+									<a class="footer_down">
+										<i class="icon_qm_android"></i>Android版
+									</a>
+								</li>
+								<li class="footer_down_list_item">
+									<a class="footer_down">
+										<i class="icon_qm_iphone"></i>iphone版    
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer_product">
+							<h3 class="footer_product_one">特色产品</h3>
+							<ul class="footer_product_list">
+								<li class="footer_product_list_item">
+									<a class="footer_up">
+										<i class="icon_qm_kg"></i>全民K歌
+									</a>
+								</li>
+								<li class="footer_product_list_item">
+									<a class="footer_up">
+										<i class="icon_qm_ss"></i>Super Sound
+									</a>
+								</li>
+								<li class="footer_product_list_item">
+									<a class="footer_up">
+										<i class="icon_qm_qp"></i>QPlay
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer_link">
+							<h3 class="footer_link_item">合作连接</h3>
+							<ul class="footer_link_list">
+								<li class="footer_link_item_list"><a>CJ E&M</a></li>
+								<li class="footer_link_item_list"><a>腾讯视频</a></li>
+								<li class="footer_link_item_list"><a>手机QQ空间</a></li>
+								<li class="footer_link_item_list"><a>最新版QQ</a></li>
+								<li class="footer_link_item_list"><a>腾讯社交广告</a></li>
+								<li class="footer_link_item_list"><a>电脑管家</a></li>
+								<li class="footer_link_item_list"><a>QQ浏览器</a></li>
+								<li class="footer_link_item_list"><a>画报</a></li>
+								<li class="footer_link_item_list"><a>黄钻活动</a></li>
+								<li class="footer_link_item_list"><a>星钻</a></li>
+								<li class="footer_link_item_list"><a>腾讯微云</a></li>
+								<li class="footer_link_item_list"><a>更多</a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="footer_two">
+						<p>
+							<a class="footer_size">关于腾讯</a>   |
+							<a class="footer_size">About Tencent</a>   |
+							<a class="footer_size">服务条款</a>   |
+							<a class="footer_size">用户服务协议</a>   |
+							<a class="footer_size">广告服务</a>   |
+							<a class="footer_size">腾讯招聘</a>   |
+							<a class="footer_size">客服中心</a>   |
+							<a class="footer_size">网站导航</a>
+						</p>
+						<p class="pelem">Copyright   &copy;  1998-2017Tencent.   <a>All Rights Reserved</a></p>
+						<p><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></p>
+						<p class="pelem">腾讯公司               <a>版权所有</a>    <a>腾讯网络文化经营许可证</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

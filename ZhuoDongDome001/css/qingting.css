@@ -1,0 +1,440 @@
+.menu{
+    width: 100%;
+    height: 80px;
+    background: #303030;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+.menu_inner{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 40px;
+}
+.menu_title{
+    float: left;
+    margin-top: -5px;
+}
+.menu_logo{
+    width: 116px;
+    height: 46px;
+}
+.btn_share{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #31C27C;
+    border-radius: 20px;
+    text-align: center;
+    float: right;
+    margin-left: 27px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.btn_home{
+	float: right;
+	margin-left: 27px;
+	line-height: 40px;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.warp{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.mod_bg{
+	position: absolute;
+	left: 0;
+	top: 984px;
+	width: 100%;
+}
+.bg1{
+	height: 849px;
+	background-image: url(../img/bg1.jpg);
+}
+.bg2{
+	height: 757px;
+	background-image: url(../img/bg2.jpg);
+}
+.bg3{
+	height: 878px;
+	background-image: url(../img/bg3.jpg);
+}
+.bg4{
+	height: 657px;
+	background-image: url(../img/bg4.jpg);
+}
+.bg5{
+	height: 850px;
+	background-image: url(../img/bg5.jpg);
+}
+.bg6{
+	height: 929px;
+	background-image: url(../img/bg6.jpg);
+}
+.bg7{
+	height: 537px;
+	background: #000000;
+}
+.mod_banner{
+	position: relative;
+	overflow: hidden;
+	height: 984px;
+	width: 100%;
+}
+.banner_picture_list{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	text-indent: -999;
+}
+.banner_center{
+	position: absolute;
+	height: 100%;
+	width: 1000px;
+	top: 0;
+	left: 50%;
+	margin-left: -500px;
+}
+.qingting_center{
+	position: absolute;
+	top: 304px;
+	right: 78px;
+}
+.center_item_two{
+	width: 363px;
+	height: 70px;
+	background-image: url(../img/img_qingting.png);
+	background-position: -453px -460px;
+	background-repeat: no-repeat;
+	margin: 50px 0;
+}
+.hide{
+	opacity: 0;
+	display: block;
+}
+.btns_down{
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 36px;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 70px;
+}
+.btns_down:hover{
+	background: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.main{
+	position: relative;
+	z-index: 2;
+	width: 1000px;
+	height: 5474px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+.part_one{
+	height: 849px;
+	position: relative;
+	overflow: hidden;
+}
+.part_list_one{
+	position: absolute;
+	left: 50px;
+	top: 351px;
+	width: 451px;
+	height: 195px;
+	background-image: url(../img/img_qingting.png);
+	background-position: 0 -460px;
+	background-repeat: no-repeat;
+}
+.part_list_two{
+	position: absolute;
+	width: 420px;
+	height: 722px;
+	bottom: 0;
+	right: 60px;
+	background-image: url(../img/mobile_1.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.part_two_list{
+	position: absolute;
+	width: 377px;
+	height: 655px;
+    top: 66px;
+    left: 23px;
+}
+.part_list_two_item{
+	 position: absolute;
+	 width: 377px;
+	 height: 655px;
+	 top: 0;
+	 left: 0;
+}
+.part_two{
+	height: 636px;
+	position: relative;
+	overflow: hidden;
+}
+.tag_list{
+	position: relative;
+	height: 100%;
+	top: 20px;
+}
+.tag_item{
+	position: absolute;
+	left: 0;
+	top: 141px;
+}
+.part_three{
+	height: 862px;
+	position: relative;
+	overflow: hidden;
+}
+.tag_box_one{
+	width: 861px;
+	height: 132px;
+	margin: -10px auto 160px;
+	background-image: url(../img/img_qingting.png);
+	background;position: 0 0;
+	background-repeat: no-repeat;
+}
+.tag_box_two img{
+	display: block;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.part_four{
+	height: 794px;
+	overflow: hidden;
+	position: relative;
+}
+.slow_one{
+	z-index: 99;
+	position: absolute;
+	right: 50px;
+	top: 311px;
+	width: 549px;
+	height: 195px;
+	background-image: url(../img/img_qingting.png);
+	background-position: 0 -263px;
+	background-repeat: no-repeat;
+}
+.slow_two{
+	z-index: 99;
+	position: absolute;
+	left: 30px;
+	bottom: 0;
+	height: 737px;
+	width: 423px;
+	background-image: url(../img/mobile_2.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.part_five{
+	height: 851px;
+	position: relative;
+	overflow: hidden;
+}
+.fast_one{
+	position: absolute;
+	left: 60px;
+	opacity: 0;
+	top: 376px;
+	width: 452px;
+	height: 155px;
+	background-image: url(../img/img_qingting.png);
+	background-position: 0 -657px;
+	background-repeat: no-repeat;
+}
+.fast_two{
+	position: absolute;
+	width: 477px;
+	height: 736px;
+	right: 60px;
+	bottom: 0;
+	opacity: 0;
+	background-image: url(../img/mobile_3.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.fast_two_list{
+	position: absolute;
+	width: 376px;
+	height: 699px;
+	top: 93px;
+	left: 50px;
+}
+.fast_two_item{
+	position: absolute;
+	width: 376px;
+	height: 699px;
+	top: 0;
+	left: 0;
+}
+.part_six{
+	height: 929px;
+	overflow: hidden;
+	position: relative;
+}
+.super_one{
+	position: absolute;
+	width: 873px;
+	height: 473px;
+	overflow: hidden;
+	top: 180px;
+	opacity: 0;
+	left: 50%;
+	margin-left: -437px;
+}
+.super_one_list{
+	position: absolute;
+	width: 20000px;
+	height: 473px;
+	overflow: hidden;
+}
+.super_one_list_item{
+	z-index: 99;
+	position: relative;
+	float: left;
+	width: 188px;
+	overflow: hidden;
+	margin-right: 40px;
+}
+.super_one_list_item img{
+	display: block;
+	width: 100%;
+}
+.super_two{
+	position: absolute;
+	width: 859px;
+	height: 127px;
+	bottom: 100px;
+	opacity: 0;
+	left: 50%;
+	margin-left: -430px;
+	background-image: url(../img/img_qingting.png);
+	background-position: 0 -134px;
+	background-repeat: no-repeat;
+}
+.btn_know{
+	display: block;
+	width: 138px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	border-radius: 40px;
+	font-size: 18px;
+	margin: 820px auto 0;
+	opacity: 0;
+	text-align: center;
+}
+.btn_know:hover{
+	cursor: pointer;
+	background: #FFFFFF;
+	color: #000000;
+}
+.part_seven{
+	height: 537px;
+	position: relative;
+	overflow: hidden;
+}
+.try_one{
+	position: absolute;
+	width: 498px;
+	height: 49px;
+	top: 238px;
+	left: 50%;
+	opacity: 0;
+	margin-left: -249px;
+	background-image: url(../img/img_qingting.png);
+	background-position: -863px 0;
+	background-repeat: no-repeat;
+}
+.btn_down_one{
+	display: block;
+	width: 320px;
+	height: 80px;
+	line-height: 80px;
+	color: #FFFFFF;
+	border-radius: 80px;
+	font-size: 34px;
+	margin: 325px auto 0;
+	opacity: 0;
+	text-align: center;
+	background: #31C27C;
+}
+.btn_down_one:hover{
+	background: #FFFFFF;
+	color: #31C27C;
+	cursor: pointer;
+}
+.footer{
+	height: 76px;
+	padding: 14px 0;
+	font-size: 12px;
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+}
+.footer p{
+	color: #bfb0b6;
+}
+.footer_up_one{
+	vertical-align: 14px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+}
+.new:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.new{
+	margin: 0 2px;
+	font-size: 12px;
+	text-decoration: none;
+}
+.footer_up_two{
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+}
+.footer_up_two a{
+	font-size: 12px;
+	text-decoration: none;
+}
+.footer_up_two a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer_up_three{
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+}
+.footer_up_three a{
+	margin: 0 0 0 6px;
+	font-size: 12px;
+	text-decoration: none;
+}
+.footer_up_three a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}

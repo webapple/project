@@ -1,0 +1,830 @@
+html{
+    font-size: 625%;
+}
+@width:12rem;
+@margin:0 auto;
+@relative:relative;
+@absoulte:absolute;
+@green:#31c27c;
+@black:#333333;
+.alll{
+    font-size: 0.15rem;
+    line-height:13px;
+    position: relative;
+    width: 0.2rem;
+    height: 0.3rem;
+    left: 2.7rem;
+    top: -0.3rem;
+    overflow: hidden;
+}
+.denglu{
+    z-index: 99;
+    background: #FFFFFF;
+    width: 564px;
+    height: 380px;
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    border: 2px solid #eee;
+    overflow: hidden;
+    top: 170px;
+    left: 680px;
+    position: fixed;
+    .header{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        .close{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 24px;
+            height: 24px;
+            overflow: hidden;
+            z-index: 2;
+            .icon_txt{
+                display: block;
+                margin: 6px auto;
+                width: 12px;
+                height: 12px;
+                background-position: 0 -200px;
+                background-image: url(../img/icon_popup.png);
+            }
+            .icon_txt:hover{
+                background-position: -14px -200px;
+            }
+        }
+    }
+    .web_login{
+        width: 564px;
+        height: 376px;
+       position: relative;
+       top: 50%;
+       margin-top: -137px;
+       display: none;
+       .tips{
+           position: relative;
+            margin: 0 auto 36px;
+            z-index: 11;
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+            .title{
+                font-size: 20px;
+                color: #333;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            .link{
+                font-size: 16px;
+                color: #666;
+                text-align: center;
+                a{
+                    color: #3481cf;
+                }
+                a:hover{
+                    text-decoration: underline;
+                    color: #3481cf;
+                    cursor: pointer;
+                }
+            }
+       }
+       .login_from{
+           width: 272px;
+           height: 150px;
+           margin: 0 auto;
+           .inputout{
+               height: 55px;
+                position: relative;
+                z-index: 10;
+                .input_tips{
+                    position: absolute;
+                    top: 13px;
+                    left: 13px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #aaa;
+                    cursor: text;
+                }
+                .inputout_out{
+                    width: 272px;
+                    height: 42px;
+                    background-image: url(../img/icon_3_tiny.png);
+                    background-position: -1px -1px;
+                    .input_style{
+                        width: 258px;
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        height: 18px;
+                        padding: 10px 0 10px 10px;
+                        line-height: 18px;
+                        border: none;
+                        background: 0 0;
+                        color: #333;
+                        font-family: Verdana,Tahoma,Arial;
+                        font-size: 16px;
+                    }
+                }
+           }
+           .inputover{
+                height: 55px;
+                position: relative;
+                z-index: 3;
+                .input_tip{
+                    position: absolute;
+                    top: 13px;
+                    left: 13px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #aaa;
+                    cursor: text;
+                }
+                .inputover_over{
+                    width: 272px;
+                    height: 42px;
+                    background-image: url(../img/icon_3_tiny.png);
+                    background-position: -1px -1px;
+                    .input_over_style{
+                        width: 258px;
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        height: 18px;
+                        padding: 10px 0 10px 10px;
+                        line-height: 18px;
+                        border: none;
+                        background: 0 0;
+                        color: #333;
+                        font-family: Verdana,Tahoma,Arial;
+                        font-size: 16px;
+                    }
+                }
+           }
+           .submit{
+               position: relative;
+                .login_button{
+                    position: absolute;
+                    left: 0;
+                    outline: none;
+                    width: 100%;
+                    .btns{
+                        float: left;
+                        width: 272px;
+                        height: 40px;
+                        line-height: 35px;
+                        border: none;
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: #fff;
+                        cursor: pointer;
+                        background-color: #86ce2f;
+                        position: relative;
+                    }
+                }
+           }
+       }
+    }
+    .web_login_one{
+       width: 564px;
+       height: 376px;
+       position: relative;
+       top: 50%;
+       margin-top: -137px;
+       .tips{
+           position: relative;
+            margin: 0 auto 36px;
+            z-index: 11;
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+            .title{
+                font-size: 20px;
+                color: #333;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            .link{
+                font-size: 16px;
+                color: #666;
+                text-align: center;
+                a{
+                    color: #3481cf;
+                }
+                a:hover{
+                    text-decoration: underline;
+                    color: #3481cf;
+                    cursor: pointer;
+                }
+            }
+       }
+       .web_one_picture{
+           width: 400px;
+           height: 200px;
+           margin: 0 auto;
+           position: relative;
+           text-align: center;
+           top: -28px;
+           .picture_one{
+               position: relative;
+               top: -45px;
+               left: 10px;
+           }
+           .picture_two{
+               margin-right: 10px;
+           }
+       }
+       
+    }
+    .web_login_two{
+        width: 564px;
+       height: 376px;
+       position: relative;
+       top: 50%;
+       margin-top: -137px;
+       display: none;
+       .tips{
+           position: relative;
+            margin: 0 auto 36px;
+            z-index: 11;
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+            .title{
+                font-size: 20px;
+                color: #333;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+       }
+       .login_from{
+            width: 272px;
+           height: 150px;
+           margin: 0 auto;
+           .inputout{
+               height: 55px;
+                position: relative;
+                z-index: 10;
+                .input_tips{
+                    position: absolute;
+                    top: 13px;
+                    left: 13px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #aaa;
+                    cursor: text;
+                }
+                .inputout_out{
+                    width: 272px;
+                    height: 42px;
+                    background-image: url(../img/icon_3_tiny.png);
+                    background-position: -1px -1px;
+                    .input_style{
+                        width: 258px;
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        height: 18px;
+                        padding: 10px 0 10px 10px;
+                        line-height: 18px;
+                        border: none;
+                        background: 0 0;
+                        color: #333;
+                        font-family: Verdana,Tahoma,Arial;
+                        font-size: 16px;
+                    }
+                }
+           }
+           .inputover{
+                height: 55px;
+                position: relative;
+                z-index: 3;
+                .input_tip{
+                    position: absolute;
+                    top: 13px;
+                    left: 13px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #aaa;
+                    cursor: text;
+                }
+                .inputover_over{
+                    width: 272px;
+                    height: 42px;
+                    background-image: url(../img/icon_3_tiny.png);
+                    background-position: -1px -1px;
+                    .input_over_style{
+                        width: 258px;
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        height: 18px;
+                        padding: 10px 0 10px 10px;
+                        line-height: 18px;
+                        border: none;
+                        background: 0 0;
+                        color: #333;
+                        font-family: Verdana,Tahoma,Arial;
+                        font-size: 16px;
+                    }
+                }
+           }
+           .inputover_one{
+                height: 55px;
+                position: relative;
+                z-index: 3;
+                .input_tip_one{
+                    position: absolute;
+                    top: 13px;
+                    left: 13px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #aaa;
+                    cursor: text;
+                    z-index: 99;
+                }
+                .inputover_over_one{
+                    width: 272px;
+                    height: 42px;
+                    background-image: url(../img/icon_3_tiny.png);
+                    background-position: -1px -1px;
+                    .input_over_style_one{
+                        width: 258px;
+                        height: 38px;
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        height: 18px;
+                        padding: 10px 0 10px 10px;
+                        line-height: 18px;
+                        border: none;
+                        color: #333;
+                        font-family: Verdana,Tahoma,Arial;
+                        font-size: 16px;
+                    }
+                }
+           }
+           .submit{
+               position: relative;
+                .login_button{
+                    position: absolute;
+                    left: 0;
+                    outline: none;
+                    width: 100%;
+                    .btns{
+                        float: left;
+                        width: 272px;
+                        height: 40px;
+                        line-height: 35px;
+                        border: none;
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: #fff;
+                        cursor: pointer;
+                        background-color: #86ce2f;
+                        margin-top: 20px;
+                        position: relative;
+                    }
+                }
+           }
+           
+           
+           
+       }
+       
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .bottom{
+        height: 16px;
+        margin-bottom: 8px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: right;
+        font-size: 12px;
+        .bottom_box{
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            .checked{
+                float: left;
+                height: 18px;
+                width: 18px;
+                background-image: url(../img/icon_3_tiny.png);
+                background-position: -92px -163px;
+            }
+            .bottom_wording{
+                height: 16px;
+                line-height: 16px;
+                cursor: pointer;
+                margin-left: 5px;
+            }
+        }
+        .txt{
+           margin-right: 8px;
+           color: #666;
+        }
+        .txt:hover{
+            text-decoration: underline;
+            color: #666;
+            cursor: pointer;
+        }
+    }
+}
+.hide{
+    width: 100%;
+    height: 3954.5px;
+    background: #cccccc;
+    display: none;
+}
+.nav{
+    width: 100%;
+    height: 1.42rem;
+    position: @relative;
+    .inner{
+       width: 12rem;
+       height: 1.42rem;
+       margin:@margin;
+       position: @relative;
+       .qqmusic{
+           position: @absoulte;
+           width: 1.9rem;
+           height: 0.52rem;
+           margin-top: 0.15rem;
+       }
+       .top_nav_one{
+          position: @absoulte;
+          left: 2.25rem;
+          top: 0;
+          font-size: 0.18rem;
+            .top_one_item{
+                float: left;
+               .top_nav_link{
+                  float: left;
+                  display: block;
+                  padding: 0 0.2rem;
+                  line-height: 0.9rem;
+                  height: 0.9rem;
+                  text-align: center;
+                  font-size: 0.18rem;
+               }
+               #nav_link:hover{
+                   color: @green;
+               }
+            }
+            #top_one_item{
+                background-color: @green;
+                color: #FFFFFF;
+            }
+       }
+       .top_nav_two{
+          height: 0.51rem;
+          position: relative;
+          line-height: 0.51rem;
+          padding-left: 2.56rem;
+          top: 0.9rem;
+          border-top: 0.01rem solid #f2f2f2;
+           .top_two_item{
+              float: left;
+              font-size: 0.15rem;
+              color: #c1c1c1;
+              margin-right: 0.56rem;
+               .top_nav_subnav{
+                   color: #333333;
+               }
+               .top_nav_subnav:hover{
+                   color: @green;
+               }
+               #top_two_item{
+                   color: #31c27c;
+               }
+           }
+       }
+       .top_nav_search{
+           position: absolute;
+           top: 0;
+           right: 3rem;
+           width: 2.5rem;
+           height: 0.64rem;
+           .search_input{
+               border: 0.01rem solid #c9c9c9;
+               padding: 0 0.33rem 0 0.15rem;
+               line-height: 0.36rem;
+               height: 0.36rem;
+               margin-top: 0.26rem;
+               position: relative;
+               border-radius: 0.03rem;
+               background-color: #fff;
+               font-size: 0.14rem;
+               .search_input_input{
+                   width: 2rem;
+                   height: 0.36rem;
+                   border: 0 none;
+                   font-size: 0.14rem;
+               }
+//             .top_up{
+//                 width: 2rem;
+//                 height: 2.5rem;
+//                 background: pink;
+//                 padding: 0 0.33rem 0 0.15rem;
+//             }
+           }
+           .search_btn{
+               position: absolute;
+               top: 0;
+                right: 0;
+                border: 0 none;
+               .icon_search{
+                    position: absolute;
+                    top: 50%;
+                    right: 0.15rem;
+                    margin-top: 0.35rem;
+                    width: 0.16rem;
+                    height: 0.16rem;
+                    background: url(../img/icon_sprite.png);
+                    background-position: 0 -40px;
+               }
+//             .icon_search:hover{
+//                 background-position: 0 -60px;
+//             }
+           }
+       }
+       .header_opt{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2.73rem;
+            height: 0.9rem;
+            line-height: 0.9rem;
+           .top_login{
+                font-size: 0;
+                height: 0.9rem;
+                line-height: 0.9rem;
+               .login{
+                   font-size: 0.16rem;
+                    float: left;
+                    width: 0.38rem;
+                    text-overflow: ellipsis;
+                    text-align: center;
+                    overflow: hidden;
+               }
+               .header_green{
+                   float: left;
+                   padding: 0 0.11rem;
+                   font-size: 0.13rem;
+                   border: 0.01rem solid #31c27c;
+                   background-color: #31c27c;
+                   color: #FFFFFF;
+                   height: 0.38rem;
+                    line-height: 0.38rem;
+                    display: inline-block;
+                    margin-top: 0.28rem;
+                    margin-left: 0.2rem;
+               }
+               .opean{
+                   float: right;
+                    padding: 0 0.11rem;
+                    margin-top: 0.28rem;
+                    font-size: 0.13rem;
+                    border: 0.01rem solid #c9c9c9;
+                    color: #333;
+                    height: 0.38rem;
+                    line-height: 0.38rem;
+                    display: inline-block;
+                    white-space: nowrap;
+               }
+                .login:hover{
+                 color: @green;
+                }
+                .opean:hover{
+                    background-color: #f2f2f2;
+                }
+           }
+       }
+   }
+}
+   
+    
+    
+    
+    
+    
+    
+   
+    .foot{
+        width: 100%;
+        height: 510px;
+        background: #333;
+        .foot_inner{
+            width: @width;
+            height: 470.5px;
+            margin: @margin;
+            .footer_one{
+                position: relative;
+                width: @width;
+                height: 338.5px;
+                overflow: hidden;
+                border-bottom: 1px solid #353535;
+                .footer_iphone{
+                    width: 357px;
+                    height: 229.5px;
+                    .footer_tit{
+                        font-size: 15px;
+                        width: 357px;
+                        font-weight: 400;
+                        padding: 80px 0 46px;
+                        color: #999;
+                    }
+                    .footer_down_list{
+                        width: 357px;
+                        height: 81px;
+                        .footer_down_list_item{
+                            float: left;
+                            text-align: center;
+                            position: relative;
+                            .footer_down{
+                                font-size: 14px;
+                                color: #999;
+                                .icon_qm_pc{
+                                    width: 37px;
+                                    background-position: -2px 0;
+                                    display: block;
+                                    margin: 0 20px -35px;
+                                    height: 48px;
+                                    background-image: url(../img/footer.png);
+                                }
+                                .icon_qm_pc:hover{
+                                    background-position: -2px -50px;
+                                }
+                                .icon_qm_mac{
+                                    width: 46px;
+                                    background-position: -92px 0;
+                                    display: block;
+                                    margin: 0 20px -35px;
+                                    height: 48px;
+                                    background-image: url(../img/footer.png);
+                                }
+                                .icon_qm_mac:hover{
+                                    background-position: -92px -50px;
+                                }
+                                .icon_qm_android{
+                                    width: 37px;
+                                    display: block;
+                                    margin: 0 20px -35px;
+                                    height: 48px;
+                                    background: url(../img/footer.png) -190px 0 no-repeat;
+                                }
+                                .icon_qm_android:hover{
+                                    background-position: -190px -50px;
+                                }
+                                .icon_qm_iphone{
+                                    width: 34px;
+                                    background-position: -279px 0;
+                                    display: block;
+                                    margin: 0 20px -35px;
+                                    height: 48px;
+                                    background: url(../img/footer.png) -279px 0 no-repeat;
+                                }
+                                .icon_qm_iphone:hover{
+                                    background-position: -279px -50px;
+                                }
+                            }
+                            .footer_down:hover{
+                                color: @green;
+                            }
+                        }
+                    }
+                }
+                .footer_product{
+                    position: absolute;
+                    top: 0;
+                    left: 476px;
+                    width: 304px;
+                    height: 325.5px;
+                    .footer_product_one{
+                        width: 304px;
+                        font-size: 15px;
+                        font-weight: 400;
+                        padding: 80px 0 46px;
+                        color: #999;
+                    }
+                    .footer_product_list{
+                        .footer_product_list_item{
+                            text-align: center;
+                            position: relative;
+                            margin-right: 0;
+                            text-indent: 0;
+                            float: left;
+                            margin-bottom: 18px;
+                            .footer_up{
+                                font-size: 14px;
+                                color: #999;
+                                .icon_qm_kg{
+                                    width: 41px;
+                                    background-position: -370px 0;
+                                    display: block;
+                                    margin: 0 20px -35px;
+                                    height: 48px;
+                                    background-image: url(../img/footer.png);
+                                }
+                                .icon_qm_kg:hover{
+                                    background-position: -370px -50px;
+                                }
+                                .icon_qm_ss{
+                                    width: 37px;
+                                    background-position: -463px 0;
+                                    display: block;
+                                    margin: 0 20px -35px;
+                                    height: 48px;
+                                    background-image: url(../img/footer.png);
+                                }
+                                .icon_qm_ss:hover{
+                                    background-position: -463px -50px;
+                                }
+                                .icon_qm_qp{
+                                    margin-right: 23px;
+                                    width: 40px;
+                                    background-position: -563px 0;
+                                    display: block;
+                                    margin: 0 20px -35px;
+                                    height: 48px;
+                                    background-image: url(../img/footer.png);
+                                }
+                                .icon_qm_qp:hover{
+                                    background-position: -563px -50px;
+                                }
+                            }
+                            .footer_up:hover{
+                                color:@green;
+                            }
+                        }
+                    }
+                }
+                .footer_link{
+                    width: 300px;
+                    font-size: 14px;
+                    color: #999;
+                    height: 337.5px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    .footer_link_item{
+                        font-size: 15px;
+                        font-weight: 400;
+                        padding: 80px 0 46px;
+                    }
+                    .footer_link_list{
+                        .footer_link_item_list{
+                            float: left;
+                            min-width: 100px;
+                            margin-bottom: 12px;
+                            a:hover{
+                                color: @green;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_two{
+                width: @width;
+                height: 132px;
+                text-align: center;
+                line-height: 28px;
+                font-size: 14px;  
+                p{
+                    color: #999;
+                }
+                .footer_size:hover{
+                    color: @green;
+                }   
+                .pelem:hover{
+                    color: @green;
+                }   
+            }
+        }
+    }

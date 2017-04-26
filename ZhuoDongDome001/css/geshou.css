@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.inner{
+	width: 1200px;
+	margin: 0 auto;
+}
+.song_center{
+    width: 100%;
+	height: 376px;
+	overflow: hidden;
+}
+.div_back{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+.max_img{
+	width: 100%;
+}
+ .txt-p p:nth-child(1){
+	font-size: 50px;
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	position: relative;
+	z-index: 5;
+	float: left;
+	top: -280px;
+	left: 400px;
+	}
+	
+.txt-p p:nth-child(2){
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-top: 10px;
+	font-family: "微软雅黑";
+	position: relative;
+	z-index: 5;
+	float: left;
+	top: -200px;
+	left:100px;
+}
+.txt-p p:last-child{
+	font-size: 15px;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 5px 15px 5px 15px;
+	font-family: "微软雅黑";
+	border: 1px solid #FFFFFF;
+	border-radius: 2px;
+	display: inline;
+	position: relative;
+	z-index: 5;
+	float: left;
+	top: -130px;
+	left:-50px;
+}
+/*----------------------------------------------------------*/
+.search{
+	background: #fbfbfd;
+	width: 1200px;
+	height: 200px;
+	position: relative;
+	top: 20px;
+	z-index: 5;
+}
+.s-one{
+	padding: 50px 40px 30px 30px;
+	font-size: 16px;
+	color: #4F4F4F;
+}
+.s-one span{
+	margin-right: 30px;
+	padding-top: 20px;
+	height: 40px;
+	line-height: 40px;
+	
+}
+.s-one span:nth-child(1){
+	background: #31C27C;
+	padding: 5px;
+	margin-right: 40px;
+}
+.s-two{
+	padding: 30px;
+	padding-top: 0;
+	font-size: 16px;
+	margin-right: 15px;
+	color: #4F4F4F;
+}
+span:hover{
+	cursor: pointer;
+}
+.s-two span{
+	margin-right: 20px;
+}
+.s-two span:nth-child(1){
+	background: #31C27C;
+	padding: 5px;
+	margin-right: 40px;
+}
+/*----------------------------------------------------------*/
+.count-one{
+	background: #FBFBFD;
+	width: 180px;
+	height: 260px;
+	margin-right: 20px;
+	margin-top: 40px;
+	float: left;
+}
+.count-one img{
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 120px;
+	height: 120px;
+	border: 1px solid transparent;
+	border-radius: 100px;
+}
+.count-one p{
+	text-align: center;
+	font-size: 16px;
+	margin: 10px 15px 0px 15px;
+	height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

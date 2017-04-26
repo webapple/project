@@ -1,0 +1,669 @@
+<script type="text/javascript" src="js/my.js" ></script>
+<style>
+	body{
+		color: rgb(102,102,102);
+	}
+	*,p{
+		margin: 0;padding: 0;
+	}
+	a{
+	    text-decoration: none;
+	}
+	.H10{
+		height: 10px;
+	}
+	.H20{
+		width: 100%;
+		height: 20px;
+	}
+	.H30{
+		width: 100%;
+		height: 30px;
+	}
+	.H40{
+		height: 40px;
+	}
+	.H60{
+		height: 60px;
+	}
+	@font-face {
+		font-family:'qiao';
+		src: url('fonts/MYRIADPRO-REGULAR.OTF');
+	}
+	body{
+		font-family: 'qiao', Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+	}
+	
+	
+	#supp_01{
+		height: 200px;
+		width: 100%;
+		background: url(img/Banner_ts.jpg) bottom #0088cc no-repeat;
+		border-bottom: 1px solid #ccc;
+	}
+	#supp_02 form input{
+		border-radius: 13px;
+		width: 300px;
+	}
+	#supp_02 h4,#supp_03 h4,#supp_04 h4{
+		color: #0088cc;
+	    line-height: 40px;
+	}
+	#supp_02 h4 span,#supp_03 h4 span,#supp_04 h4 span{
+		margin-left: 10px;
+		font-size: 16px;
+	}
+	#supp_02 h4 span a,#supp_03 h4 span a,#supp_04 h4 span a{
+		display: inline-block;
+		background: url(img/more.png)no-repeat;
+		background-position: 2px 2px;
+		width: 35px;
+		height: 10px;
+	}
+	#supp_03 .col-md-9>div{
+		width: 170px;
+		height: 100px;
+		line-height: 120px;
+		text-align: center;
+		display: inline-block;
+		margin-right: 30px;
+		background: url(img/Support_list_video_bg.jpg)no-repeat;
+		background-position: -170px 0;
+		border-radius: 6px;
+		border: 1px solid #ccc;
+		margin-bottom: 20px;
+	}
+	
+	#supp_04 .container,#supp_04 .container div div{
+		padding: 0;
+	}
+	#supp_04 .p1:hover{
+		text-underline: initial #ccc;
+	}
+	#supp_04 .p2{
+	    color: #a3a3a3;
+	    font-size: 14px;
+	    margin-bottom: 10px;
+	}
+	
+	
+	/*----   #supp_05   ----*/
+	#supp_05 h3{
+		margin-bottom: 0;
+	    font-size: 34px;
+	    letter-spacing: 0.08em;
+	    font-weight: inherit;
+	    color: #404040;
+	}
+	#supp_05 .p3{
+	    font-size: 18px;
+	    letter-spacing: 0.06em;
+	    color: #7c7c7c;
+	}
+	#supp_05 .fl ul{
+		margin: 0 auto;
+	    display: table;
+	    overflow: hidden;
+	    margin-bottom: 20px;
+	}
+	#supp_05 .fl ul li{
+		display: inline-block;
+	    float: left;
+	    padding: 5px 25px;
+	    font-size: 14px;
+	    cursor: pointer;
+	    margin: 10px 10px 0px 10px;
+	    border-radius: 4px;
+	    background-color: transparent;
+	    border: 1px solid transparent;
+	}
+	#supp_05 .fl ul li:hover{
+	    background-color: transparent;
+		border: 1px solid #9b9b9b;
+	}
+	#supp_05 .fl ul .active,#supp_05 .fl ul .active:hover{
+		color: #fff;
+	    background-color: #0088cc;
+	    border: 1px solid #9b9b9b;
+	}
+	
+	#supp_05 .list h4{
+		color: #0088cc;
+	}
+	#supp_05 .list h4 img{
+		margin-right: 5px;
+	}
+	#supp_05 .list table{
+		margin-left: 45px;
+		margin-top: 5px;
+	}
+	#supp_05 .list table td{
+		padding: 5px;
+		font-size: 14px;
+	}
+	#supp_05 .list table .td1{
+		width: 115px;
+		font-weight: bold;
+	}
+	#supp_05 .list table td a{
+		color: #666;
+		margin-right: 15px;
+		cursor: pointer;
+	}
+	
+</style>
+
+
+
+<div id="supp_01">	</div>
+<div id="supp_02">
+	<div class="container">
+		<form class="navbar-form pull-right">
+			<div class="form-group has-feedback">
+				<input class="form-control ipt" placeholder="搜索"/>
+				<span class="form-control-feedback glyphicon glyphicon-search"></span>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="supp_03">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-xs-12">
+				<h4>快速安装<span>more<a></a></span></h4>
+				<p>使您更加方便快捷的安装爱快七层流控路由，附带ISO、IMG、GHO、光盘及虚拟机安装的详细安装方法的图文教程，祝您安装顺利。</p>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<h4>硬件参数<span>more<a></a></span></h4>
+				<p>根据目前众多用户使用经验，整理编辑出爱快硬件支持相关参数信息，希望给您在考量环境选择硬件上有所帮助。</p>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<h4>路由页面讲解<span>more<a></a></span></h4>
+				<p>为了更方便用户的使用，爱快针对路由器各个功能页面做了具体图文教程，（建议用户在使用路由器之前，首先阅读该选项里面的描述内容）。</p>
+			</div>
+			<div class="H30 col-xs-12"></div>
+			<div class="col-xs-12">
+				<h4>视频教程<span>more<a></a></span></h4>
+				<div class="col-md-2"></div>
+				<div class="col-xs-12 col-md-9">
+					<div class="kuai">
+						<p>1.3版本安装视频</p>
+					</div>
+					<div class="kuai">
+						<p>微信连WiFi---苹果手机</p>
+					</div>
+					<div class="kuai">
+						<p>微信连WiFi---PC端</p>
+					</div>
+					<div class="kuai">
+						<p>行为管理教程讲解</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="supp_04">
+	<div class="container">
+		<div class="col-md-6 col-xs-12">
+			<div class="col-xs-12">
+				<h4>常见问题<span>more<a></a></span></h4>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<p class="p1">路由模式下，外网访问内网端口</p>
+				<p class="p2">2017-03-02</p>
+				<p class="p1">云平台2.0微信认证详解</p>
+				<p class="p2">2017-03-17</p>
+				<p class="p1">AP到手后怎么使用</p>
+				<p class="p2">2016-10-28</p>
+				<p class="p1">无线终端无法获取IP</p>
+				<p class="p2">2016-10-18</p>
+				<p class="p1">爱快各产品版本说明</p>
+				<p class="p2">2016-09-21</p>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<p class="p1">爱快云平台2.0WEB认证配置详解</p>
+				<p class="p2">2017-03-02</p>
+				<p class="p1">爱快路由对接文网卫士组网方案</p>
+				<p class="p2">2017-03-17</p>
+				<p class="p1">WEB认证常见问题</p>
+				<p class="p2">2016-10-28</p>
+				<p class="p1">自定义模板开启微信吸粉</p>
+				<p class="p2">2016-10-18</p>
+				<p class="p1">爱快NAT模式和路由模式的区别</p>
+				<p class="p2">2016-09-21</p>
+			</div>
+		</div>
+		<div class="col-md-6 col-xs-12">
+			<div class="col-xs-12">
+				<h4>案例中心<span>more<a></a></span></h4>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<p class="p1">爱快与侠诺IPsec VPN实施实例</p>
+				<p class="p2">2017-03-02</p>
+				<p class="p1">自定义模板（WEB认证）</p>
+				<p class="p2">2017-03-17</p>
+				<p class="p1">WEB---Radius卓迈对接教程</p>
+				<p class="p2">2016-10-28</p>
+				<p class="p1">《爱快无线WiFi工程科普》第一季</p>
+				<p class="p2">2016-10-18</p>
+				<p class="p1">小区环境双100M对等电信光纤带200用户</p>
+				<p class="p2">2016-09-21</p>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<p class="p1">爱快与Cisco ipsec实施案例</p>
+				<p class="p2">2017-03-02</p>
+				<p class="p1">WEB---Radius凌风对接教程</p>
+				<p class="p2">2017-03-17</p>
+				<p class="p1">《爱快无线WiFi工程科普》第二季</p>
+				<p class="p2">2016-10-28</p>
+				<p class="p1">电信50M,联通30M,ADSL是5条20M上传2M多拨线路带600台机器</p>
+				<p class="p2">2016-10-18</p>
+				<p class="p1">网吧用户双线环境,电信上传3M下载30M,网通上传12M下载40M带机130台</p>
+				<p class="p2">2016-09-21</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="supp_05">
+	<div class="container">
+		<div class="H40 col-xs-12"></div>
+		<div class="text-center">
+			<h3>
+				路由页面讲解
+			</h3>
+			<p class="p3">Explain Routing</p>
+		</div>
+		<div class="fl">
+			<ul>
+				<li class="active flLi">X86架构路由器</li>
+				<li class="flLi">Mips架构路由器</li>
+				<li class="flLi">云平台详解</li>
+			</ul>
+		</div>
+		<div class="list">
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_00.png"/>首页</h4>
+				<table>
+					<tr>
+						<td class="td1">首页</td>
+						<td><a>首页</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_01.png"/>系统设置</h4>
+				<table>
+					<tr>
+						<td class="td1">基础设置：</td>
+						<td><a>基础设置</a><a>硬件信息</a></td>
+					</tr>
+					<tr>
+						<td class="td1">系统状态：</td>
+						<td><a>内网监控</a><a>协议监控</a><a>策略监控</a><a>线路监控</a><a>系统监控</a><a>分流监控</a><a>用户访问记录</a></td>
+					</tr>
+					<tr>
+						<td class="td1">服务账号：</td>
+						<td><a>服务账号</a></td>
+					</tr>
+					<tr>
+						<td class="td1">安全设置：</td>
+						<td><a>远程控制</a><a>WEB账号管理</a></td>
+					</tr>
+					<tr>
+						<td class="td1">升级备份：</td>
+						<td><a>版本升级</a><a>系统备份</a></td>
+					</tr>
+					<tr>
+						<td class="td1">重启关机：</td>
+						<td><a>重启关机</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_02.png"/>网络设置</h4>
+				<table>
+					<tr>
+						<td class="td1">内网设置：</td>
+						<td><a>内网设置</a></td>
+					</tr>
+					<tr>
+						<td class="td1">外网设置：</td>
+						<td><a>外网设置</a></td>
+					</tr>
+					<tr>
+						<td class="td1">DNS设置：</td>
+						<td><a>DNS设置</a><a>多线路DNS</a></td>
+					</tr>
+					<tr>
+						<td class="td1">分流设置：</td>
+						<td><a>端口分流</a><a>协议分流</a><a>域名分流</a><a>上下行分离</a></td>
+					</tr>
+					<tr>
+						<td class="td1">多线负载：</td>
+						<td><a>多线负载</a><a>自定义运营商</a></td>
+					</tr>
+					<tr>
+						<td class="td1">DHCP设置：</td>
+						<td><a>DHCP服务端</a><a>客户端静态分配</a><a>客户端状态列表</a></td>
+					</tr>
+					<tr>
+						<td class="td1">静态路由：</td>
+						<td><a>静态路由</a><a>当前路由表</a></td>
+					</tr>
+					<tr>
+						<td class="td1">VLAN设置：</td>
+						<td><a>VLAN设置</a></td>
+					</tr>
+					
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_12.png"/>AC智能控制</h4>
+				<table>
+					<tr>
+						<td class="td1">配置管理：</td>
+						<td><a>配置管理</a></td>
+					</tr>
+					<tr>
+						<td class="td1">AP在线用户：</td>
+						<td><a>AP在线用户</a></td>
+					</tr>
+					<tr>
+						<td class="td1">AP周边信道：</td>
+						<td><a>AP周边信道</a></td>
+					</tr>
+					<tr>
+						<td class="td1">AP干扰分析：</td>
+						<td><a>AP干扰分析</a></td>
+					</tr>
+					<tr>
+						<td class="td1">AP系统升级：</td>
+						<td><a>AP系统升级</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_03.png"/>流控设置</h4>
+				<table>
+					<tr>
+						<td class="td1">一键流控：</td>
+						<td><a>一键流控</a></td>
+					</tr>
+					<tr>
+						<td class="td1">手工流控：</td>
+						<td><a>手工流控</a></td>
+					</tr>
+					<tr>
+						<td class="td1">IP/MAC限速：</td>
+						<td><a>IP限速</a><a>MAC限速</a></td>
+					</tr>
+					<tr>
+						<td class="td1">协议库：</td>
+						<td><a>自定义协议</a><a>高级自定义协议</a></td>
+					</tr>
+					<tr>
+						<td class="td1">顺网合作：</td>
+						<td><a>顺网合作</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_04.png"/>认证计费</h4>
+				<table>
+					<tr>
+						<td class="td1">认证用户管理：</td>
+						<td><a>账号在线用户</a><a>优惠券在线用户</a><a>RADIUS在线用户</a></td>
+					</tr>
+					<tr>
+						<td class="td1">认证服务管理：</td>
+						<td><a>WEB服务端</a><a>PPPOE服务端</a><a>PPTP服务端</a><a>L2TP服务端</a><a>OpenVPN服务端</a></td>
+					</tr>
+					<tr>
+						<td class="td1">认证账号管理：</td>
+						<td><a>账号管理</a><a>套餐设置</a><a>总账管理</a><a>优惠券</a></td>
+					</tr>
+					<tr>
+						<td class="td1">通知推送：</td>
+						<td><a>实时通知</a><a>周期通知</a><a>到期提醒</a><a>拨号用户过期提醒</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_05.png"/>服务中心</h4>
+				<table>
+					<tr>
+						<td class="td1">URL控制：</td>
+						<td><a>URL跳转</a><a>关键字替换</a><a>参数替换</a></td>
+					</tr>
+					<tr>
+						<td class="td1">动态域名：</td>
+						<td><a>动态域名</a></td>
+					</tr>
+					<tr>
+						<td class="td1">NAT转发：</td>
+						<td><a>NAT转发</a></td>
+					</tr>
+					<tr>
+						<td class="td1">端口映射：</td>
+						<td><a>端口映射</a><a>DMZ设置</a></td>
+					</tr>
+					<tr>
+						<td class="td1">UPNP设置：</td>
+						<td><a>UPNP设置</a></td>
+					</tr>
+					<tr>
+						<td class="td1">VPN服务：</td>
+						<td><a>PPTP客户端</a><a>L2TP客户端</a><a>IPSec</a><a>VPN</a><a>OpenVPN客户端</a></td>
+					</tr>
+					<tr>
+						<td class="td1">端口镜像：</td>
+						<td><a>端口镜像</a></td>
+					</tr>
+					<tr>
+						<td class="td1">健康服务：</td>
+						<td><a>主动健康检测</a></td>
+					</tr>
+					<tr>
+						<td class="td1">视频缓存：</td>
+						<td><a>视频缓存</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+		</div>
+		<div class="list">
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_00.png"/>首页</h4>
+				<table>
+					<tr>
+						<td class="td1">首页</td>
+						<td><a>首页</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_10.png"/>网络状态</h4>
+				<table>
+					<tr>
+						<td class="td1">网络状态：</td>
+						<td><a>系统监控</a><a>内网监控</a><a>策略监控</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_09.png"/>网络设置</h4>
+				<table>
+					<tr>
+						<td class="td1">网络设置：</td>
+						<td><a>上网设置</a><a>局域网设置</a><a>WI-FI设置</a><a>静态路由</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_13.png"/>AC管理</h4>
+				<table>
+					<tr>	  
+						<td class="td1">AC管理：</td>
+						<td><a>设置</a><a>用户</a><a>AP升级</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_04.png"/>认证设置</h4>
+				<table>
+					<tr>
+							   
+						<td class="td1">认证设置：</td>
+						<td><a>服务管理</a><a>账号管理</a><a>在线用户</a><a>服务账号</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_03.png"/>流控设置</h4>
+				<table>
+					<tr>
+						<td class="td1">流控设置：</td>
+						<td><a>一键流控</a><a>手工流控</a><a>IP限速</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_14.png"/>服务中心</h4>
+				<table>
+					<tr>
+						<td class="td1">服务中心：</td>
+						<td><a>URL控制</a><a>动态域名</a><a>端口映射</a><a>UPNP设置</a><a>PPTP客户端</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_06.png"/>安全设置</h4>
+				<table>
+					<tr>
+						<td class="td1">安全设置：</td>
+						<td><a>分组管理</a><a>MAC访问控制</a><a>网页访问控制</a><a>连接数限制</a><a>应用协议控制</a><a>ARP绑定</a><a>ACL访问控制</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/sidebar_nav_05.png"/>系统工具</h4>
+				<table>
+					<tr>
+						<td class="td1">系统工具：</td>
+						<td><a>PING测试</a><a>路由追踪</a><a>子网换算</a><a>DHCP检测</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+		</div>
+		<div class="list">
+			<div class="col-xs-12">
+				<h4><img src="img/cloud1.gif"/>首页</h4>
+				<table>
+					<tr>
+						<td class="td1">首页</td>
+						<td><a>首页</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/cloud2.gif"/>路由列表</h4>
+				<table>
+					<tr>
+						<td class="td1">路由列表：</td>
+						<td><a>路由列表</a><a>设备管理</a><a>升级</a></td>
+					</tr>
+					<tr>
+						<td class="td1">设备信息：</td>
+						<td><a>设备信息</a><a>远程登录</a><a>路由解绑</a></td>
+					</tr>
+					<tr>
+						<td class="td1">认证页配置：</td>
+						<td><a>认证页配置</a></td>
+					</tr>
+					<tr>
+						<td class="td1">AP列表：</td>
+						<td><a>AP列表</a></td>
+					</tr>
+					<tr>
+						<td class="td1">在线用户：</td>
+						<td><a>在线用户</a></td>
+					</tr>
+					<tr>
+						<td class="td1">推送通知：</td>
+						<td><a>推送通知</a></td>
+					</tr>
+					<tr>
+						<td class="td1">路由云备份：</td>
+						<td><a>路由云备份</a></td>
+					</tr>
+					<tr>
+						<td class="td1">资产报备：</td>
+						<td><a>资产报备</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/cloud3.gif"/>消息中心</h4>
+				<table>
+					<tr>
+						<td class="td1">消息中心</td>
+						<td><a>消息中心</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/cloud4.png"/>警告中心</h4>
+				<table>
+					<tr>
+						<td class="td1">警告信息</td>
+						<td><a>警告信息</a></td>
+					</tr>
+					<tr>
+						<td class="td1">警告设置</td>
+						<td><a>警告设置</a></td>
+					</tr>
+					<tr>
+						<td class="td1">接受人管理</td>
+						<td><a>接受人管理</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+			<div class="col-xs-12">
+				<h4><img src="img/cloud5.gif"/>开放平台</h4>
+				<table>
+					<tr>
+						<td class="td1">开放平台</td>
+						<td><a>平台业务</a></td>
+					</tr>
+					<tr>
+						<td class="td1">我的业务</td>
+						<td><a>我的业务</a></td>
+					</tr>
+				</table>
+				<div class="H20"></div>
+			</div>
+		</div>
+		<div class="H60 col-xs-12"></div>
+		
+	</div>
+</div>

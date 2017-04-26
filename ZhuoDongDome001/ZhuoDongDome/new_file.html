@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <meta name="author" content="Tencent-ISUX-Music" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="description" content="QQ音乐最新版官方下载。最全的高品质正版音乐曲库，任你免费试听下载。最新最热的排行榜、歌单、电台、MV天天推荐，智能音乐搜索、猜你喜欢帮你轻松发现音乐，歌词翻译、免费空间背景音乐，尽在QQ音乐。" />
+    <meta name="keywords" content="音乐,歌曲,qq音乐,qq音乐下载,mp3下载,音乐下载,免费下载,在线听歌,歌词,歌词翻译,MV,最新歌曲,经典老歌,音乐播放器,无损音乐,电台,中国好声音,好听的歌,音乐在线听" />
+    <meta name="applicable-device" content="pc">
+    <title>QQ音乐下载页 - QQ音乐,音乐你的生活!</title>
+<!--[if IE 6]><script type="text/javascript">try{document.execCommand('BackgroundImageCache',false,true);}catch(e){}</script><![endif]-->
+    <script>
+        var _w = top ? top : window;
+        if (_w && _w.navigator.platform.toLowerCase().indexOf('mac') > -1 && _w.location.href.indexOf('pgv_ref=qqmusic.y.topmenu') > -1) {
+            _w.location.href = location.protocol+'//y.qq.com/download/mac.html?part=1&ADTAG=YQQ';
+        }
+    </script>
+    <link rel="stylesheet" href="//imgcache.gtimg.cn/mediastyle/app/download/download.css?max_age=2592000&v=20160122" />
+
+	<script type='text/javascript' src='//imgcache.gtimg.cn/music/js/lib/aq_common.js?max_age=2592000'></script>
+</head>
+
+<body>
+<img src="//i.gtimg.cn/mediastyle/musicprotal/img/frame_logo_min.png?max_age=2592000" width="121" height="75" style="position:absolute;left:-999px;top:-999px;" alt="QQ音乐最新版官方下载。最全的高品质正版音乐曲库，任你免费试听下载。"/>
+ <div class="menu">
+    <div class="menu__content">
+        <h2 class="menu__title"><a href="//y.qq.com/" class="menu__link" title="QQ音乐">QQ音乐</a></h2>
+        <div class="menu_nav">
+            <a class="menu_nav__item menu_nav__item--current" hideFocus>产品动态</a>
+            <a href="/download/download.html" class="menu_nav__item" hideFocus>下载</a>
+        </div>
+        <a class="menu__home js_stat_down" data-type="0" href="http://y.qq.com/download/qt.html?part=1&ADTAG=YQQ" target="_blank">轻听介绍</a>
+        <a class="menu__home js_stat_down" data-type="2" href="http://y.qq.com/download/mac.html?part=1&ADTAG=YQQ" target="_blank">MAC版介绍</a>
+        <a class="menu__home js_stat_down" data-type="0" href="http://y.qq.com/vip/pc_intro/index.html?part=1&ADTAG=YQQ" target="_blank">PC版介绍</a>
+    </div>
+</div>
+
+<div class="wrap fullpage-wrapper" style="display:none;">
+    <h1 class="hide">QQ音乐最新版官方下载</h1>
+    <div class="section mod_banner">
+        <ul class="mod_banner_list">
+            <li class="mod_banner_list__item mod_banner_pc">
+                <h2 class="mod_banner_pc__tit"></h2>
+                <a href="http://dldir1.qq.com/music/clntupate/QQMusicForYQQ.exe" data-type="1" target="_blank" class="btn_banner js_stat_down">立即下载</a>
+                <div class="mod_banner_list__pcbg1"></div>
+                <div class="mod_banner_list__pcbg2"></div>
+                <div class="mod_banner_list__pcbg3"></div>
+                <div class="mod_banner__star mod_banner__star1">QQ音乐下载</div>
+                <div class="mod_banner__star mod_banner__star2">流行音乐</div>
+                <div class="mod_banner__star mod_banner__star3">经典老歌</div>
+                <div class="mod_banner__star mod_banner__star4">在线听歌</div>
+                <div class="mod_banner__star mod_banner__star5">最新MV</div>
+                <div class="mod_banner__star mod_banner__star6">中国好声音</div>
+                <div class="watch">
+                    <div class="watch__hand"></div>
+                    <div class="watch__numb1"></div>
+                    <div class="watch__numb2"></div>
+                </div>
+            </li>
+            <li class="mod_banner_list__item mod_banner_mac">
+                <div class="mod_banner_list__macbg1"></div>
+                <div class="mod_banner_list__macbg2"></div>
+                <div class="mod_banner_list__macbg3"></div>
+                <a href="http://dldir1.qq.com/music/clntupate/mac/QQMusic4.2.3Build02.dmg" data-type="2" target="_blank" class="btn_banner js_stat_down">立即下载</a>
+            </li>
+            <li class="mod_banner_list__item mod_banner_iphone">
+                <div class="iphone_play__list--1" id="js_iphone_play__list0"></div>
+                <div class="iphone_play__list--2" id="js_iphone_play__list1"></div>
+                <div class="iphone_play__list--3" id="js_iphone_play__list2"></div>
+                <p class="iphone_intro">百变播放器，不变好声音</p>
+                <a href="javascript:;" data-type="3" class="btn_banner js_show_tips">立即下载</a>
+
+            </li>
+            <li class="mod_banner_list__item mod_banner_android">
+                <div class="mod_banner_list__androidbg1"></div>
+                <div class="mod_banner_list__androidbg2"></div>
+                <a href="javascript:;" data-type="4" class="btn_banner js_show_tips">立即下载</a>
+            </li>
+        </ul>
+        <div class="download_list" style="z-index:3;">
+            <i class="download_list__br"></i>
+            <a href="javascript:;" class="download_list__item download_list__item--pc download_list__item--current" hideFocus>PC版<i></i></a>
+            <a href="javascript:;" class="download_list__item download_list__item--mac" hideFocus>Mac版<i></i></a>
+            <a href="javascript:;" class="download_list__item download_list__item--iphone" hideFocus>iPhone版<i></i></a>
+            <a href="javascript:;" class="download_list__item download_list__item--android" hideFocus>Android版<i></i></a>
+        </div>
+        <i class="icon_arrow" style=""></i>
+    </div>
+
+    <div class="section part_singer">
+        <div class="section__inner">
+            <h2 class="part_singer__tit"><span class="hide">1500万正版歌曲</span></h2>
+            <h3 class="part_singer__desc hide"><span class="hide">国内唯一千万级版权超级平台,你想听的都在这里</span></h3>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic1"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic2"></div>
+            </div> 
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic3"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic4"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic5"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic6"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic7"></div>
+            </div> 
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic8"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic9"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic10"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic11"></div>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer12.jpg?max_age=2592000" alt="陈奕迅-QQ音乐" class="part_singer__pic part_singer__pic12"/>
+            </div> 
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer13.jpg?max_age=2592000" alt="吉克隽逸" class="part_singer__pic part_singer__pic13"/>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic14"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic15"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic16"></div>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer17.jpg?max_age=2592000" alt="张靓颖-QQ音乐" class="part_singer__pic part_singer__pic17"/>
+            </div> 
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic18"></div>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer19.jpg?max_age=2592000" alt="金在中-QQ音乐" class="part_singer__pic part_singer__pic19"/>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer20.jpg?max_age=2592000" alt="林俊杰-QQ音乐" class="part_singer__pic part_singer__pic20"/>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer21.jpg?max_age=2592000" alt="Rain-QQ音乐" class="part_singer__pic part_singer__pic21"/>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic22"></div>
+            </div> 
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic23"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic24"></div>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer25.jpg?max_age=2592000" alt="周杰伦-QQ音乐" class="part_singer__pic part_singer__pic25"/>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic26"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic27"></div>
+            </div> 
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic28"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic29"></div>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer30.jpg?max_age=2592000" alt="谢霆锋-QQ音乐" class="part_singer__pic part_singer__pic30"/>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic31"></div>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer32.jpg?max_age=2592000" alt="Taylor Swift-QQ音乐" class="part_singer__pic part_singer__pic32"/>
+            </div> 
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic33"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic34"></div>
+            </div>
+            <div class="part_singer__item">
+                <img src="//imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer35.jpg?max_age=2592000" alt="蔡依林-QQ音乐" class="part_singer__pic part_singer__pic35"/>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic36"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic37"></div>
+            </div> 
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic38"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic39"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic40"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic41"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic42"></div>
+            </div> 
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic43"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic44"></div>
+            </div>
+            <div class="part_singer__item">
+                <div class="part_singer__pic part_singer__pic45"></div>
+            </div>
+        </div>
+        <i class="icon_arrow" style=""></i>
+    </div>
+
+    <div class="section part_lyric">
+        <div class="part_lyric__bg1"></div>
+        <div class="part_lyric__bg2"></div>
+        <div class="part_lyric__bg3"></div>
+        <div class="section__inner">
+            <h2 class="part_lyric__tit"><span class="hide">智能推荐,随刻遇见喜欢的音乐</span></h2>
+            <h3 class="part_lyric__desc hide"><span class="hide">懂你的猜你喜欢，最新最热独家首发、排行榜、 电台，全方位的音乐推荐都在这里！ </span></h3>
+            <div class="part_lyric__phone">
+                <div class="lyric_phone"><div class="lyric_phone2"></div></div>
+                <div class="lyric_phonebox"></div>
+            </div>
+        </div>
+        <i class="icon_arrow" style=""></i>
+    </div>
+
+    <div class="section part_like">
+        <div class="part_like__bg">
+            <div class="part_like__bg1"></div>
+            <div class="part_like__bg2"></div>
+        </div>
+        <div class="section__inner">
+            <h2 class="part_like__tit"><span class="hide">智能推荐,随刻遇见喜欢的音乐</span></h2>
+            <h3 class="part_like__desc hide"><span class="hide">懂你的猜你喜欢，最新最热独家首发、排行榜、 电台，全方位的音乐推荐都在这里！ </span></h3>
+            <div class="part_like__phone">
+                <div class="like_phone"></div>
+                <div class="like_phonebox"></div>
+            </div>
+            <div class="part_like__phonebox"></div>
+        </div>
+        <i class="icon_arrow" style=""></i>
+    </div>
+
+    <div class="section part_synchro">
+        <div class="part_synchro__bg1"></div>
+        <div class="part_synchro__bg2"></div>
+        <div class="section__inner">
+            <h2 class="part_synchro__tit"><span class="hide">智能推荐,随刻遇见喜欢的音乐</span></h2>
+            <h3 class="part_synchro__desc hide"><span class="hide">懂你的猜你喜欢，最新最热独家首发、排行榜、 电台，全方位的音乐推荐都在这里！ </span></h3>
+            <div class="part_synchro__mac"><div class="part_synchro__mac2"></div></div>
+            <div class="part_synchro__phone"></div>
+        </div>
+        <div class="mod_footer" id="frame_bottom">
+            <!--p class="footermenu"><a target="new" href="http://www.tencent.com/">关于腾讯</a>|<a target="new" href="http://www.tencent.com/index_e.shtml">About Tencent</a>|<a target="new" href="http://www.qq.com/contract.shtml">服务条款</a>|<a target="new" href="http://adver.qq.com/">广告服务</a>|<a target="new" href="http://hr.tencent.com/">腾讯招聘</a>|<a target="new" href="http://service.qq.com/">客服中心</a>|<a target="new" href="http://www.qq.com/map/">网站导航</a></p-->                
+            <p class="copyrighten" id="data_p">Copyright © 1998 - 2015</span> Tencent.<a target="new" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml">All Rights Reserved</a>.</p>               
+            <p class="copyrightzh">腾讯公司<a target="new" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml">版权所有</a><a target="new" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm">腾讯网络文化经营许可证</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!--主要内容 E--> 
+
+<div class="js_popup" id="layer_cover" style="display:none; position: absolute; top: 0px; left: 0px; background-color:#000;filter:alpha(opacity=50); opacity: 0.5; z-index: 100; width: 100%; height: 2100px; "></div>
+<div class="js_popup" id="popup" style="display:none;width:590px;position:fixed;top:450px;left:0;z-index:999">
+    <div class="popup_dialog">
+        <div class="popup_dialog_hd">
+            <a href="javascript:;" class="popup_dialog_close" title="关闭">关闭</a>
+        </div>
+        <div class="popup_dialog_cont popup_dowload_cont">
+
+        </div>
+    </div>
+</div>
+<div class="mod_loading"></div>
+
+
+<script src="//imgcache.qq.com/music/js/lib/jquery-min.js?max_age=31536000"></script>
+<script type="text/javascript" src="//imgcache.gtimg.cn/music/portal_v3/js/qmfl_portal.js?max_age=31536000" charset="utf-8"></script>
+<script>
+(function(b){b.fn.fullpage=function(c){function pa(a){a.find(".fp-slides").after('<div class="fp-controlArrow fp-prev"></div><div class="fp-controlArrow fp-next"></div>');"#fff"!=c.controlArrowColor&&(a.find(".fp-controlArrow.fp-next").css("border-color","transparent transparent transparent "+c.controlArrowColor),a.find(".fp-controlArrow.fp-prev").css("border-color","transparent "+c.controlArrowColor+" transparent transparent"));c.loopHorizontal||a.find(".fp-controlArrow.fp-prev").hide()}function qa(){if(document.getElementById('fp-nav')){b("#fp-nav").html('<ul></ul>');}else b("body").append('<div id="fp-nav"><ul></ul></div>');
+k=b("#fp-nav");k.css("color",c.navigationColor);k.addClass(c.navigationPosition);for(var a=0;a<b(".fp-section").length;a++){var d="";c.anchors.length&&(d=c.anchors[a]);var d='<li><a href="#'+d+'"><span></span></a>',e=c.navigationTooltips[a];void 0!=e&&""!=e&&(d+='<div class="fp-tooltip '+c.navigationPosition+'">'+e+"</div>");d+="</li>";k.find("ul").append(d)}}function R(){b(".fp-section").each(function(){var a=b(this).find(".fp-slide");a.length?a.each(function(){y(b(this))}):y(b(this))});b.isFunction(c.afterRender)&&
+c.afterRender.call(this)}function S(){if(!c.autoScrolling||c.scrollBar){var a=b(window).scrollTop(),d=0,e=Math.abs(a-b(".fp-section").first().offset().top);b(".fp-section").each(function(c){var f=Math.abs(a-b(this).offset().top);f<e&&(d=c,e=f)});var f=b(".fp-section").eq(d)}if(!c.autoScrolling&&!f.hasClass("active")){F=!0;var ra=b(".fp-section.active").index(".fp-section")+1,g=G(f),h=f.data("anchor"),k=f.index(".fp-section")+1,l=f.find(".fp-slide.active");if(l.length)var n=l.data("anchor"),t=l.index();
+f.addClass("active").siblings().removeClass("active");m||(b.isFunction(c.onLeave)&&c.onLeave.call(this,ra,k,g),b.isFunction(c.afterLoad)&&c.afterLoad.call(this,h,k));H(h,0);c.anchors.length&&!m&&(p=h,I(t,n,h,k));clearTimeout(T);T=setTimeout(function(){F=!1},100)}c.scrollBar&&(clearTimeout(U),U=setTimeout(function(){m||q(f)},1E3))}function V(a){return scrollable=a.find(".fp-slides").length?a.find(".fp-slide.active").find(".fp-scrollable"):a.find(".fp-scrollable")}function z(a,d){if(l[a]){if("down"==
+a)var c="bottom",f=b.fn.fullpage.moveSectionDown;else c="top",f=b.fn.fullpage.moveSectionUp;if(0<d.length)if(c="top"===c?!d.scrollTop():"bottom"===c?d.scrollTop()+1+d.innerHeight()>=d[0].scrollHeight:void 0,c)f();else return!0;else f()}}function sa(a){var d=a.originalEvent;if(!W(a.target)){c.autoScrolling&&!c.scrollBar&&a.preventDefault();a=b(".fp-section.active");var e=V(a);m||t||(d=X(d),u=d.y,A=d.x,a.find(".fp-slides").length&&Math.abs(B-A)>Math.abs(v-u)?Math.abs(B-A)>b(window).width()/100*c.touchSensitivity&&
+(B>A?l.right&&b.fn.fullpage.moveSlideRight():l.left&&b.fn.fullpage.moveSlideLeft()):c.autoScrolling&&!c.scrollBar&&Math.abs(v-u)>b(window).height()/100*c.touchSensitivity&&(v>u?z("down",e):u>v&&z("up",e)))}}function W(a,d){d=d||0;var e=b(a).parent();return d<c.normalScrollElementTouchThreshold&&e.is(c.normalScrollElements)?!0:d==c.normalScrollElementTouchThreshold?!1:W(e,++d)}function ta(a){a=X(a.originalEvent);v=a.y;B=a.x}function r(a){if(c.autoScrolling){a=window.event||a;var d=Math.max(-1,Math.min(1,
+a.wheelDelta||-a.deltaY||-a.detail));c.scrollBar&&(a.preventDefault?a.preventDefault():a.returnValue=!1);a=b(".fp-section.active");a=V(a);m||(0>d?z("down",a):z("up",a));return!1}}function Y(a){var d=b(".fp-section.active").find(".fp-slides");if(d.length&&!t){var e=d.find(".fp-slide.active"),f=null,f="prev"===a?e.prev(".fp-slide"):e.next(".fp-slide");if(!f.length){if(!c.loopHorizontal)return;f="prev"===a?e.siblings(":last"):e.siblings(":first")}t=!0;w(d,f)}}function Z(){b(".fp-slide.active").each(function(){J(b(this))})}
+function q(a,d,e){var f=a.position();if("undefined"!==typeof f&&(d={element:a,callback:d,isMovementUp:e,dest:f,dtop:f.top,yMovement:G(a),anchorLink:a.data("anchor"),sectionIndex:a.index(".fp-section"),activeSlide:a.find(".fp-slide.active"),activeSection:b(".fp-section.active"),leavingSection:b(".fp-section.active").index(".fp-section")+1,localIsResizing:x},!(d.activeSection.is(a)&&!x||c.scrollBar&&b(window).scrollTop()===d.dtop))){if(d.activeSlide.length)var g=d.activeSlide.data("anchor"),h=d.activeSlide.index();
+c.autoScrolling&&c.continuousVertical&&"undefined"!==typeof d.isMovementUp&&(!d.isMovementUp&&"up"==d.yMovement||d.isMovementUp&&"down"==d.yMovement)&&(d.isMovementUp?b(".fp-section.active").before(d.activeSection.nextAll(".fp-section")):b(".fp-section.active").after(d.activeSection.prevAll(".fp-section").get().reverse()),n(b(".fp-section.active").position().top),Z(),d.wrapAroundElements=d.activeSection,d.dest=d.element.position(),d.dtop=d.dest.top,d.yMovement=G(d.element));a.addClass("active").siblings().removeClass("active");
+m=!0;I(h,g,d.anchorLink,d.sectionIndex);b.isFunction(c.onLeave)&&!d.localIsResizing&&c.onLeave.call(this,d.leavingSection,d.sectionIndex+1,d.yMovement);ua(d);p=d.anchorLink;c.autoScrolling&&H(d.anchorLink,d.sectionIndex)}}function ua(a){if(c.css3&&c.autoScrolling&&!c.scrollBar)aa("translate3d(0px, -"+a.dtop+"px, 0px)",!0),setTimeout(function(){ba(a)},c.scrollingSpeed);else{var d=va(a);b(d.element).animate(d.options,c.scrollingSpeed,c.easing).promise().done(function(){ba(a)})}}function va(a){var b=
+{};c.autoScrolling&&!c.scrollBar?(b.options={top:-a.dtop},b.element="."+ca):(b.options={scrollTop:a.dtop},b.element="html, body");return b}function wa(a){a.wrapAroundElements&&a.wrapAroundElements.length&&(a.isMovementUp?b(".fp-section:first").before(a.wrapAroundElements):b(".fp-section:last").after(a.wrapAroundElements),n(b(".fp-section.active").position().top),Z())}function ba(a){wa(a);b.isFunction(c.afterLoad)&&!a.localIsResizing&&c.afterLoad.call(this,a.anchorLink,a.sectionIndex+1);setTimeout(function(){m=
+!1;b.isFunction(a.callback)&&a.callback.call(this)},600)}function da(){if(!F){var a=window.location.hash.replace("#","").split("/"),b=a[0],a=a[1];if(b.length){var c="undefined"===typeof p,f="undefined"===typeof p&&"undefined"===typeof a&&!t;(b&&b!==p&&!c||f||!t&&K!=a)&&L(b,a)}}}function w(a,d){var e=d.position(),f=a.find(".fp-slidesContainer").parent(),g=d.index(),h=a.closest(".fp-section"),k=h.index(".fp-section"),l=h.data("anchor"),n=h.find(".fp-slidesNav"),m=d.data("anchor"),q=x;if(c.onSlideLeave){var p=
+h.find(".fp-slide.active").index(),r;r=p==g?"none":p>g?"left":"right";q||"none"===r||b.isFunction(c.onSlideLeave)&&c.onSlideLeave.call(this,l,k+1,p,r)}d.addClass("active").siblings().removeClass("active");"undefined"===typeof m&&(m=g);!c.loopHorizontal&&c.controlArrows&&(h.find(".fp-controlArrow.fp-prev").toggle(0!=g),h.find(".fp-controlArrow.fp-next").toggle(!d.is(":last-child")));h.hasClass("active")&&I(g,m,l,k);var u=function(){q||b.isFunction(c.afterSlideLoad)&&c.afterSlideLoad.call(this,l,k+
+1,m,g);t=!1};c.css3?(e="translate3d(-"+e.left+"px, 0px, 0px)",ea(a.find(".fp-slidesContainer"),0<c.scrollingSpeed).css(fa(e)),setTimeout(function(){u()},c.scrollingSpeed,c.easing)):f.animate({scrollLeft:e.left},c.scrollingSpeed,c.easing,function(){u()});n.find(".active").removeClass("active");n.find("li").eq(g).find("a").addClass("active")}function ga(){ha();if(C){if("text"!==b(document.activeElement).attr("type")){var a=b(window).height();Math.abs(a-M)>20*Math.max(M,a)/100&&(b.fn.fullpage.reBuild(!0),
+M=a)}}else clearTimeout(ia),ia=setTimeout(function(){b.fn.fullpage.reBuild(!0)},500)}function ha(){if(c.responsive){var a=g.hasClass("fp-responsive");b(window).width()<c.responsive?a||(b.fn.fullpage.setAutoScrolling(!1,"internal"),b("#fp-nav").hide(),g.addClass("fp-responsive")):a&&(b.fn.fullpage.setAutoScrolling(N.autoScrolling,"internal"),b("#fp-nav").show(),g.removeClass("fp-responsive"))}}function ea(a){var b="all "+c.scrollingSpeed+"ms "+c.easingcss3;a.removeClass("fp-notransition");return a.css({"-webkit-transition":b,
+transition:b})}function O(a){return a.addClass("fp-notransition")}function xa(a,d){if(825>a||900>d){var c=Math.min(100*a/825,100*d/900).toFixed(2);b("body").css("font-size",c+"%")}else b("body").css("font-size","100%")}function H(a,d){c.menu&&(b(c.menu).find(".active").removeClass("active"),b(c.menu).find('[data-menuanchor="'+a+'"]').addClass("active"));c.navigation&&(b("#fp-nav").find(".active").removeClass("active"),a?b("#fp-nav").find('a[href="#'+a+'"]').addClass("active"):b("#fp-nav").find("li").eq(d).find("a").addClass("active"))}
+function G(a){var d=b(".fp-section.active").index(".fp-section");a=a.index(".fp-section");return d==a?"none":d>a?"up":"down"}function y(a){a.css("overflow","hidden");var b=a.closest(".fp-section"),e=a.find(".fp-scrollable");if(e.length)var f=e.get(0).scrollHeight;else f=a.get(0).scrollHeight,c.verticalCentered&&(f=a.find(".fp-tableCell").get(0).scrollHeight);b=h-parseInt(b.css("padding-bottom"))-parseInt(b.css("padding-top"));f>b?e.length?e.css("height",b+"px").parent().css("height",b+"px"):(c.verticalCentered?
+a.find(".fp-tableCell").wrapInner('<div class="fp-scrollable" />'):a.wrapInner('<div class="fp-scrollable" />'),a.find(".fp-scrollable").slimScroll({allowPageScroll:!0,height:b+"px",size:"10px",alwaysVisible:!0})):ja(a);a.css("overflow","")}function ja(a){a.find(".fp-scrollable").children().first().unwrap().unwrap();a.find(".slimScrollBar").remove();a.find(".slimScrollRail").remove()}function ka(a){a.addClass("fp-table").wrapInner('<div class="fp-tableCell" style="height:'+la(a)+'px;" />')}function la(a){var b=
+h;if(c.paddingTop||c.paddingBottom)b=a,b.hasClass("fp-section")||(b=a.closest(".fp-section")),a=parseInt(b.css("padding-top"))+parseInt(b.css("padding-bottom")),b=h-a;return b}function aa(a,b){b?ea(g):O(g);g.css(fa(a));setTimeout(function(){g.removeClass("fp-notransition")},10)}function L(a,d){"undefined"===typeof d&&(d=0);var c=isNaN(a)?b('[data-anchor="'+a+'"]'):b(".fp-section").eq(a-1);a===p||c.hasClass("active")?ma(c,d):q(c,function(){ma(c,d)})}function ma(a,b){if("undefined"!=typeof b){var c=
+a.find(".fp-slides"),f=c.find('[data-anchor="'+b+'"]');f.length||(f=c.find(".fp-slide").eq(b));f.length&&w(c,f)}}function ya(a,b){a.append('<div class="fp-slidesNav"><ul></ul></div>');var e=a.find(".fp-slidesNav");e.addClass(c.slidesNavPosition);for(var f=0;f<b;f++)e.find("ul").append('<li><a href="#"><span></span></a></li>');e.css("margin-left","-"+e.width()/2+"px");e.find("li").first().find("a").addClass("active")}function I(a,b,e,f){var g="";c.anchors.length?(a?("undefined"!==typeof e&&(g=e),"undefined"===
+typeof b&&(b=a),K=b,na(g+"/"+b)):("undefined"!==typeof a&&(K=b),na(e)),D(location.hash)):"undefined"!==typeof a?D(f+"-"+a):D(String(f))}function na(a){if(c.recordHistory)location.hash=a;else if(C||P)history.replaceState(void 0,void 0,"#"+a);else{var b=window.location.href.split("#")[0];window.location.replace(b+"#"+a)}}function D(a){a=a.replace("/","-").replace("#","");b("body")[0].className=b("body")[0].className.replace(/\b\s?fp-viewing-[^\s]+\b/g,"");b("body").addClass("fp-viewing-"+a)}function za(){var a=
+document.createElement("p"),b,c={webkitTransform:"-webkit-transform",OTransform:"-o-transform",msTransform:"-ms-transform",MozTransform:"-moz-transform",transform:"transform"};document.body.insertBefore(a,null);for(var f in c)void 0!==a.style[f]&&(a.style[f]="translate3d(1px,1px,1px)",b=window.getComputedStyle(a).getPropertyValue(c[f]));document.body.removeChild(a);return void 0!==b&&0<b.length&&"none"!==b}function oa(){return window.PointerEvent?{down:"pointerdown",move:"pointermove"}:{down:"MSPointerDown",
+move:"MSPointerMove"}}function X(a){var b=[];b.y="undefined"!==typeof a.pageY&&(a.pageY||a.pageX)?a.pageY:a.touches[0].pageY;b.x="undefined"!==typeof a.pageX&&(a.pageY||a.pageX)?a.pageX:a.touches[0].pageX;return b}function J(a){b.fn.fullpage.setScrollingSpeed(0,"internal");w(a.closest(".fp-slides"),a);b.fn.fullpage.setScrollingSpeed(N.scrollingSpeed,"internal")}function n(a){c.scrollBar?g.scrollTop(a):c.css3?aa("translate3d(0px, -"+a+"px, 0px)",!1):g.css("top",-a)}function fa(a){return{"-webkit-transform":a,
+"-moz-transform":a,"-ms-transform":a,transform:a}}function Aa(){n(0);b("#fp-nav, .fp-slidesNav, .fp-controlArrow").remove();b(".fp-section").css({height:"","background-color":"",padding:""});b(".fp-slide").css({width:""});g.css({height:"",position:"","-ms-touch-action":"","touch-action":""});b(".fp-section, .fp-slide").each(function(){ja(b(this));b(this).removeClass("fp-table active")});O(g);O(g.find(".fp-easing"));g.find(".fp-tableCell, .fp-slidesContainer, .fp-slides").each(function(){b(this).replaceWith(this.childNodes)});
+b("html, body").scrollTop(0)}function Q(a,b,e){c[a]=b;"internal"!==e&&(N[a]=b)}function E(a,b){console&&console[a]&&console[a]("fullPage: "+b)}c=b.extend({menu:!1,anchors:[],navigation:!1,navigationPosition:"right",navigationColor:"#000",navigationTooltips:[],slidesNavigation:!1,slidesNavPosition:"bottom",scrollBar:!1,css3:!0,scrollingSpeed:700,autoScrolling:!0,easing:"easeInQuart",easingcss3:"ease",loopBottom:!1,loopTop:!1,loopHorizontal:!0,continuousVertical:!1,normalScrollElements:null,scrollOverflow:!1,
+touchSensitivity:5,normalScrollElementTouchThreshold:5,keyboardScrolling:!0,animateAnchor:!0,recordHistory:!0,controlArrows:!0,controlArrowColor:"#fff",verticalCentered:!0,resize:!0,sectionsColor:[],paddingTop:0,paddingBottom:0,fixedElements:null,responsive:0,sectionSelector:".section",slideSelector:".slide",afterLoad:null,onLeave:null,afterRender:null,afterResize:null,afterReBuild:null,afterSlideLoad:null,onSlideLeave:null},c);(function(){c.continuousVertical&&(c.loopTop||c.loopBottom)&&(c.continuousVertical=
+!1,E("warn","Option `loopTop/loopBottom` is mutually exclusive with `continuousVertical`; `continuousVertical` disabled"));c.continuousVertical&&c.scrollBar&&(c.continuousVertical=!1,E("warn","Option `scrollBar` is mutually exclusive with `continuousVertical`; `continuousVertical` disabled"));b.each(c.anchors,function(a,c){(b("#"+c).length||b('[name="'+c+'"]').length)&&E("error","data-anchor tags can not have the same value as any `id` element on the site (or `name` element for IE).")})})();b.extend(b.easing,
+{easeInQuart:function(a,b,c,f,g){return f*(b/=g)*b*b*b+c}});b.fn.fullpage.setAutoScrolling=function(a,d){Q("autoScrolling",a,d);var e=b(".fp-section.active");c.autoScrolling&&!c.scrollBar?(b("html, body").css({overflow:"hidden",height:"100%"}),b.fn.fullpage.setRecordHistory(c.recordHistory,"internal"),g.css({"-ms-touch-action":"none","touch-action":"none"}),e.length&&n(e.position().top)):(b("html, body").css({overflow:"visible",height:"initial"}),b.fn.fullpage.setRecordHistory(!1,"internal"),g.css({"-ms-touch-action":"",
+"touch-action":""}),n(0),b("html, body").scrollTop(e.position().top))};b.fn.fullpage.setRecordHistory=function(a,b){Q("recordHistory",a,b)};b.fn.fullpage.setScrollingSpeed=function(a,b){Q("scrollingSpeed",a,b)};b.fn.fullpage.setMouseWheelScrolling=function(a){a?document.addEventListener?(document.addEventListener("mousewheel",r,!1),document.addEventListener("wheel",r,!1)):document.attachEvent("onmousewheel",r):document.addEventListener?(document.removeEventListener("mousewheel",r,!1),document.removeEventListener("wheel",
+r,!1)):document.detachEvent("onmousewheel",r)};b.fn.fullpage.setAllowScrolling=function(a,c){if("undefined"!=typeof c)c=c.replace(" ","").split(","),b.each(c,function(c,d){switch(d){case "up":l.up=a;break;case "down":l.down=a;break;case "left":l.left=a;break;case "right":l.right=a;break;case "all":b.fn.fullpage.setAllowScrolling(a)}});else if(a){if(b.fn.fullpage.setMouseWheelScrolling(!0),C||P)MSPointer=oa(),b(document).off("touchstart "+MSPointer.down).on("touchstart "+MSPointer.down,ta),b(document).off("touchmove "+
+MSPointer.move).on("touchmove "+MSPointer.move,sa)}else if(b.fn.fullpage.setMouseWheelScrolling(!1),C||P)MSPointer=oa(),b(document).off("touchstart "+MSPointer.down),b(document).off("touchmove "+MSPointer.move)};b.fn.fullpage.setKeyboardScrolling=function(a){c.keyboardScrolling=a};b.fn.fullpage.moveSectionUp=function(){var a=b(".fp-section.active").prev(".fp-section");a.length||!c.loopTop&&!c.continuousVertical||(a=b(".fp-section").last());a.length&&q(a,null,!0)};b.fn.fullpage.moveSectionDown=function(){var a=
+b(".fp-section.active").next(".fp-section");a.length||!c.loopBottom&&!c.continuousVertical||(a=b(".fp-section").first());a.length&&q(a,null,!1)};b.fn.fullpage.moveTo=function(a,c){var e="",e=isNaN(a)?b('[data-anchor="'+a+'"]'):b(".fp-section").eq(a-1);"undefined"!==typeof c?L(a,c):0<e.length&&q(e)};b.fn.fullpage.moveSlideRight=function(){Y("next")};b.fn.fullpage.moveSlideLeft=function(){Y("prev")};b.fn.fullpage.reBuild=function(a){x=!0;var d=b(window).width();h=b(window).height();c.resize&&xa(h,d);
+b(".fp-section").each(function(){parseInt(b(this).css("padding-bottom"));parseInt(b(this).css("padding-top"));c.verticalCentered&&b(this).find(".fp-tableCell").css("height",la(b(this))+"px");b(this).css("height",h+"px");if(c.scrollOverflow){var a=b(this).find(".fp-slide");a.length?a.each(function(){y(b(this))}):y(b(this))}a=b(this).find(".fp-slides");a.length&&w(a,a.find(".fp-slide.active"))});b(".fp-section.active").position();d=b(".fp-section.active");d.index(".fp-section")&&q(d);x=!1;b.isFunction(c.afterResize)&&
+a&&c.afterResize.call(this);b.isFunction(c.afterReBuild)&&!a&&c.afterReBuild.call(this)};var t=!1,C=navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|Windows Phone|Tizen|Bada)/),P="ontouchstart"in window||0<navigator.msMaxTouchPoints||navigator.maxTouchPoints,g=b(this),h=b(window).height(),m=!1,x=!1,p,K,k,ca="fullpage-wrapper",l={up:!0,down:!0,left:!0,right:!0},N=jQuery.extend(!0,{},c);b.fn.fullpage.setAllowScrolling(!0);c.css3&&(c.css3=za());b(this).length?(g.css({height:"100%",
+position:"relative"}),g.addClass(ca)):E("error","Error! Fullpage.js needs to be initialized with a selector. For example: $('#myContainer').fullpage();");b(c.sectionSelector).each(function(){b(this).addClass("fp-section")});b(c.slideSelector).each(function(){b(this).addClass("fp-slide")});c.navigation&&qa();b(".fp-section").each(function(a){var d=b(this),e=b(this).find(".fp-slide"),f=e.length;a||0!==b(".fp-section.active").length||b(this).addClass("active");b(this).css("height",h+"px");(c.paddingTop||
+c.paddingBottom)&&b(this).css("padding",c.paddingTop+" 0 "+c.paddingBottom+" 0");"undefined"!==typeof c.sectionsColor[a]&&b(this).css("background-color",c.sectionsColor[a]);"undefined"!==typeof c.anchors[a]&&b(this).attr("data-anchor",c.anchors[a]);if(1<f){a=100*f;var g=100/f;e.wrapAll('<div class="fp-slidesContainer" />');e.parent().wrap('<div class="fp-slides" />');b(this).find(".fp-slidesContainer").css("width",a+"%");c.controlArrows&&pa(b(this));c.slidesNavigation&&ya(b(this),f);e.each(function(a){b(this).css("width",
+g+"%");c.verticalCentered&&ka(b(this))});d=d.find(".fp-slide.active");0==d.length?e.eq(0).addClass("active"):J(d)}else c.verticalCentered&&ka(b(this))}).promise().done(function(){b.fn.fullpage.setAutoScrolling(c.autoScrolling,"internal");var a=b(".fp-section.active").find(".fp-slide.active");a.length&&(0!=b(".fp-section.active").index(".fp-section")||0==b(".fp-section.active").index(".fp-section")&&0!=a.index())&&J(a);c.fixedElements&&c.css3&&b(c.fixedElements).appendTo("body");c.navigation&&(k.css("margin-top",
+"-"+k.height()/2+"px"),k.find("li").eq(b(".fp-section.active").index(".fp-section")).find("a").addClass("active"));c.menu&&c.css3&&b(c.menu).closest(".fullpage-wrapper").length&&b(c.menu).appendTo("body");c.scrollOverflow?("complete"===document.readyState&&R(),b(window).on("load",R)):b.isFunction(c.afterRender)&&c.afterRender.call(this);ha();a=window.location.hash.replace("#","").split("/")[0];if(a.length){var d=b('[data-anchor="'+a+'"]');!c.animateAnchor&&d.length&&(c.autoScrolling?n(d.position().top):
+(n(0),D(a),b("html, body").scrollTop(d.position().top)),H(a,null),b.isFunction(c.afterLoad)&&c.afterLoad.call(this,a,d.index(".fp-section")+1),d.addClass("active").siblings().removeClass("active"))}b(window).on("load",function(){var a=window.location.hash.replace("#","").split("/"),b=a[0],a=a[1];b&&L(b,a)})});var T,U,F=!1;b(window).on("scroll",S);var v=0,B=0,u=0,A=0;b(window).on("hashchange",da);b(document).keydown(function(a){if(c.keyboardScrolling&&c.autoScrolling&&(40!=a.which&&38!=a.which||a.preventDefault(),
+!m))switch(a.which){case 38:case 33:b.fn.fullpage.moveSectionUp();break;case 40:case 34:b.fn.fullpage.moveSectionDown();break;case 36:b.fn.fullpage.moveTo(1);break;case 35:b.fn.fullpage.moveTo(b(".fp-section").length);break;case 37:b.fn.fullpage.moveSlideLeft();break;case 39:b.fn.fullpage.moveSlideRight()}});b(document).on("click touchstart","#fp-nav a",function(a){a.preventDefault();a=b(this).parent().index();q(b(".fp-section").eq(a))});b(document).on("click touchstart",".fp-slidesNav a",function(a){a.preventDefault();
+a=b(this).closest(".fp-section").find(".fp-slides");var c=a.find(".fp-slide").eq(b(this).closest("li").index());w(a,c)});c.normalScrollElements&&(b(document).on("mouseenter",c.normalScrollElements,function(){b.fn.fullpage.setMouseWheelScrolling(!1)}),b(document).on("mouseleave",c.normalScrollElements,function(){b.fn.fullpage.setMouseWheelScrolling(!0)}));b(".fp-section").on("click touchstart",".fp-controlArrow",function(){b(this).hasClass("fp-prev")?b.fn.fullpage.moveSlideLeft():b.fn.fullpage.moveSlideRight()});
+b(window).resize(ga);var M=h,ia;b.fn.fullpage.destroy=function(a){b.fn.fullpage.setAutoScrolling(!1,"internal");b.fn.fullpage.setAllowScrolling(!1);b.fn.fullpage.setKeyboardScrolling(!1);b(window).off("scroll",S).off("hashchange",da).off("resize",ga);b(document).off("click","#fp-nav a").off("mouseenter","#fp-nav li").off("mouseleave","#fp-nav li").off("click",".fp-slidesNav a").off("mouseover",c.normalScrollElements).off("mouseout",c.normalScrollElements);b(".fp-section").off("click",".fp-controlArrow");
+a&&Aa()}}})(jQuery);
+
+/*! Lazy Load 1.9.7 - MIT license - Copyright 2010-2015 Mika Tuupola */
+!function(a,b,c,d){var e=a(b);a.fn.lazyload=function(f){function g(){var b=0;i.each(function(){var c=a(this);if(!j.skip_invisible||c.is(":visible"))if(a.abovethetop(this,j)||a.leftofbegin(this,j));else if(a.belowthefold(this,j)||a.rightoffold(this,j)){if(++b>j.failure_limit)return!1}else c.trigger("appear"),b=0})}var h,i=this,j={threshold:0,failure_limit:0,event:"scroll",effect:"show",container:b,data_attribute:"original",skip_invisible:!1,appear:null,load:null,placeholder:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"};return f&&(d!==f.failurelimit&&(f.failure_limit=f.failurelimit,delete f.failurelimit),d!==f.effectspeed&&(f.effect_speed=f.effectspeed,delete f.effectspeed),a.extend(j,f)),h=j.container===d||j.container===b?e:a(j.container),0===j.event.indexOf("scroll")&&h.bind(j.event,function(){return g()}),this.each(function(){var b=this,c=a(b);b.loaded=!1,(c.attr("src")===d||c.attr("src")===!1)&&c.is("img")&&c.attr("src",j.placeholder),c.one("appear",function(){if(!this.loaded){if(j.appear){var d=i.length;j.appear.call(b,d,j)}a("<img />").bind("load",function(){var d=c.attr("data-"+j.data_attribute);c.hide(),c.is("img")?c.attr("src",d):c.css("background-image","url('"+d+"')"),c[j.effect](j.effect_speed),b.loaded=!0;var e=a.grep(i,function(a){return!a.loaded});if(i=a(e),j.load){var f=i.length;j.load.call(b,f,j)}}).attr("src",c.attr("data-"+j.data_attribute))}}),0!==j.event.indexOf("scroll")&&c.bind(j.event,function(){b.loaded||c.trigger("appear")})}),e.bind("resize",function(){g()}),/(?:iphone|ipod|ipad).*os 5/gi.test(navigator.appVersion)&&e.bind("pageshow",function(b){b.originalEvent&&b.originalEvent.persisted&&i.each(function(){a(this).trigger("appear")})}),a(c).ready(function(){g()}),this},a.belowthefold=function(c,f){var g;return g=f.container===d||f.container===b?(b.innerHeight?b.innerHeight:e.height())+e.scrollTop():a(f.container).offset().top+a(f.container).height(),g<=a(c).offset().top-f.threshold},a.rightoffold=function(c,f){var g;return g=f.container===d||f.container===b?e.width()+e.scrollLeft():a(f.container).offset().left+a(f.container).width(),g<=a(c).offset().left-f.threshold},a.abovethetop=function(c,f){var g;return g=f.container===d||f.container===b?e.scrollTop():a(f.container).offset().top,g>=a(c).offset().top+f.threshold+a(c).height()},a.leftofbegin=function(c,f){var g;return g=f.container===d||f.container===b?e.scrollLeft():a(f.container).offset().left,g>=a(c).offset().left+f.threshold+a(c).width()},a.inviewport=function(b,c){return!(a.rightoffold(b,c)||a.leftofbegin(b,c)||a.belowthefold(b,c)||a.abovethetop(b,c))},a.extend(a.expr[":"],{"below-the-fold":function(b){return a.belowthefold(b,{threshold:0})},"above-the-top":function(b){return!a.belowthefold(b,{threshold:0})},"right-of-screen":function(b){return a.rightoffold(b,{threshold:0})},"left-of-screen":function(b){return!a.rightoffold(b,{threshold:0})},"in-viewport":function(b){return a.inviewport(b,{threshold:0})},"above-the-fold":function(b){return!a.belowthefold(b,{threshold:0})},"right-of-fold":function(b){return a.rightoffold(b,{threshold:0})},"left-of-fold":function(b){return!a.rightoffold(b,{threshold:0})}})}(jQuery,window,document);
+</script>
+
+<script>
+//document.domain = "qq.com";
+function isMobile()  
+{  
+   var userAgentInfo = navigator.userAgent;  
+   var Agents = new Array("Android", "iPhone", "Windows Phone", "iPod");  
+   var flag = false;  
+   for (var v = 0; v < Agents.length; v++) {  
+        if (userAgentInfo.indexOf(Agents[v]) > 0) { 
+            flag = true; break; 
+        }  
+   }  
+   return flag;  
+}
+if(isMobile()){
+    window.location.href = location.protocol+"//y.qq.com/m/download.html";
+}
+var sizeTag = false;
+    $(function(){
+        $(window).resize(function() {
+            if ($(window).height()>768){
+                if(sizeTag==1){return;}else{location.reload()};
+            }else{
+                if(sizeTag==0){return;}else{location.reload()};
+            }
+            
+        });
+        reRun();
+        function reRun(){
+            if ($(window).height()>768)
+                {
+                    sizeTag = 1;
+                    $('.section').removeClass('active');
+                    $('.wrap').fullpage({'autoScrolling': true,'navigation': true})
+                }else {
+                    sizeTag = 0;
+                    //$('.wrap').fullpage({'autoScrolling': false,'navigation':false})
+                    $('.section').css({'height':'900px'}).addClass('active');
+                    $('.fp-tableCell').css({'height':'900px'});
+
+                    $('.mod_banner').css({'height':'650px'});
+                    $('.mod_banner .fp-tableCell').css({'height':'650px'});
+                };
+        }
+        $('.download_list__item').bind('click mousedown',function(){
+            var $this = $(this);
+            var n = $this.index() - 1;
+            $('.download_list__item--current').removeClass('download_list__item--current');
+            $this.addClass('download_list__item--current');
+            $('.mod_banner_list__item:eq('+n+')').fadeIn().siblings().hide();
+            return false;
+        })
+    });
+(function(){
+	function loading(imgurls, delayimgs, callback) {
+		if (typeof delayimgs == "function") {
+			callback = delayimgs;
+			delayimgs = null;
+		}
+		var $loading = $(".mod_loading"), //$progress = $loading.find(".progress>span"), 
+			imgs = [], loaded = 0, l = imgurls.length;
+		function _loaded() {
+			$loading.css("opacity", 0);
+			$('.wrap').show();
+			setTimeout(function(){
+				$loading.hide();
+			}, 500)
+			// 处理延迟加载的图片
+			if (delayimgs && delayimgs instanceof Array) {
+				setTimeout(function(){
+					for (var i = 0; i < delayimgs.length; i++) {
+						new Image().src = delayimgs[i];
+					}
+				}, 100);
+			}
+			typeof callback === "function" && callback();
+		};
+		function checkloaded(i){
+			//$progress.css("width", i / l * 100 + "%");
+			if (i >= imgurls.length) {
+				_show && _show();
+			}
+		};
+		function _show() {
+			_show = null;
+			clearTimeout(t_loadfaild);
+			imgs = t_loadfaild = null;
+			_loaded();
+		};
+		if (!l) {
+			return _loaded();
+		}
+		for (var i = 0; i < l; i++) {
+			imgs[i] = new Image();
+			imgs[i].src = imgurls[i];
+			imgs[i].onload = imgs[i].onerror = imgs[i].onabort = function(){
+				checkloaded(++loaded);
+			}
+		};
+		var t_loadfaild = setTimeout(function() {
+			checkloaded(imgurls.length);
+		}, 10000);
+	};
+
+
+        //页面逻辑对象
+    var Page = (function () {
+        var popupTpl = {
+                "3" : '<h3 class="popup_dowload_tit">QQ音乐iPhone V7.1版</h3>'+
+							'<div class="dialog_type_2">'+
+								'<div class="btns">'+
+									'<div class="btns">'+
+										'<a href="https://itunes.apple.com/cn/app/qq-yin-le/id414603431?mt=8" data-type="3" target="_blank" style="margin-top: 30px;" class="popup_dowload__btn_ios_store js_stat_down">'+
+											'<i class="popup_dowload__icon_phone"></i> '+
+											'去App Store下载'+
+										'</a>'+
+									'</div> '+
+								'</div>'+
+								'<div class="qr_code">'+
+									'<h4 class="qr_code__tit">扫描二维码下载</h4>'+
+									'<img src="https://chart.googleapis.com/chart?cht=qr&chs=120x120&choe=UTF-8&chld=L|0&chl=https://itunes.apple.com/cn/app/qq-yin-le/id414603431?mt=8" onerror="this.src=\'http://y.gtimg.cn/music/common/upload/T_Y_SOFTWARE/1450856876852257641.jpg?max_age=2592000\';this.onerror=null;" class="qr_code__pic">'+
+								'</div>'+
+							'</div>',
+
+                "4" : '<h3 class="popup_dowload_tit">QQ音乐Android Phone V7.1.0.20版</h3>'+
+							'<div class="dialog_type_2">'+
+								'<div class="btns">'+
+									'<div class="btns">'+
+										'<a href="http://dldir1.qq.com/music/clntupate/QQMusic_7.1.0.20_72282.apk" data-type="4" target="_blank" class="popup_dowload__btn_down popup_dowload__btn_single js_stat_down"> '+
+											'<i class="popup_dowload__icon_down"></i> '+
+											'下载安装包'+
+										'</a>'+
+									'</div> '+
+								'</div>'+
+								'<div class="qr_code">'+
+									'<h4 class="qr_code__tit">扫描二维码下载</h4>'+
+									'<img src="https://chart.googleapis.com/chart?cht=qr&chs=120x120&choe=UTF-8&chld=L|0&chl=http://dldir1.qq.com/music/clntupate/QQMusic_7.1.0.20_72282.apk" onerror="this.src=\'http://y.gtimg.cn/music/common/upload/T_Y_SOFTWARE/1450859070211242471.jpg?max_age=2592000\';this.onerror=null;" class="qr_code__pic">'+
+								'</div>'+
+							'</div>',
+
+                "5" : '<h3 class="popup_dowload_tit">QQ音乐Windows Phone V2.4.1版</h3>'+
+							'<div class="dialog_type_2">'+
+								'<div class="btns">'+
+									'<div class="btns">'+
+										'<a href="https://dldir1.qq.com/music/clntupate/QQMusic_Release_ARM_0113_newHttp.xap" data-type="5" target="_blank" class="popup_dowload__btn_down js_stat_down"> '+
+											'<i class="popup_dowload__icon_down"></i> '+
+											'下载安装包'+
+										'</a>'+
+										'<a href="http://www.windowsphone.com/zh-cn/store/app/qq%E9%9F%B3%E4%B9%90/bb8d2603-091e-43e4-9857-651b4d38b6b4" data-type="5" target="_blank" class="popup_dowload__btn_ios_store btn_markplace js_stat_down">'+
+											'<i class="popup_dowload__icon_mark"></i>'+ 
+											'Markplace安装'+
+											'<div class="popup_dowload__btn_tips">(需要安装Zune)</div>'+
+										'</a>'+
+									'</div> '+
+								'</div>'+
+								'<div class="qr_code">'+
+									'<h4 class="qr_code__tit">扫描二维码下载</h4>'+
+									'<img src="https://chart.googleapis.com/chart?cht=qr&chs=120x120&choe=UTF-8&chld=L|0&chl=https://dldir1.qq.com/music/clntupate/QQMusic_Release_ARM_0113_newHttp.xap" onerror="this.src=\'http://y.gtimg.cn/music/common/upload/T_Y_SOFTWARE/1450859187135257641.jpg?max_age=2592000\';this.onerror=null;" class="qr_code__pic">'+
+								'</div>'+
+							'</div>',
+
+
+                "6" : '<h3 class="popup_dowload_tit">QQ音乐iPad V5.2.1版</h3>'+
+							'<div class="dialog_type_2">'+
+								'<div class="btns">'+
+									'<div class="btns">'+
+										'<a href="https://dldir1.qq.com/music/clntupate/ios/QQMusicPad_5.0build03_yqq.ipa" data-type="6" target="_blank" class="popup_dowload__btn_down js_stat_down"> '+
+											'<i class="popup_dowload__icon_down"></i> '+
+											'下载安装包'+
+										'</a>'+
+										'<a href="https://itunes.apple.com/cn/app/qq-yin-lehd-du-bo-zhong-guo/id429885089?l=en&mt=8" data-type="6" target="_blank" class="popup_dowload__btn_ios_store js_stat_down">'+
+											'<i class="popup_dowload__icon_phone"></i> '+
+											'去App Store下载'+
+										'</a>'+
+									'</div> '+
+								'</div>'+
+								'<div class="qr_code">'+
+									'<h4 class="qr_code__tit">扫描二维码下载</h4>'+
+									'<img src="https://chart.googleapis.com/chart?cht=qr&chs=120x120&choe=UTF-8&chld=L|0&chl=https://itunes.apple.com/cn/app/qq-yin-lehd-du-bo-zhong-guo/id429885089?l=en&mt=8" onerror="this.src=\'http://y.gtimg.cn/music/common/upload/T_Y_SOFTWARE/1450921611819202070.png?max_age=2592000\';this.onerror=null;" class="qr_code__pic">'+
+								'</div>'+
+							'</div>'         ,
+                "7" : '<h3 class="popup_dowload_tit">QQ音乐Android Pad V4.8.1版</h3>'+
+							'<div class="dialog_type_2">'+
+								'<div class="btns">'+
+									'<div class="btns">'+
+										'<a href="http://dldir1.qq.com/music/clntupate/qqmusichd_4.8.1.2_android_r51397_20161229112446.apk" data-type="7" target="_blank" class="popup_dowload__btn_down popup_dowload__btn_single js_stat_down"> '+
+											'<i class="popup_dowload__icon_down"></i> '+
+											'下载安装包'+
+										'</a>'+
+									'</div> '+
+								'</div>'+
+								'<div class="qr_code">'+
+									'<h4 class="qr_code__tit">扫描二维码下载</h4>'+
+									'<img src="https://chart.googleapis.com/chart?cht=qr&chs=120x120&choe=UTF-8&chld=L|0&chl=http://dldir1.qq.com/music/clntupate/qqmusichd_4.8.1.2_android_r51397_20161229112446.apk" onerror="this.src=\'http://y.gtimg.cn/music/common/upload/T_Y_SOFTWARE/1452221575587274860.png?max_age=2592000\';this.onerror=null;" class="qr_code__pic">'+
+								'</div>'+
+							'</div>'        
+            },  
+
+
+            layer = (function () {               
+
+                return {
+                    show : function (type) {
+                        if (type in popupTpl) {
+                            var _top = (($(top.window).height() -350 - 114) > 0 ? ($(top.window).height() -350 -114)/2 : 0) + $(top.window).scrollTop();
+
+                            $(".popup_dialog_cont").html(popupTpl[type]);
+                            if (_top < 0) {
+                                _top = 0;
+                            } else if (_top > 258) {
+                                _top = 258;
+                            }
+
+                            $("#popup").css("top", _top + "px");
+                            if ($.browser.msie) {
+                                $(".js_popup").css("display","block");
+                               
+                                //ie6绝对定位的问题
+                                if (parseInt($.browser.version) == 6) {
+                                    var _bodyScrollTop = $("html,body").scrollTop() || $(document.body).scrollTop();
+
+                                    $("#popup").css({
+                                        "position" : "absolute",
+                                        "top" : (_bodyScrollTop + 250) + "px",
+                                        "left" : (($(window).width() - 590)/2) + "px"
+                                    })
+                                }
+                            } else {
+                                $(".js_popup").show();
+                            }
+                        }                         
+                    },
+
+                    hide : function () {
+                        if ($.browser.msie) {
+                            $(".js_popup").css("display","none");
+                        } else {
+                            $(".js_popup").hide();
+                        }
+                        
+                    }
+                } 
+            })(),
+
+            bindEvent = function (){
+                var down = function (obj, source) {
+                    var _type = obj.data("type") || "";
+                    
+                    //android比较特殊，要调用pc push 手机
+                   /* if (_type == "4") {
+                        if (g_user.getUin()) {                           
+                            if (window.PCPUSH) {
+                                PCPUSH.show(1101079856, 'MUSICGW', '下载QQ音乐手机版');
+                            } else {
+                                var _js = document.createElement("script");
+                                _js.onload = function () {
+                                    if (window.PCPUSH) {
+                                        PCPUSH.show(1101079856, 'MUSICGW', '下载QQ音乐手机版');
+                                    } else {
+                                        alert("连接手机模块加载失败，请稍候再试");
+                                    }
+                                }
+                                _js.setAttribute("src", "http://qzs.qq.com/open/canvas/pcpush.js?max_age=31536000");
+
+                                document.body.appendChild(_js);
+                            }
+                            return;
+                        }  
+                    }*/
+
+
+                    //浮层
+                    if (_type in popupTpl) {
+                        layer.show(_type);
+                    }
+
+                  //  setTimeout(function () {
+                 //       statDown(source + "_" + _type);
+                 //   }, 200)
+                }
+				var titleMap = {"1" : "windows_pc","2" : "mac","3" : "iphone","4" : "android_phone","5" : "windows_phone","6" : "ipad","7" : "android_pad"};
+                //banner下载按钮
+                $(".wrap").on("click", ".js_show_tips", function (e) {
+                    var _type = $(this).data("type") || "0";
+					if (_type in titleMap)
+					{
+						statDown(titleMap[_type]+'.pop');
+					}else statDown(_type+'.pop');
+                    down($(this),"banner");
+                });
+                $(document).on("click", ".js_stat_down", function (e) {
+                    var _type = $(this).data("type") || "0";
+					if (_type in titleMap)
+					{
+						statDown(titleMap[_type]+'.down');
+					}else statDown(_type+'.down');
+                });
+                //浮层
+                $(".popup_dialog_close").on("click", function () {
+                    layer.hide();
+                });
+
+                $("#layer_cover").on("click", function () {
+                    layer.hide();
+                });
+            };
+
+        return {
+            init : function () {
+                var _x;
+
+                //绑定按钮下载事件
+                bindEvent();    
+				$('#data_p').html('Copyright © 1998 - '+(new Date().getFullYear()));
+
+                if ($.browser.msie && ($.browser.version == "6.0")) {
+                    $("#popup").css("position", "absolute");
+                }
+
+                //定位浮层到中间
+                _x = ($(window).width() - 590)/2;
+                $("#popup").css("left", _x + "px");
+
+            }
+        };
+    })()
+	loading([location.protocol+'//imgcache.gtimg.cn/mediastyle/app/download/img/index/watch_bg.png?max_age=2592000',
+			location.protocol+'//imgcache.gtimg.cn/mediastyle/app/download/img/index/watch_numb.png?max_age=2592000',
+			location.protocol+'//imgcache.gtimg.cn/mediastyle/app/download/img/index/banner_pc1.jpg?max_age=2592000',
+			location.protocol+'//imgcache.gtimg.cn/mediastyle/app/download/img/index/banner_pc2.jpg?max_age=2592000',
+			location.protocol+'//imgcache.gtimg.cn/mediastyle/app/download/img/index/banner_pc3.jpg?max_age=2592000',
+			location.protocol+'//imgcache.gtimg.cn/mediastyle/app/download/sprite/img_index.png?max_age=2592000'//,
+			//'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer12.jpg?max_age=2592000',
+			//'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer13.jpg?max_age=2592000',
+			//'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer17.jpg?max_age=2592000',
+			//'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer19.jpg?max_age=2592000',
+			//'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer20.jpg?max_age=2592000',
+			//'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer21.jpg?max_age=2592000',
+			//'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer25.jpg?max_age=2592000',
+			//'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer30.jpg?max_age=2592000','http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer32.jpg?max_age=2592000', //'http://imgcache.gtimg.cn/mediastyle/app/download/img/singer/singer35.jpg?max_age=2592000'
+			], [], 
+		function(){
+			Page.init();
+			//$(".part_singer img").lazyload();
+		}
+	);
+})();
+
+
+function initPvJs(callback){
+	var _sd = new MUSIC.JsLoader();
+	_sd.onload = function(){
+		if (callback) {
+			callback();
+		}
+	};
+	_sd.load(location.protocol+"//y.gtimg.cn/music/portal/js/ping.js");
+}
+function statDown(type) {
+    type = type.toUpperCase() || "PHONE";
+    var hottag = ['Y', 'DOWNLOAD', 'INDEX', type].join('.');
+	initPvJs(
+		function(){
+			if (typeof ping.pgvSendClick != "undefined") {
+				setTimeout(function() {
+					ping.pgvSendClick({hottag: hottag});
+				}, 100);
+			}
+		}
+	);
+}
+initPvJs(function(){
+	//过滤非法url
+	var url = window.location.href;
+	url = (url||"").toString();
+	if(!url) {
+		return;
+	}
+	url = url.replace(/(http:|https:)\/\/y.qq.com/i, "");
+
+	if ((/(http:|https:)\/\//i).test(url)){
+		url = url.replace(/http:\/\//i, "");
+		domain = url.substring(0, url.indexOf("/"));
+		url = url.substring(url.indexOf("/"), url.length);
+	}
+	url = url.replace(/(\?|#).+/g, "");
+	ping.pgvMain("", {
+		repeatApplay: "true", 
+		virtualURL: url, 
+		virtualDomain: 'y.qq.com', 
+		reserved2: ("")
+	});
+});
+
+</script>
+<script type="text/javascript">
+    $(function(){
+        var sizeTag = false;
+        $(window).resize(function() {
+            if ($(window).height()>768){
+                if(sizeTag==1){return;}else{location.reload()};
+            }else{
+                if(sizeTag==0){return;}else{location.reload()};
+            }
+        });
+        reRun();
+        function reRun(){
+            if ($(window).height()>768)
+                {
+                    sizeTag = 1;
+                    $('.section').removeClass('active');
+                    $('.wrap').fullpage({'autoScrolling': true,'navigation': true})
+                }else {
+                    sizeTag = 0;
+                    $('.section').css({'height':'900px'}).addClass('active');
+                    $('.fp-tableCell').css({'height':'900px'});
+                    $('.mod_banner').css({'height':'650px'});
+                    $('.mod_banner .fp-tableCell').css({'height':'650px'});
+                };
+        }
+        
+        $('.download_list__item').bind('click mousedown',function(){
+            var $this = $(this);
+            var n = $this.index() - 1;
+            $('.download_list__item--current').removeClass('download_list__item--current');
+            $this.addClass('download_list__item--current');
+            $('.mod_banner_list__item:eq('+n+')').fadeIn().siblings().hide();
+            return false;
+        })
+
+        //iPhone轮播
+        initCarousel('#js_iphone_play__list', 3000);
+        function initCarousel(selector, timeout) {
+            var now = 0;
+            for(var i = 0; i < 3; i++){
+                $(selector + i).css('z-index', 2 - i);
+            }
+            setInterval(function(){
+                var next = now === 2 ? 0 : now + 1;
+                var nextnext = now === 0 ? 2 : now - 1;
+                var nowPic = $(selector + now);
+                var nextPic = $(selector + next);
+                var nextnextPic = $(selector + nextnext);
+                nowPic.animate({
+                    opacity: "0"
+                }, 1000, 'linear', function(){
+                    nowPic.css('z-index', 0).css('opacity', '1');
+                    nextPic.css('z-index', 2);
+                    nextnextPic.css('z-index', 1);
+                });
+                now = next;
+            }, timeout);
+        }
+    });
+</script>
+</script>
+</body>
+</html><!--[if !IE]>|xGv00|d046999eeb2ab58427b623a5cfd6b1b6<![endif]-->

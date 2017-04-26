@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — 项目导航演示_dowebok</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+	.section {overflow: hidden;/* text-align: center;*/ /*font: 22px*/ "Microsoft Yahei"; color: #fff;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<link rel="stylesheet" href="css/fullpage.css">
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/fullpage.js"></script>
+<script>
+$(function(){
+	
+//				$($(".sec-11")[0]).animate({'transform':"rotate(0deg)",},1000);
+//				$(".sec-11").animate({"left":"40px"},1000);
+//	$($('.sec-11')[0]).rotate({
+//		animateTo:0
+//	});
+	$($('.sec-8')[0]).animate({
+		'opacity':'1',
+	},800)
+	$('#dowebok').fullpage({
+		sectionsColor: ['#000', '#000', '#000', '#000','#000'],
+		'navigation':true,
+		afterLoad:function(anchorLink,index){
+			if(index==1){
+//				alert(123);
+				console.log($(".sec-11")[0])
+				$('.sec-8').animate({
+					'opacity':'1',
+				},1000)
+				$('.sing').animate({
+					'opacity':'0',
+					'top':'120%',
+				},1000)
+				$('.imga').animate({
+					'left':'200%'
+				},1000)
+				$('.imgb').animate({
+					'right':'200%'
+				},1000)
+				$('.imgc').animate({
+					'left':'200%'
+					
+				},1000)
+				$('.imgd').animate({
+					'right':'200%'
+				},1000)
+				$('.ph-1').animate({
+					'top':'100px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-2').animate({
+					'top':'100px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-3').animate({
+					'top':'150px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-4').animate({
+					'bottom':'38px',
+					'opacity':'0.2'
+				},1000)
+				$('.ob-3').animate({
+					'opacity':'0.2',
+					'left':'226px'
+				},1000)
+				$('.ob-4').animate({
+					'opacity':'0.2',
+					'right':'-200px'
+				},1000)
+				$('.ob-5').animate({
+					'opacity':'0.2',
+					'left':'400px'
+				},1000)
+				$('.ob-6').animate({
+					'opacity':'0.2',
+					'left':'400px'
+				},1000)
+				$('.bc-3').animate({
+					'right':'-100px'
+				},1000)
+				$('.bc-4').animate({
+					'right':'-100px'
+				},1000)
+				$('.bc-5').animate({
+					'left':'0px'
+				},1000)
+			}
+			if(index==2){
+//				alert(2)
+				$('.sing').animate({
+					'opacity':'1',
+					'top':'35%',
+				},1000)
+				$('.imga').animate({
+					'left':'5%'
+				},1000)
+				$('.imgb').animate({
+					'right':'5.15%'
+				},1000)
+				$('.imgc').animate({
+					'left':'5%'
+				},1000)
+				$('.imgd').animate({
+					'right':'5.15%'
+				},1000)
+				$('.sec-8').animate({
+					'opacity':'0.2',
+				},1000)
+				$('.ph-1').animate({
+					'top':'100px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-2').animate({
+					'top':'100px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-3').animate({
+					'top':'150px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-4').animate({
+					'bottom':'38px',
+					'opacity':'0.2'
+				},1000)
+				$('.ob-3').animate({
+					'opacity':'0.2',
+					'left':'226px'
+				},1000)
+				$('.ob-4').animate({
+					'opacity':'0.2',
+					'right':'-200px'
+				},1000)
+				$('.ob-5').animate({
+					'opacity':'0.2',
+					'left':'400px'
+				},1000)
+				$('.ob-6').animate({
+					'opacity':'0.2',
+					'left':'400px'
+				},1000)
+				$('.bc-3').animate({
+					'right':'-100px'
+				},1000)
+				$('.bc-4').animate({
+					'right':'-100px'
+				},1000)
+				$('.bc-5').animate({
+					'left':'0px'
+				},1000)
+			}
+			if(index==3){
+				$('.sec-8').animate({
+					'opacity':'0.2',
+				},1000)
+				$('.sing').animate({
+					'opacity':'0',
+					'top':'120%',
+				},1000)
+				$('.imga').animate({
+					'left':'200%'
+				},1000)
+				$('.imgb').animate({
+					'right':'200%'
+				},1000)
+				$('.imgc').animate({
+					'left':'200%'
+				},1000)
+				$('.imgd').animate({
+					'right':'200%'
+				},1000)
+				$('.ph-1').animate({
+					'top':'300px',
+					'opacity':'1'
+				},1000)
+				$('.ph-2').animate({
+					'top':'300px',
+					'opacity':'1'
+				},1000)
+				$('.ph-3').animate({
+					'top':'-140px',
+					'opacity':'1'
+				},1000)
+				$('.ph-4').animate({
+					'bottom':'328px',
+					'opacity':'1'
+				},1000)
+				$('.ob-3').animate({
+					'opacity':'0.2',
+					'left':'226px'
+				},1000)
+				$('.ob-4').animate({
+					'opacity':'0.2',
+					'right':'-200px'
+				},1000)
+				$('.ob-5').animate({
+					'opacity':'0.2',
+					'left':'400px'
+				},1000)
+				$('.ob-6').animate({
+					'opacity':'0.2',
+					'left':'400px'
+				},1000)
+				$('.bc-3').animate({
+					'right':'-100px'
+				},1000)
+				$('.bc-4').animate({
+					'right':'-100px'
+				},1000)
+				$('.bc-5').animate({
+					'left':'0px'
+				},1000)
+			}
+			if(index==4){
+				$('.sec-8').animate({
+					'opacity':'0.2',
+				},1000)
+				$('.ph-1').animate({
+					'top':'100px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-2').animate({
+					'top':'100px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-3').animate({
+					'top':'150px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-4').animate({
+					'bottom':'38px',
+					'opacity':'0.2'
+				},1000)
+				$('.sing').animate({
+					'opacity':'0',
+					'top':'120%',
+				},1000)
+				$('.imga').animate({
+					'left':'200%'
+				},1000)
+				$('.imgb').animate({
+					'right':'200%'
+				},1000)
+				$('.imgc').animate({
+					'left':'200%'
+				},1000)
+				$('.imgd').animate({
+					'right':'200%'
+				},1000)
+				$('.ob-3').animate({
+					'opacity':'1',
+					'left':'26px'
+				},1000)
+				$('.ob-4').animate({
+					'opacity':'1',
+					'right':'0'
+				},1000)
+				$('.ob-5').animate({
+					'opacity':'1',
+					'left':'600px'
+				},1000)
+				$('.ob-6').animate({
+					'opacity':'1',
+					'left':'600px'
+				},1000)
+				$('.bc-3').animate({
+					'right':'-100px'
+				},1000)
+				$('.bc-4').animate({
+					'right':'-100px'
+				},1000)
+				$('.bc-5').animate({
+					'left':'0px'
+				},1000)
+			}
+			if(index==5){
+				$('.sec-8').animate({
+					'opacity':'0.2',
+				},1000)
+				$('.ph-1').animate({
+					'top':'100px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-2').animate({
+					'top':'100px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-3').animate({
+					'top':'150px',
+					'opacity':'0.2'
+				},1000)
+				$('.ph-4').animate({
+					'bottom':'38px',
+					'opacity':'0.2'
+				},1000)
+				$('.sing').animate({
+					'opacity':'0',
+					'top':'120%',
+				},1000)
+				$('.imga').animate({
+					'left':'200%'
+				},1000)
+				$('.imgb').animate({
+					'right':'200%'
+				},1000)
+				$('.imgc').animate({
+					'left':'200%'
+				},1000)
+				$('.imgd').animate({
+					'right':'200%'
+				},1000)
+				$('.ob-3').animate({
+					'opacity':'0.2',
+					'left':'226px'
+				},1000)
+				$('.ob-4').animate({
+					'opacity':'0.2',
+					'right':'-200px'
+				},1000)
+				$('.ob-5').animate({
+					'opacity':'0.2',
+					'left':'400px'
+				},1000)
+				$('.ob-6').animate({
+					'opacity':'0.2',
+					'left':'400px'
+				},1000)
+				$('.bc-3').animate({
+					'right':'0'
+				},1000)
+				$('.bc-4').animate({
+					'right':'0'
+				},1000)
+				$('.bc-5').animate({
+					'left':'100px'
+				},1000)
+			}
+		}
+	
+		
+		
+		
+	});
+});
+</script>
+</head>
+
+<body>
+		
+<div id="dowebok">
+	<div class="section" style="background: url(img/banner_pc.jpg);">
+		<!--<div><img src="img/banner_mac.jpg"/></div>-->
+		<div class="sec-1">
+			<div class="sec-2">
+				<img src="img/logo.png"/>
+				<div class="sec-3">
+					<a>产品动态</a>
+					<a>下载</a>
+				</div>
+				<div class="sec-4">
+					<a>PC版介绍</a>
+					<a>MAC版介绍</a>
+					<a>轻听介绍</a>
+				</div>
+			</div>
+		</div>
+		<div class="sec-5">
+			<img class="sec-6" src="img/watch_bg.png"/>
+			<div class="sec-11"></div>
+			<div class="sec-7">
+				<div class="sec-8">
+					
+				</div>
+				<div class="sec-q"></div>
+				<div class="sec-w"></div>
+				<div class="sec-e"></div>
+				<div class="sec-a">
+					<div class="sec-12"></div>
+					<div class="sec-13"></div>
+				</div>
+				<div class="sec-10"><a>立即下载</a></div>
+			</div>
+		</div>
+		<div class="sec-9">
+			<div class="sec-b">
+				<a href="#"><div class="sec-14"></div></a>
+				<a href="#"><div class="sec-15"></div></a>
+				<a href="#"><div class="sec-16"></div></a>
+				<a href="#"><div class="sec-17"></div></a>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div>
+			<div class="imga">
+				<img src="img/singer12.jpg"/>
+				<img src="img/singer13.jpg"/>
+				<img src="img/singer17.jpg"/>
+				<img src="img/singer19.jpg"/>
+				<img src="img/singer20.jpg"/>
+				<img src="img/singer21.jpg"/>
+				<img src="img/singer25.jpg"/>
+				<img src="img/singer30.jpg"/>
+			</div>
+			<div class="imgb">
+				<img src="img/singer32.jpg"/>
+				<img src="img/singer35.jpg"/>
+				<img src="img/singer12.jpg"/>
+				<img src="img/singer13.jpg"/>
+				<img src="img/singer17.jpg"/>
+				<img src="img/singer19.jpg"/>
+				<img src="img/singer20.jpg"/>
+				<img src="img/singer21.jpg"/>
+			</div>
+			<div class="imgc">
+				<img src="img/singer25.jpg"/>
+				<img src="img/singer30.jpg"/>
+				<img src="img/singer32.jpg"/>
+				<img src="img/singer35.jpg"/>
+				<img src="img/singer12.jpg"/>
+				<img src="img/singer13.jpg"/>
+				<img src="img/singer17.jpg"/>
+				<img src="img/singer19.jpg"/>
+			</div>
+			<div class="imgd">
+				<img src="img/singer20.jpg"/>
+				<img src="img/singer21.jpg"/>
+				<img src="img/singer25.jpg"/>
+				<img src="img/singer30.jpg"/>
+				<img src="img/singer32.jpg"/>
+				<img src="img/singer35.jpg"/>
+				<img src="img/singer12.jpg"/>
+				<img src="img/singer13.jpg"/>
+			</div>
+		</div>
+		<div class="sing">
+			<div class="sing-1">
+			
+			</div>
+			<div class="sing-2">
+				
+			</div>
+		</div>
+	
+	</div>
+	<div class="section" style="background: url(img/bg_lyric.jpg);">
+		<div class="ph">
+			<div class="ph-1"></div>
+			<div class="ph-2"></div>
+			<div class="ph-5">
+				
+				<img class="ph-3" src="img/lyric_phonebox.png"/>S
+				<img class="ph-4" src="img/lyric_phone2.jpg"/>
+			</div>
+		</div>
+		
+	</div>
+	<div class="section" style="background: url(img/bg_like.jpg);">
+		<div class="ob-1">
+			<div class="ob-2">
+				
+				<img class="ob-3" src="img/like_phone.jpg"/>
+				<img class="ob-4" src="img/like_phonebox.png"/>
+			</div>
+			<div class="ob-5"></div>
+			<div class="ob-6"></div>
+		</div>
+		
+	</div>
+	<div class="section" style="background: url(img/bg_synchro.jpg);">
+		<div class="bc">
+			<div class="bc-1"></div>
+			<div class="bc-2"></div>
+			<div class="bc-6">
+				
+				<img class="bc-3" src="img/synchro_mac1.png"/>
+				<img class="bc-4" src="img/synchro_mac2.png"/>
+			</div>
+			<img class="bc-5" src="img/synchro_phone.png"/>
+		</div>
+		<div class="bc-7">
+			<p>Copyright&nbsp;@&nbsp;1998&nbsp;-&nbsp;2017</p>
+			<p>腾讯公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;腾讯网络文化经营许可证</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
+
+</body>
+</html>

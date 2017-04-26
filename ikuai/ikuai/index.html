@@ -1,0 +1,659 @@
+<script type="text/javascript" src="js/my.js" ></script>
+<style>
+	
+	@font-face {
+		font-family:'qiao';
+		src: url('fonts/MYRIADPRO-REGULAR.OTF');
+	}
+	body{
+		font-family: 'qiao', Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+		min-width: 450px;
+	}
+	*{
+		margin: 0;padding: 0;
+	}
+	.pad{
+		padding: 50px 0;
+	}
+	#index_01{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+	}
+	#index_03{
+		background: #EEEEEE;
+	}
+	.right,.left{
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+	#index_01 .right{
+		left:100%;
+		background: url(img/background_2.jpg) no-repeat 0 0/100% 100%;
+	}
+	#index_01 .left{
+		background: #fff;
+		left: 0%;
+	}
+	.left .dm{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 175%;
+	}
+	.left_fa img{
+		position: absolute;
+	}
+	.left_zi{
+		position: relative;
+		left: 26%;
+		top: 25%;
+	}
+	.left_shang{
+		position: relative;
+		top: -200px;
+		opacity: 0;
+	}
+	.left_xia{
+		position: relative;
+		top: 200px;
+		opacity: 0;
+	}
+	.right img{
+		position: absolute;
+	}
+	.rimg_1{
+		width: 25%;
+		left: 23%;
+		top: 46%;
+		opacity: 0;
+	}
+	.rimg_2{
+		width: 30%;
+		left: 18%;
+		top: 16%;
+		opacity: 0;
+	}
+	.rimg_3{
+		width: 30%;
+		left: 48%;
+		top: 16%;
+		opacity: 0;
+	}
+	.rimg_4{
+		width: 36%;
+		left: 48%;
+		top: 46%;
+		opacity: 0;
+	}
+	.rimg_5{
+		width: 8%;
+		left: 18%;
+		top: 36%;
+	}
+	.rimg_6{
+		width: 10%;
+		left: 32%;
+		top: 75%;
+	}
+	.rimg_7{
+		width: 36%;
+		left: 48%;
+		top: 68%;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.rimg_1{
+			width: 44%;
+		    left: 54%;
+		    top: 46%;
+		    opacity: 0;
+		}
+		.rimg_2{
+		    width: 50%;
+		    left: 0%;
+		    top: 16%;
+		    opacity: 0;
+		}
+		.rimg_3{
+			width: 50%;
+		    left: 48%;
+		    top: 16%;
+		    opacity: 0;
+		}
+		.rimg_4{
+			width: 50%;
+		    left: 10%;
+		    top: 46%;
+		    opacity: 0;
+		}
+		.rimg_5{
+			width: 10%;
+		    left: 10%;
+		    top: 80%;
+		}
+		.rimg_6{
+		    width: 12%;
+		    left: 80%;
+		    top: 75%;
+		}
+		.rimg_7{
+			width: 36%;
+		    left: 8%;
+		    top: 68%;
+		}
+	}
+	
+	#index_02{
+		width: 100%;
+		background: #fff;
+	}
+	#index_05{
+	    height: 600px;
+	    padding: 0px;
+	    margin: 0px;
+	    overflow: hidden;
+		background: url(img/indexB-img03.jpg)no-repeat;
+		background-position: center;
+	}
+	h3{
+		font-weight: 1500;
+	    font-size: 36px;
+	    font-weight: normal;
+	    color: #0088cc;
+	    margin-top: 160px;
+	    line-height: 40px;
+	}
+	.h3{
+		font-weight: 1500;
+	    font-size: 36px;
+	    font-weight: normal;
+	    color: #0088cc;
+	    margin-top: 160px;
+	    line-height: 40px;
+	}
+	.p1{
+	    color: #5f5f5f;
+	    font-size: 20px;
+	    line-height: 180%;
+	    padding: 10px;
+	}
+	.p2{
+		font-size: 18px;
+    	color: #0088cc;
+    	line-height: 180%;
+    	padding: 10px;
+	}
+	#index_06 .container{
+		padding: 40px 0;
+	}
+	#index_06 .container .col-lg-6{
+		margin: 15px 0;
+	}
+	#index_06 .container .col-lg-6 img,#index_06 .container .col-lg-6 div{
+		display: inline-block;
+	}
+	#index_06 .container .col-lg-6 div{
+		position: relative;
+		top: 15px;
+		left: 25px;
+	}
+	.p3{
+		color: #0088cc;
+	    font-size: 16px;
+	}
+	.p4{
+		font-size: 14px;
+	}
+	
+	
+	
+	@media only screen and (min-width: 992px) and (max-width: 1200px) {
+		.left_zi img{
+			width: 25%;
+		}
+		h3{
+		    margin-top: 90px;
+		}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 992px) {
+		.left_zi img{
+			width: 35%;
+		}
+		h3{
+		    margin-top: 50px;
+		}
+	}
+	@media only screen and (min-width: 460px) and (max-width: 768px) {
+		.left_zi img{
+			width: 45%;
+		}
+		h3{
+		    margin-top: 0px;
+		    text-align: center;
+		}
+		.p1,.p2{
+	    	text-align: center;
+		}
+	}
+	
+	.dm1{
+		animation: man 30s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes man{
+		from{left: 0;}
+		to{left:-50%}
+	}
+	.dm2{
+		animation: zhong 20s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes zhong{
+		from{left: 0;}
+		to{left:-50%}
+	}
+	.dm3{
+		animation: kuai 13s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes kuai{
+		from{left: 0;}
+		to{left:-50%}
+	}
+	
+	
+	.limg_1,.limg_2,.limg_3,.limg_4,.limg_5,.limg_6,.limg_7,.limg_8,.limg_9,.limg_10,.limg_11,.limg_12,.limg_13,.limg_14,.limg_15,.limg_16,.limg_17,.limg_18,.limg_19{
+		opacity: 0;
+	}
+	.limg_1{
+		animation: wifi1 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi1{
+		to{left:2%;bottom: 4%;opacity: 1;}
+	}
+	.limg_2{
+		animation: wifi2 2s 1.5s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi2{
+		to{left:-1%;bottom: 0%;opacity: 1;}
+	}
+	.limg_3{
+		animation: wifi3 2s 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi3{
+		to{left:9%;bottom: 2%;opacity: 1;}
+	}
+	.limg_4{
+		animation: wifi4 2s 1.5s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi4{
+		to{left:13%;bottom: 1%;opacity: 1;}
+	}
+	.limg_5{
+		animation: wifi5 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi5{
+		to{left:18%;bottom: 7%;opacity: 1;}
+	}
+	.limg_6{
+		animation: wifi6 2s 2.5s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi6{
+		to{left:24%;bottom: 1%;opacity: 1;}
+	}
+	.limg_7{
+		animation: wifi7 2s 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi7{
+		to{left:39%;bottom: 14%;opacity: 1;}
+	}
+	.limg_8{
+		animation: wifi8 2s 3s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi8{
+		to{left:32%;bottom: 9%;opacity: 1;}
+	}
+	.limg_9{
+		animation: wifi9 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi9{
+		to{left:36%;bottom: 4%;opacity: 1;}
+	}
+	.limg_10{
+		animation: wifi10 2s 1s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi10{
+		to{left:46%;bottom: 2%;opacity: 1;}
+	}
+	.limg_11{
+		animation: wifi11 2s 3s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi11{
+		to{left:52%;bottom: 0%;opacity: 1;}
+	}
+	.limg_12{
+		animation: wifi12 2s 0.5s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi12{
+		to{left:56%;bottom: 6%;opacity: 1;}
+	}
+	.limg_13{
+		animation: wifi13 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi13{
+		to{left:58%;bottom: 4%;opacity: 1;}
+	}
+	.limg_14{
+		animation: wifi14 2s 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi14{
+		to{left:60%;bottom: 0%;opacity: 1;}
+	}
+	.limg_15{
+		animation: wifi15 2s 1.5s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi15{
+		to{left:66%;bottom: 2%;opacity: 1;}
+	}
+	.limg_16{
+		animation: wifi16 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi16{
+		to{left:74%;bottom: 1%;opacity: 1;}
+	}
+	.limg_17{
+		animation: wifi17 2s 3s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi17{
+		to{left:78%;bottom: 7%;opacity: 1;}
+	}
+	.limg_18{
+		animation: wifi18 2s 0.5s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi18{
+		to{left:82%;bottom: 1%;opacity: 1;}
+	}
+	.limg_19{
+		animation: wifi19 2s 2s linear;
+		animation-iteration-count: infinite;
+	}
+	@keyframes wifi19{
+		to{left:89%;bottom: 14%;opacity: 1;}
+	}
+	
+	
+</style>
+
+<script>
+$(function(){
+
+	$(".left_shang").animate({
+		"top":0,
+		"opacity":1
+	},1300)
+	$(".left_xia").animate({
+		"top":0,
+		"opacity":1
+	},1300)
+	
+	var left=true;
+	setInterval(function(){
+		if(left==true){
+			$(".left").animate({
+				"left":"-100%"
+			},600)
+			$(".right").animate({
+				"left":"0%"
+			},600,function(){
+				$(".left_shang").animate({
+					"top":"-200px",
+					"opacity":0
+				},1300)
+				$(".left_xia").animate({
+					"top":"200px",
+					"opacity":0
+				},1300)
+				$(".rimg_2").animate({
+					"opacity":1,
+				},2000)
+				$(".rimg_3").delay(400).animate({
+					"opacity":1
+				},2000)
+				$(".rimg_4").delay(700).animate({
+					"opacity":1
+				},2000)
+				$(".rimg_1").delay(1000).animate({
+					"opacity":1,
+				},2000)
+				
+			})
+			left=false;
+		}else{
+			$(".left").animate({
+				"left":"0%"
+			},600)
+			$(".right").animate({
+				"left":"100%"
+			},600,function(){
+				$(".left_shang").animate({
+					"top":0,
+					"opacity":1
+				},1300)
+				$(".left_xia").animate({
+					"top":0,
+					"opacity":1
+				},1300)
+				$(".rimg_1").animate({
+					"opacity":0
+				},2000)
+				$(".rimg_2").animate({
+					"opacity":0
+				},2000)
+				$(".rimg_3").animate({
+					"opacity":0
+				},2000)
+				$(".rimg_4").animate({
+					"opacity":0
+				},2000)
+				
+				
+			})
+			left=true;
+		}
+	},20000)
+})	
+</script>
+
+
+
+<div id="index_01">
+	<div class="left">
+		<div class="left_zi">
+			<div class="left_shang">
+				<img src="img/dm01_a.png" />
+			</div>
+			<div class="left_xia">
+				<img src="img/dm01_b.png" />
+			</div>
+		</div>
+		<div class="left_c"><img class="dm dm1" src="img/dm01_c.png"/></div>
+		<div class="left_d"><img class="dm dm2" src="img/dm01_d.png"/></div>
+		<div class="left_e">
+			<img class="dm dm3" src="img/dm01_e.png"/>
+			<div class="left_fa">
+				<img class="limg_1" src="img/dm01_f01.png"  style="width: 4%;left: 8%;bottom: 8%;"/>
+				<img class="limg_2" src="img/dm01_f02.png"  style="width: 3%;left: 5%;bottom: 4%;"/>
+				<img class="limg_3" src="img/dm01_f03.png"  style="width: 5%;left: 15%;bottom: 6%;"/>
+				<img class="limg_4" src="img/dm01_f04.png"  style="width: 3%;left: 19%;bottom: 5%;"/>
+				<img class="limg_5" src="img/dm01_f05.png"  style="width: 4%;left: 24%;bottom: 11%;"/>
+				<img class="limg_6" src="img/dm01_f06.png"  style="width: 3%;left: 30%;bottom: 5%;"/>
+				<img class="limg_7" src="img/dm01_f07.png"  style="width: 5%;left: 45%;bottom: 18%;"/>
+				<img class="limg_8" src="img/dm01_f08.png"  style="width: 3%;left: 38%;bottom: 13%;"/>
+				<img class="limg_9" src="img/dm01_f06.png"  style="width: 4%;left: 42%;bottom: 8%;"/>
+				<img class="limg_10" src="img/dm01_f03.png"  style="width: 5%;left: 52%;bottom: 6%;"/>
+				<img class="limg_11" src="img/dm01_f01.png"  style="width: 4%;left: 58%;bottom: 4%;"/>
+				<img class="limg_12" src="img/dm01_f02.png"  style="width: 3%;left: 62%;bottom: 10%;"/>
+				<img class="limg_13" src="img/dm01_f05.png"  style="width: 5%;left: 64%;bottom: 8%;"/>
+				
+				<img class="limg_14" src="img/dm01_f02.png"  style="width: 3%;left: 66%;bottom: 4%;"/>
+				<img class="limg_15" src="img/dm01_f03.png"  style="width: 5%;left: 72%;bottom: 6%;"/>
+				<img class="limg_16" src="img/dm01_f04.png"  style="width: 3%;left: 80%;bottom: 5%;"/>
+				<img class="limg_17" src="img/dm01_f05.png"  style="width: 4%;left: 82%;bottom: 11%;"/>
+				<img class="limg_18" src="img/dm01_f06.png"  style="width: 3%;left: 86%;bottom: 5%;"/>
+				<img class="limg_19" src="img/dm01_f07.png"  style="width: 5%;left: 95%;bottom: 18%;"/>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="container">
+			<img class="rimg_1" src="img/dm02_a.png"/>
+			<img class="rimg_2" src="img/dm02_b.png"/>
+			<img class="rimg_3" src="img/dm02_c.png"/>
+			<img class="rimg_4" src="img/dm02_d.png"/>
+			<img class="rimg_5" src="img/dm02_e.png"/>
+			<img class="rimg_6" src="img/dm02_f.png"/>
+			<img class="rimg_7 hidden-xs" src="img/dm02_g.png"/>
+		</div>
+	</div>
+</div>
+<div id="index_02">
+	<div class="container pad">
+		<div class="col-lg-8 col-md-8 col-sm-8">
+			<img style="width: 100%;" src="img/indexB-img04.png"/>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<h3>超赞的云系统</h3>
+			<p class="p1">
+				云平台集中管理 
+				<br />智能云AC 
+				<br />Portal认证配置 
+				<br />图形化数据体现 
+				<br />自定义JS通知插入 
+				<br />第三方认证接口
+			</p>
+			<p class="p2">更多，待你发现...</p>
+		</div>
+	</div>
+</div>
+<div id="index_03">
+	<div class="container pad">
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<h3>七层DPI流量管理</h3>
+			<p class="p1">
+				看网页、看电影、玩游戏互不干扰
+				<br />多台终端同时上网不卡
+				<br />带宽利用最大化，绝不浪费带宽
+				<br />永远告别延迟卡顿
+				<br />3000款+应用识别
+			</p>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8">
+			<img style="width: 100%;" src="img/indexB-img01.png"/>
+		</div>
+	</div>
+</div>
+<div id="index_04">
+	<div class="container pad">
+		<div class="col-lg-8 col-md-8 col-sm-8">
+			<img style="width: 100%;" src="img/indexB-img02.png"/>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<h3>五大功能</h3>
+			<p class="p1">
+				多线路由
+				<br />一键流控
+				<br />免费AC管理
+				<br />自定义微信认证
+				<br />集中云管理
+			</p>
+		</div>
+	</div>
+</div>
+<div id="index_05">
+	<div class="container pad">
+		<div>
+			<h3 class="text-center h3">开放尽显开放</h3>
+			<p class="text-center p1">
+				Portal认证页面自定义
+				<br />云数据API+认证SDK
+				<br />从数据到应用，从应用到底层的开放之旅
+			</p>
+		</div>
+	</div>
+</div>
+<div id="index_06">
+	<div class="container">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<img src="img/indexLsit01.png"/>
+			<div>
+				<p class="p3">云系统</p>
+				<p class="p4">在线管理您所拥有的所有路由器</p>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<img src="img/indexLsit02.png"/>
+			<div>
+				<p class="p3">数据可视性</p>
+				<p class="p4">从终端到流量，所有数据通过图表一眼尽观</p>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<img src="img/indexLsit03.png"/>
+			<div>
+				<p class="p3">卓越的优先级</p>
+				<p class="p4">保障关键应用无论何时，都可优先通过</p>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<img src="img/indexLsit04.png"/>
+			<div>
+				<p class="p3">应用行为管理</p>
+				<p class="p4">基于DPI的应用行为管理</p>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<img src="img/indexLsit05.png"/>
+			<div>
+				<p class="p3">网址跳转</p>
+				<p class="p4">精准跳转、参数替换在最底层轻松搞定</p>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<img src="img/indexLsit06.png"/>
+			<div>
+				<p class="p3">插入JS通知</p>
+				<p class="p4">无论插入通知还是JS代码，总让您轻松完成</p>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<img src="img/indexLsit07.png"/>
+			<div>
+				<p class="p3">更多惊喜，待您体验</p>
+				<p class="p4">尊崇用户需求导向，做最接地气的路由企业</p>
+			</div>
+		</div>
+	</div>
+</div>

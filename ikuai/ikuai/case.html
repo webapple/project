@@ -1,0 +1,503 @@
+<style>
+	body{
+		color: rgb(102,102,102);
+	}
+	*,p{
+		margin: 0;padding: 0;
+	}
+	a{
+	    text-decoration: none;
+	}
+	.H10{
+		height: 10px;
+	}
+	.H20{
+		width: 100%;
+		height: 20px;
+	}
+	.H30{
+		width: 100%;
+		height: 30px;
+	}
+	.H40{
+		height: 40px;
+	}
+	.H60{
+		height: 60px;
+	}
+	@font-face {
+		font-family:'qiao';
+		src: url('fonts/MYRIADPRO-REGULAR.OTF');
+	}
+	body{
+		font-family: 'qiao', Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+	}
+	
+	
+	#case_01{
+		height: 200px;
+		width: 100%;
+		background: url(img/Banner_ex.jpg) bottom #0088cc no-repeat;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	#case_02 h3{
+		margin-bottom: 0;
+	    font-size: 34px;
+	    letter-spacing: 0.08em;
+	    font-weight: inherit;
+	    color: #404040;
+	}
+	#case_02 .p3{
+	    font-size: 18px;
+	    letter-spacing: 0.06em;
+	    color: #7c7c7c;
+	}
+	#case_02 .fl ul{
+		margin: 0 auto;
+	    display: table;
+	    overflow: hidden;
+	    margin-bottom: 20px;
+	}
+	#case_02 .fl ul li{
+		display: inline-block;
+	    float: left;
+	    padding: 5px 25px;
+	    font-size: 14px;
+	    cursor: pointer;
+	    margin: 10px 10px 0px 10px;
+	    border-radius: 4px;
+	    background-color: transparent;
+	    border: 1px solid transparent;
+	}
+	#case_02 .fl ul li:hover{
+	    background-color: transparent;
+		border: 1px solid #9b9b9b;
+	}
+	#case_02 .fl ul .active,#case_02 .fl ul .active:hover{
+		color: #fff;
+	    background-color: #0088cc;
+	    border: 1px solid #9b9b9b;
+	}
+	
+	#case_02 .list>div{
+		height: 300px;
+	}
+	#case_02 .list img{
+		border-radius: 10px;
+	}
+	#case_02 .list h3{
+		text-align: center;
+	    font-size: 18px;
+	    line-height: 26px;
+	    color: #0088cc;
+	    font-weight: inherit;
+	    margin: 10px 0;
+	}
+	#case_02 .list p{
+	    text-align: left;
+		text-indent: 2em;
+	}
+	.list img{
+		width: 100%;
+	}
+	
+	@media only screen and (min-width: 768px) and (max-width: 992px) {
+		#case_02 .list>div{
+			height: 170px;
+		}
+	}
+	@media only screen and (min-width: 0px) and (max-width: 768px) {
+		#case_02 .list>div{
+			height: auto;
+		}
+	}
+	
+	
+	
+</style>
+
+
+<script type="text/javascript" src="js/my.js" ></script>
+
+
+<div id="case_01"></div>
+<div id="case_02">
+	<div class="container">
+		<div class="H40 col-xs-12"></div>
+		<div class="text-center">
+			<h3>
+				场景案例
+			</h3>
+		</div>
+		<div class="fl">
+			<ul>
+				<li class="active flLi">全部</li>
+				<li class="flLi">酒店</li>
+				<li class="flLi">学校</li>
+				<li class="flLi">商场</li>
+				<li class="flLi">景区</li>
+				<li class="flLi">医院</li>
+				<li class="flLi">会场</li>
+			</ul>
+		</div>
+		
+		<div class="list">
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-1-001.jpg"/>
+					<h3>天津曼哈顿酒店</h3>
+					<p class="hidden-sm">四星级集客房、餐饮、多功能宴会厅、会议中心、商务中心、娱乐、健身房等服务设施为一体的豪华商务型酒店。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-1-002.jpg"/>
+					<h3>东莞市曼佧特国际大酒店</h3>
+					<p class="hidden-sm">五星级商务酒店，楼层达26层，高99米，为区域最高建筑。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-1-003.jpg"/>
+					<h3>深圳前岸国际酒店</h3>
+					<p class="hidden-sm">集餐饮、会议、住房、水疗、康体于一体，是一座极具先锋艺术代表的地标性建筑。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-2-001.jpg"/>
+					<h3>北京八维研修学院</h3>
+					<p class="hidden-sm">现拥有PC机万余台，是经北京市教委批准的全日制现代职业教育高等院校。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-2-002.jpg"/>
+					<h3>广州新东方烹饪学校</h3>
+					<p class="hidden-sm">中国粤菜烹饪教育第一品牌，是广东省目前规模最大、最专业的烹饪技能培训学校。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-2-003.jpg"/>
+					<h3>北方汽车专修学校</h3>
+					<p class="hidden-sm">在石家庄、广州、郑州、沈阳、济南、西安、成都、苏州等地开设了8所同等规模的分校，是一所系统化培训汽车人才的独立专业职业学校。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-001.jpg"/>
+					<h3>北京西单新一代商场</h3>
+					<p class="hidden-sm">一家集小商品销售、餐饮、休闲、娱乐等功能于一体的综合性特色商品市场。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-002.jpg"/>
+					<h3>北京新年华购物中心</h3>
+					<p class="hidden-sm">七个经营楼层的精品时尚购物中心。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-003.jpg"/>
+					<h3>长春市欧亚卖场</h3>
+					<p class="hidden-sm">欧亚卖场目前已经拥有四十万平方米的营业面积，是目前我国规模最大的现代化商贸购物中心。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-004.jpg"/>
+					<h3>昆明金源购物中心</h3>
+					<p class="hidden-sm">总建筑面积53.5万平方，是西南地区单体面积最大的购物中心。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-005.jpg"/>
+					<h3>乌鲁木齐奥特莱斯</h3>
+					<p class="hidden-sm">占地面积5.4万平方米，打造购物、餐饮、娱乐为一体的综合性商业。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-4-001.jpg"/>
+					<h3>苏州拙政园</h3>
+					<p class="hidden-sm">占地78亩（约合5.2公顷）。全园以水为中心，山水萦绕，厅榭精美，花木繁茂，具有浓郁的江南汉族水乡特色。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-4-002.jpg"/>
+					<h3>北京昌平苹果主题公园</h3>
+					<p class="hidden-sm">园区占地800余亩，是北京最大规模的苹果主题公园。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-4-003.jpg"/>
+					<h3>张家界黄龙洞 AAAA景区</h3>
+					<p class="hidden-sm">黄龙洞地处核心景区，属典型的喀斯特岩溶地貌，张家界旅游精品线之一，享有绝世奇观之美誉。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-5-001.jpg"/>
+					<h3>贝尔耳鼻喉专科医院</h3>
+					<p class="hidden-sm">贝尔耳鼻咽喉专科医院是一所由浏阳市卫生局审核批准的一所湖南省特色耳鼻咽喉专科医院。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-001.jpg"/>
+					<h3>2016微信公开课Pro版</h3>
+					<p class="hidden-sm">地点：广州保利世贸博览馆（安全支付场馆）</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-002.jpg"/>
+					<h3>2016湖南卫视跨年演唱会</h3>
+					<p class="hidden-sm">湖南卫视主办，现场人数约18000人。地点：国家体育馆</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-003.jpg"/>
+					<h3>2015全球创新者大会暨APEC青年创业家峰会</h3>
+					<p class="hidden-sm">APEC工商咨询理事会、APEC中国工商理事会主办，地址：北京市朝阳区将台路14</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-004.jpg"/>
+					<h3>2015iWeb峰会暨第四届HTML5峰会</h3>
+					<p class="hidden-sm">Html5梦工场主办，地点：北京国际会议中心</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-005.jpg"/>
+					<h3>2015全球营销烧脑夜第二弹•鸟巢站</h3>
+					<p class="hidden-sm">蓝色光标传播集团、品牌训练营、活动树主办，地点：鸟巢</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-006.jpg"/>
+					<h3>WISE2.0 36氪创业生态大会</h3>
+					<p class="hidden-sm">36氪主办，地点：北京国家会议中心</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			
+		</div>
+		<!--酒店-->
+		<div class="list">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-sm-offset-2">
+				<div>
+					<img src="img/example-1-001.jpg"/>
+					<h3>天津曼哈顿酒店</h3>
+					<p class="hidden-sm">四星级集客房、餐饮、多功能宴会厅、会议中心、商务中心、娱乐、健身房等服务设施为一体的豪华商务型酒店。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-1-002.jpg"/>
+					<h3>东莞市曼佧特国际大酒店</h3>
+					<p class="hidden-sm">五星级商务酒店，楼层达26层，高99米，为区域最高建筑。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-1-003.jpg"/>
+					<h3>深圳前岸国际酒店</h3>
+					<p class="hidden-sm">集餐饮、会议、住房、水疗、康体于一体，是一座极具先锋艺术代表的地标性建筑。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+		</div>
+		<!--学校-->
+		<div class="list">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-sm-offset-2">
+				<div>
+					<img src="img/example-2-001.jpg"/>
+					<h3>北京八维研修学院</h3>
+					<p class="hidden-sm">现拥有PC机万余台，是经北京市教委批准的全日制现代职业教育高等院校。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-2-002.jpg"/>
+					<h3>广州新东方烹饪学校</h3>
+					<p class="hidden-sm">中国粤菜烹饪教育第一品牌，是广东省目前规模最大、最专业的烹饪技能培训学校。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-2-003.jpg"/>
+					<h3>北方汽车专修学校</h3>
+					<p class="hidden-sm">在石家庄、广州、郑州、沈阳、济南、西安、成都、苏州等地开设了8所同等规模的分校，是一所系统化培训汽车人才的独立专业职业学校。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+		</div>
+		<!--商场-->
+		<div class="list">
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-001.jpg"/>
+					<h3>北京西单新一代商场</h3>
+					<p class="hidden-sm">一家集小商品销售、餐饮、休闲、娱乐等功能于一体的综合性特色商品市场。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-002.jpg"/>
+					<h3>北京新年华购物中心</h3>
+					<p class="hidden-sm">七个经营楼层的精品时尚购物中心。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-003.jpg"/>
+					<h3>长春市欧亚卖场</h3>
+					<p class="hidden-sm">欧亚卖场目前已经拥有四十万平方米的营业面积，是目前我国规模最大的现代化商贸购物中心。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-004.jpg"/>
+					<h3>昆明金源购物中心</h3>
+					<p class="hidden-sm">总建筑面积53.5万平方，是西南地区单体面积最大的购物中心。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-3-005.jpg"/>
+					<h3>乌鲁木齐奥特莱斯</h3>
+					<p class="hidden-sm">占地面积5.4万平方米，打造购物、餐饮、娱乐为一体的综合性商业。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+		</div>
+		<!--景区-->
+		<div class="list">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-sm-offset-2">
+				<div>
+					<img src="img/example-4-001.jpg"/>
+					<h3>苏州拙政园</h3>
+					<p class="hidden-sm">占地78亩（约合5.2公顷）。全园以水为中心，山水萦绕，厅榭精美，花木繁茂，具有浓郁的江南汉族水乡特色。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-4-002.jpg"/>
+					<h3>北京昌平苹果主题公园</h3>
+					<p class="hidden-sm">园区占地800余亩，是北京最大规模的苹果主题公园。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-4-003.jpg"/>
+					<h3>张家界黄龙洞 AAAA景区</h3>
+					<p class="hidden-sm">黄龙洞地处核心景区，属典型的喀斯特岩溶地貌，张家界旅游精品线之一，享有绝世奇观之美誉。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+		</div>
+		<!--医院-->
+		<div class="list">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-sm-offset-4">
+				<div>
+					<img src="img/example-5-001.jpg"/>
+					<h3>贝尔耳鼻喉专科医院</h3>
+					<p class="hidden-sm">贝尔耳鼻咽喉专科医院是一所由浏阳市卫生局审核批准的一所湖南省特色耳鼻咽喉专科医院。</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+		</div>
+		<!--会场-->
+		<div class="list">
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-001.jpg"/>
+					<h3>2016微信公开课Pro版</h3>
+					<p class="hidden-sm">地点：广州保利世贸博览馆（安全支付场馆）</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-002.jpg"/>
+					<h3>2016湖南卫视跨年演唱会</h3>
+					<p class="hidden-sm">湖南卫视主办，现场人数约18000人。地点：国家体育馆</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-003.jpg"/>
+					<h3>2015全球创新者大会暨APEC青年创业家峰会</h3>
+					<p class="hidden-sm">APEC工商咨询理事会、APEC中国工商理事会主办，地址：北京市朝阳区将台路14</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-004.jpg"/>
+					<h3>2015iWeb峰会暨第四届HTML5峰会</h3>
+					<p class="hidden-sm">Html5梦工场主办，地点：北京国际会议中心</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-005.jpg"/>
+					<h3>2015全球营销烧脑夜第二弹•鸟巢站</h3>
+					<p class="hidden-sm">蓝色光标传播集团、品牌训练营、活动树主办，地点：鸟巢</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<div>
+					<img src="img/example-6-006.jpg"/>
+					<h3>WISE2.0 36氪创业生态大会</h3>
+					<p class="hidden-sm">36氪主办，地点：北京国家会议中心</p>
+					<div class="H30"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

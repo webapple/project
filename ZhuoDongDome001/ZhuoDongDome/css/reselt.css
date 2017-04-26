@@ -1,0 +1,103 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: none; 
+} 
+html ,body{ 
+    font: 62.5% "Times New Roman",Georgia,Serif,monaco, “Lucida Console”, courier, mono-space; 
+    text-shadow: #000 0px 0px 0px; 
+} 
+ul { 
+    list-style: none; 
+    list-style-type: none; 
+} 
+
+h1, h2, h3, h4, h5, h6, p, pre, 
+blockquote, ul, ol, dl, address { 
+    font-weight: normal; 
+    margin: 0 0 1em 0; 
+} 
+cite, em, dfn { 
+    font-style: italic; 
+} 
+sup { 
+    position: relative; 
+    bottom: 0.3em; 
+    vertical-align: baseline; 
+} 
+sub { 
+    position: relative; 
+    bottom: -0.2em; 
+    vertical-align: baseline; 
+} 
+li, dd, blockquote { 
+    margin-left: 1em; 
+} 
+code, kbd, samp, pre, tt, var, input[type='text'], textarea { 
+    font-size: 100%; 
+    font-family: "Times New Roman",Georgia,Serif,monaco, “Lucida Console”, courier, mono-space; 
+} 
+del { 
+    text-decoration: line-through; 
+} 
+ins, dfn { 
+    border-bottom: 1px solid #ccc; 
+} 
+small, sup, sub { 
+    font-size: 85%; 
+} 
+abbr, acronym { 
+    text-transform: uppercase; 
+    font-size: 85%; 
+    letter-spacing: .1em; 
+    border-bottom-style: dotted; 
+    border-bottom-width: 1px; 
+} 
+a abbr, a acronym { 
+    border: none; 
+} 
+sup { 
+    vertical-align: super; 
+} 
+sub { 
+    vertical-align: sub; 
+} 
+h1 { 
+    font-size: 2em; 
+} 
+h2 { 
+    font-size: 1.8em; 
+} 
+h3 { 
+    font-size: 1.6em; 
+} 
+h4 { 
+    font-size: 1.4em; 
+} 
+h5 { 
+    font-size: 1.2em; 
+} 
+h6 { 
+    font-size: 1em; 
+} 
+a, a:link, a:visited, a:hover, a:active { 
+    outline: 0; 
+    text-decoration: none; 
+} 
+a img { 
+    border: none; 
+    text-decoration: none; 
+} 
+img { 
+    border: none; 
+    text-decoration: none; 
+} 
+label, button { 
+    cursor: pointer; 
+} 
+input:focus, select:focus, textarea:focus { 
+    background-color: #FFF; 
+} 
+fieldset { 
+    border: none; 
+} 

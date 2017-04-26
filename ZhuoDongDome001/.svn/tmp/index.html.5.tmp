@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reselt.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/musice.less" />
+		<script src="js/less.min.js"></script>
+	</head>
+	<body>
+		<div class="max">
+			<div class="nav">
+				<div class="inner">
+					
+				</div>
+			</div>
+			<div class="banner">
+				
+			</div>
+			<div class="banner_two">
+				<div class="inner">
+					<span></span>
+					<p>精彩推荐</p>
+					<img src="img/Q67825.jpg" />
+					<img src="img/Q678252.jpg" />
+					<img src="img/Q725433.jpg" />
+					<img src="img/Q725434.jpg"/>
+					<img src="img/Q72544.jpg"/>
+					
+				</div>
+			</div>
+			<div class="top">
+				
+			</div>
+			<div class="hotsong">
+				
+			</div>
+			<div class="mv">
+				
+			</div>
+			<div class="foot">
+				
+			</div>
+		</div>
+	</body>
+</html>

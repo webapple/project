@@ -1,0 +1,37 @@
+$(function(){
+	$(".login").click(function(){
+		$("#denglu").show();
+	})
+	$(".header").click(function(){
+		$("#denglu").hide();
+	})
+	$("#txt").click(function(){
+		$("#password").show();
+		$(".web_login").show();
+		$(".web_login_one").animate({},2000).hide();
+		$("#txt").animate({},2000).hide();
+		$(".web_login_two").hide();
+	})
+	$(".fast").click(function(){
+		$("#web_login_one").show();
+		$("#web_login").hide();
+		$("#txt").show();
+		$("#password").hide();
+	})
+	$("#zhuce").click(function(){
+		$(".web_login_two").show();
+		$("#web_login_one").hide();
+		$("#deng").show();
+		$("#zhuce").hide();
+		$("#web_login").hide();
+	})
+	$("#deng").click(function(){
+		$("#deng").hide();
+		$("#zhuce").show();
+		$(".web_login_two").hide();
+		$("#web_login_one").show();
+		$("#txt").show();
+		$("#password").hide();
+		$("#web_login").hide();
+	})
+})
